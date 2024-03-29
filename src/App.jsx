@@ -1,5 +1,8 @@
 import { useState } from "react";
 import Nav from "./components/Nav";
+import Projects from "./components/Projects";
+import Welcome from "./components/Welcome";
+
 import "@theme-toggles/react/css/Classic.css";
 import { Classic } from "@theme-toggles/react";
 import "./App.css";
@@ -11,19 +14,23 @@ function App() {
 	return (
 		<>
 			<div className={"h-dvh w-vw px-4 py-6" + (isDark ? " dark" : "")}>
-				<Nav
-					isNavOpen={isNavOpen}
-					setIsNavOpen={setIsNavOpen}
-				/>
+				<header className="h-[8%] z-10">
+					<Nav
+						isNavOpen={isNavOpen}
+						setIsNavOpen={setIsNavOpen}
+					/>
 
-				<Classic
-					className={
-						"top-4 right-4 absolute text-4xl" + (isNavOpen ? " hidden" : "")
-					}
-					toggled={isDark}
-					toggle={setIsDark}
-				/>
-				<h1 className={isNavOpen ? " hidden" : ""}>Arron Bent</h1>
+					<Classic
+						className={
+							"top-4 right-4 absolute text-4xl animate-pulse" +
+							(isNavOpen ? " hidden" : "")
+						}
+						toggled={isDark}
+						toggle={setIsDark}
+					/>
+				</header>
+				<Welcome isNavOpen={isNavOpen}></Welcome>
+				<Projects isNavOpen={isNavOpen} />
 			</div>
 		</>
 	);
