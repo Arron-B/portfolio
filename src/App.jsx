@@ -2,6 +2,7 @@ import { useState } from "react";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Welcome from "./components/Welcome";
+import Skills from "./components/Skills";
 
 import "@theme-toggles/react/css/Classic.css";
 import { Classic } from "@theme-toggles/react";
@@ -32,6 +33,10 @@ function App() {
 				<Welcome isNavOpen={isNavOpen}></Welcome>
 				<Projects isNavOpen={isNavOpen} />
 			</div>
+			<Skills
+				isNavOpen={isNavOpen}
+				isDark={isDark}
+			/>
 		</>
 	);
 }
