@@ -27,13 +27,33 @@ function Projects({ isNavOpen }) {
 					onMouseLeave={() => {
 						setShowNcNewsTitle(false);
 					}}
-					class="absolute mx-auto mb-1 left-0 right-0 bottom-0 text-white h-10 bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 rounded-full text-2xl aspect-square text-center flex justify-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+					class="absolute mx-auto mb-1 left-0 right-0 bottom-0 text-white h-10 bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 rounded-full text-2xl aspect-square text-center flex justify-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 pb-1.5"
 				>
 					<span>+</span>
 				</button>
 			</section>
 
-			<section className="h-[40%] flex justify-between bg-[url('./src/assets/travel-buddy-screens.png')] bg-cover"></section>
+			<section className="h-[40%] flex justify-between bg-[url('./src/assets/travel-buddy-screens.png')] bg-cover">
+				<div
+					className={
+						"bg-black w-32 h-8 mx-auto" + (showTravelTitle ? "" : " hidden")
+					}
+				>
+					<h3 className="text-white">Travel Buddy</h3>
+				</div>
+				<button
+					type="button"
+					onMouseEnter={() => {
+						setShowTravelTitle(true);
+					}}
+					onMouseLeave={() => {
+						setShowTravelTitle(false);
+					}}
+					class="absolute mx-auto mb-7 left-0 right-0 bottom-0 text-white h-10 bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 rounded-full text-2xl aspect-square text-center flex justify-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 pb-1.5"
+				>
+					<span>+</span>
+				</button>
+			</section>
 		</div>
 	);
 }
