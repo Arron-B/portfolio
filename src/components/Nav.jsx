@@ -42,10 +42,13 @@ function Nav({ isNavOpen, setIsNavOpen }) {
 							</svg>
 						</div>
 						<ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
-							<li className="border-b border-gray-400 my-8 uppercase">
-								<a href="/portfolio">Portfolio</a>
+							<li className="my-8 uppercase">
+								<a href="/welcome">Welcome</a>
 							</li>
-							<li className="border-b border-gray-400 my-8 uppercase">
+							<li className="my-8 uppercase">
+								<a href="/about">About</a>
+							</li>
+							<li className="my-8 uppercase">
 								<a href="/contact">Contact</a>
 							</li>
 						</ul>
@@ -54,7 +57,10 @@ function Nav({ isNavOpen, setIsNavOpen }) {
 
 				<ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
 					<li>
-						<a href="/portfolio">Portfolio</a>
+						<a href="/welcome">Welcome</a>
+					</li>
+					<li>
+						<a href="/about">About</a>
 					</li>
 					<li>
 						<a href="/contact">Contact</a>

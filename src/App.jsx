@@ -13,7 +13,7 @@ function App() {
 
 	return (
 		<>
-			<div className={"h-dvh w-vw px-4 py-6" + (isDark ? " dark" : "")}>
+			<div className={"h-dvh w-vw px-4 py-6" + (isDark ? " dark" : " light")}>
 				<header className="h-[8%] z-10">
 					<Nav
 						isNavOpen={isNavOpen}

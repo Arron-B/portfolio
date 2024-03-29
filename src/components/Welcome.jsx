@@ -6,7 +6,7 @@ function Welcome({ isNavOpen }) {
 				(isNavOpen ? " hidden" : "")
 			}
 		>
-			<h1 className="col-span-2 text-2xl">Welcome To My Website!</h1>
+			<h1 className="col-span-2 text-2xl text-white">Welcome To My Website!</h1>
 			<img
 				className="rounded-full w-40"
 				src="./src/assets/default-profile.jpg"
