@@ -8,9 +8,14 @@ function Skills({ isNavOpen, isDark }) {
 				}
 			>
 				<h2>Tech Stack</h2>
-				<div className="tech-stack h-[40%]"></div>
+				<div className="tech-stack h-[40%]">
+					<img
+						src="./src/assets/tech-stack.png"
+						className="object-fill h-full"
+					></img>
+				</div>
 				<h2>Northcoders</h2>
-				<div className="northcoder h-[40%] bg-[url('./src/assets/August-cohort.jpg')] bg-cover"></div>
+				<div className="northcoder h-[40%] bg-[url('./src/assets/August-cohort.jpg')] bg-cover bg-center"></div>
 			</section>
 		</>
 	);
