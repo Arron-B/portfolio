@@ -23,7 +23,7 @@ function App() {
 
 					<Classic
 						className={
-							"top-4 right-4 absolute text-4xl animate-pulse" +
+							"top-4 right-4 fixed text-4xl animate-pulse" +
 							(isNavOpen ? " hidden" : "")
 						}
 						toggled={isDark}

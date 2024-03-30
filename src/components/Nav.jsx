@@ -1,6 +1,6 @@
 function Nav({ isNavOpen, setIsNavOpen }) {
 	return (
-		<div className="flex items-center justify-between w-10">
+		<div className="flex items-center justify-between w-10 fixed">
 			<nav>
 				<section className="MOBILE-MENU flex lg:hidden">
 					<div
