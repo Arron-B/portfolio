@@ -15,7 +15,12 @@ function App() {
 	return (
 		<>
 			<div className={"h-dvh w-vw pb-6 pt-12" + (isDark ? " dark" : " light")}>
-				<header className="h-[8%] w-full py-3 px-4 z-10 bg-[#242424] fixed top-0">
+				<header
+					className={
+						"h-[8%] w-full py-3 px-4 z-10 fixed top-0" +
+						(isDark ? " dark" : " light")
+					}
+				>
 					<Nav
 						isNavOpen={isNavOpen}
 						setIsNavOpen={setIsNavOpen}
