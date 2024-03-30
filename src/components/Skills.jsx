@@ -1,7 +1,7 @@
 import { useState } from "react";
 import NorthcodersModal from "./NorthcodersModal";
 
-function Skills({ isDark }) {
+function Skills({ isDark, isNavOpen }) {
 	const [isNorthcodersModalOpen, setIsNorthcodersModalOpen] = useState(false);
 	const [isHovered, setIsHovered] = useState(false);
 
@@ -16,7 +16,8 @@ function Skills({ isDark }) {
 			<section
 				className={
 					"h-[92dvh] w-vw px-4 pb-6 flex flex-col justify-evenly" +
-					(isDark ? " dark" : " light")
+					(isDark ? " dark" : " light") +
+					(isNavOpen ? " hidden" : "")
 				}
 			>
 				<h2 className="text-white text-lg">Technologies I've Worked With</h2>
