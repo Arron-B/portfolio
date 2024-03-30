@@ -43,10 +43,12 @@ function Projects({ isNavOpen }) {
 				>
 					<div
 						className={
-							"bg-black w-32 h-8 mx-auto" + (showNcNewsTitle ? "" : " hidden")
+							"bg-[rgba(0,0,0,0.5)] h-full w-full flex flex-col justify-center items-center" +
+							(showNcNewsTitle ? "" : " hidden")
 						}
 					>
-						<h3 className="text-white">NC News</h3>
+						<h3 className="text-white">Nc News</h3>
+						<p className="text-white">Click To View</p>
 					</div>
 				</section>
 
@@ -64,10 +66,12 @@ function Projects({ isNavOpen }) {
 				>
 					<div
 						className={
-							"bg-black w-32 h-8 mx-auto" + (showTravelTitle ? "" : " hidden")
+							"bg-[rgba(0,0,0,0.5)] h-full w-full flex flex-col justify-center items-center" +
+							(showTravelTitle ? "" : " hidden")
 						}
 					>
 						<h3 className="text-white">Travel Buddy</h3>
+						<p className="text-white">Click To View</p>
 					</div>
 				</section>
 			</div>
