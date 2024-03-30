@@ -2,7 +2,7 @@ function Welcome({ isNavOpen }) {
 	return (
 		<div
 			className={
-				"welcome h-[46%] grid grid-cols-2 grid-rows-[20%, 80%] justify-center items-center" +
+				"welcome h-[50%] px-4 grid grid-cols-2 grid-rows-[20%, 80%] justify-center items-center" +
 				(isNavOpen ? " hidden" : "")
 			}
 		>

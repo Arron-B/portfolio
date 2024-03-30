@@ -14,16 +14,16 @@ function App() {
 
 	return (
 		<>
-			<div className={"h-dvh w-vw px-4 py-6" + (isDark ? " dark" : " light")}>
-				<header className="h-[8%] z-10">
+			<div className={"h-dvh w-vw pb-6 pt-12" + (isDark ? " dark" : " light")}>
+				<header className="h-[8%] w-full py-3 px-4 z-10 bg-[#242424] fixed top-0">
 					<Nav
 						isNavOpen={isNavOpen}
 						setIsNavOpen={setIsNavOpen}
 					/>
-
+					<h1 className="text-2xl text-center">Arron Bent</h1>
 					<Classic
 						className={
-							"top-4 right-4 fixed text-4xl animate-pulse" +
+							"top-3 right-4 fixed text-4xl animate-pulse" +
 							(isNavOpen ? " hidden" : "")
 						}
 						toggled={isDark}
