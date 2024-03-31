@@ -2,7 +2,7 @@ import { useState } from "react";
 import NcnewsModal from "./NcnewsModal";
 import TravelModal from "./TravelModal";
 
-function Projects({ isNavOpen }) {
+function Projects({ isNavOpen, isDark }) {
 	const [showNcNewsTitle, setShowNcNewsTitle] = useState(false);
 	const [showTravelTitle, setShowTravelTitle] = useState(false);
 	const [isNcModalOpen, setIsNcModalOpen] = useState(false);
@@ -24,8 +24,9 @@ function Projects({ isNavOpen }) {
 			) : null}
 			<div
 				className={
-					"full-stack-projects h-[50%] px-4 flex flex-col justify-between" +
-					(isNavOpen ? " hidden" : "")
+					"full-stack-projects h-[46dvh] px-4 flex flex-col justify-between" +
+					(isNavOpen ? " hidden" : "") +
+					(isDark ? " bg-dark-bg text-white" : " bg-light-bg text-black")
 				}
 			>
 				<h2 className="mt-2 text-white">Full-stack Projects</h2>
