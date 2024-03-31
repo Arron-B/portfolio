@@ -28,7 +28,7 @@ function About({ isNavOpen, isDark }) {
 				</div>
 				<img
 					src="./src/assets/tech-stack.png"
-					className="object-fill"
+					className="mx-auto h-[40%]"
 				></img>
 			</div>
 		</>
