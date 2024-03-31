@@ -5,7 +5,7 @@ function About({ isNavOpen, isDark }) {
 				className={
 					"h-[92dvh]" +
 					(isNavOpen ? " hidden" : "") +
-					(isDark ? " bg-dark-bg text-white" : " bg-light-bg text-black")
+					(isDark ? " text-white" : " text-black")
 				}
 			>
 				<div className="flex flex-col p-4 h-[60%] justify-center gap-4 items-center">
@@ -28,7 +28,7 @@ function About({ isNavOpen, isDark }) {
 				</div>
 				<img
 					src="./src/assets/tech-stack.png"
-					className="object-fill"
+					className="mx-auto h-[40%]"
 				></img>
 			</div>
 		</>

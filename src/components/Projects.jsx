@@ -9,7 +9,7 @@ function Projects({ isNavOpen, isDark }) {
 				className={
 					"projects relative h-[100dvh] py-12 flex flex-col justify-around" +
 					(isNavOpen ? " hidden" : "") +
-					(isDark ? " bg-dark-bg text-white" : " bg-light-bg text-black")
+					(isDark ? " text-white" : " text-black")
 				}
 			>
 				<div className="absolute left-[50%] top-10">
@@ -19,12 +19,12 @@ function Projects({ isNavOpen, isDark }) {
 					<div className="red-line z-0 bg-my-red relative w-[7.5rem] h-2.5 -left-[32%] -translate-y-2.5"></div>
 				</div>
 				<section className="nc-news relative top-12 h-[30%] w-[100vw] flex hover:scale-95">
-					<div className="w-[70vw] h-full absolute z-0 bg-[#3216bb]"></div>
+					<div className="w-[70vw] h-full absolute z-[1] bg-[#3216bb]"></div>
 					<img
-						className="w-[62vw] object-scale-down z-10"
+						className="w-[62vw] object-scale-down z-[2]"
 						src="./src/assets/ncnews-cropped.png"
 					></img>
-					<div className="absolute bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center">
+					<div className="absolute z-[3] bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center">
 						<h3 className="text-md">Nc News</h3>
 						<p className="text-sm">
 							A full-stack news web app using React, Bootstrap, Node.js,
