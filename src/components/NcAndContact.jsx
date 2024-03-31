@@ -57,4 +57,4 @@ function NcAndContact({ isDark, isNavOpen }) {
 	);
 }
 
-export default Skills;
+export default NcAndContact;
