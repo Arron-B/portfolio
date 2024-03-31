@@ -1,6 +1,8 @@
 import { useState } from "react";
 
 function Projects({ isNavOpen, isDark }) {
+	const [isHovered, setIsHovered] = useState(false);
+
 	return (
 		<>
 			<div
@@ -22,7 +24,7 @@ function Projects({ isNavOpen, isDark }) {
 						className="w-[62vw] object-scale-down z-10"
 						src="./src/assets/ncnews-cropped.png"
 					></img>
-					<div className="absolute bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left">
+					<div className="absolute bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center">
 						<h3 className="text-md">Nc News</h3>
 						<p className="text-sm">
 							A full-stack news web app using React, Bootstrap, Node.js,
@@ -52,16 +54,39 @@ function Projects({ isNavOpen, isDark }) {
 					</div>
 				</section>
 
-				<section className="travel-buddy relative bottom-0 h-[30%] w-[100vw] flex ml-auto justify-end hover:scale-95">
+				<section
+					className="travel-buddy relative bottom-0 h-[30%] w-[100vw] flex ml-auto justify-end hover:scale-95"
+					onMouseEnter={() => {
+						setIsHovered(true);
+					}}
+					onMouseLeave={() => {
+						setIsHovered(false);
+					}}
+				>
+					<div
+						className={
+							"bg-[rgba(0,0,0,0.54)] absolute z-20 h-full w-[70vw] flex flex-col justify-center items-center text-sm pl-6" +
+							(isHovered ? "" : " hidden")
+						}
+					>
+						<p>Note:</p>
+						<p className="text-white">
+							This app was not intended to be a web app and should be viewed in
+							a mobile viewport.
+						</p>
+					</div>
 					<div className="w-[70vw] h-full absolute z-0 bg-[#3216bb]"></div>
+
 					<img
 						className="w-[62vw] object-scale-down z-10"
 						src="./src/assets/travel-buddy-screens-cropped.png"
 					></img>
-					<div className="absolute bg-transparent h-[90%] w-[37vw] left-0 top-[5%] flex flex-col gap-1 pl-5 text-left">
+					<div className="absolute z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center">
 						<h3 className="text-md">Travel Buddy</h3>
-						<p className="text-sm">
-							A full-stack mobile app using Vue, Typescript, Axios, and MongoDB.
+						<p className="text-xs">
+							A full-stack mobile app built in a team of 6 during my bootcamp.
+							It utilises Vue, Typescript, Axios, and MongoDB, all of which none
+							of the team had any prior experience with.
 						</p>
 						<a
 							className="text-sm underline decoration-my-red underline-offset-2"
