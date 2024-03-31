@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Welcome from "./components/Welcome";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 import "@theme-toggles/react/css/Classic.css";
 import { Classic } from "@theme-toggles/react";
@@ -42,6 +43,10 @@ function App() {
 				isNavOpen={isNavOpen}
 				isDark={isDark}
 			/>
+			<Contact
+				isNavOpen={isNavOpen}
+				isDark={isDark}
+			></Contact>
 		</>
 	);
 }

@@ -1,3 +1,7 @@
+html {
+	background: linear-gradient(to bottom, #444444 0%, #050b0b 70%);
+}
+
 html,
 * {
 	box-sizing: border-box !important;
@@ -29,10 +33,10 @@ html,
 
 .dark {
 	color: rgba(204, 0, 0, 0.87);
-	background-color: #242424;
+	/* background-color: #242424; */
 }
 
 .light {
 	color: rgba(0, 15, 80, 0.671);
-	background-color: #acacac;
+	/* background-color: #acacac; */
 }
