@@ -1,12 +1,11 @@
 import { useState } from "react";
 import Nav from "./components/Nav";
+import About from "./components/About";
 import Projects from "./components/Projects";
 import Welcome from "./components/Welcome";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
+import NcAndContact from "./components/NcAndContact";
 
 import "@theme-toggles/react/css/Classic.css";
-import { Classic } from "@theme-toggles/react";
 import "./App.css";
 
 function App() {
@@ -15,38 +14,32 @@ function App() {
 
 	return (
 		<>
-			<div className={"h-dvh w-vw pb-6 pt-12" + (isDark ? " dark" : " light")}>
-				<header
-					className={
-						"h-[8%] w-full py-3 px-4 z-10 fixed top-0" +
-						(isDark ? " dark" : " light")
-					}
-				>
-					<Nav
-						isNavOpen={isNavOpen}
-						setIsNavOpen={setIsNavOpen}
-					/>
-					<h1 className="text-2xl text-center">Arron Bent</h1>
-					<Classic
-						className={
-							"top-3 right-4 fixed text-4xl animate-pulse" +
-							(isNavOpen ? " hidden" : "")
-						}
-						toggled={isDark}
-						toggle={setIsDark}
-					/>
-				</header>
-				<Welcome isNavOpen={isNavOpen}></Welcome>
-				<Projects isNavOpen={isNavOpen} />
-			</div>
-			<Skills
+			<Nav
+				isNavOpen={isNavOpen}
+				setIsNavOpen={setIsNavOpen}
+				isDark={isDark}
+				setIsDark={setIsDark}
+			/>
+
+			<Welcome
+				isNavOpen={isNavOpen}
+				isDark={isDark}
+			></Welcome>
+
+			<About
+				isNavOpen={isNavOpen}
+				isDark={isDark}
+			></About>
+
+			<Projects
 				isNavOpen={isNavOpen}
 				isDark={isDark}
 			/>
-			<Contact
+
+			<NcAndContact
 				isNavOpen={isNavOpen}
 				isDark={isDark}
-			></Contact>
+			/>
 		</>
 	);
 }

@@ -1,22 +1,24 @@
-function Welcome({ isNavOpen }) {
+function Welcome({ isNavOpen, isDark }) {
+	const welcomeLine1 = ["Hello,", "I'm", "Arron", ","];
+
 	return (
 		<div
 			className={
-				"welcome h-[50%] px-4 grid grid-cols-2 grid-rows-[20%, 80%] justify-center items-center" +
-				(isNavOpen ? " hidden" : "")
+				"welcome h-[100dvh] px-4 flex flex-col justify-center items-center" +
+				(isNavOpen ? " hidden" : "") +
+				(isDark ? " bg-dark-bg text-white" : " bg-light-bg text-black")
 			}
 		>
-			<h1 className="col-span-2 text-2xl text-white">Welcome To My Website!</h1>
-			<img
-				className="rounded-full w-40"
-				src="./src/assets/default-profile.jpg"
-				alt=""
-			/>
-			<p>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
-				sequi facere blanditiis, maxime placeat voluptatum ducimus? Accusantium
-				inventore consequuntur itaque!
-			</p>
+			<div className="flex">
+				{welcomeLine1.map((word, i) => {
+					if (i === 2) {
+						return <p className="text-my-red text-2xl">{word}</p>;
+					} else {
+						return <p className="mr-1 text-2xl">{word}</p>;
+					}
+				})}
+			</div>
+			<p className="text-2xl">a full-stack developer.</p>
 		</div>
 	);
 }

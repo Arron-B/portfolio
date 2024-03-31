@@ -1,15 +1,37 @@
-function Nav({ isNavOpen, setIsNavOpen }) {
+import { Classic } from "@theme-toggles/react";
+
+function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
 	return (
-		<div className="flex items-center justify-between w-10 fixed pt-2">
-			<nav>
-				<section className="MOBILE-MENU flex lg:hidden">
+		<div
+			className={
+				"fixed z-40 h-[8dvh] w-full" +
+				(isDark ? " bg-dark-bg text-white" : " bg-light-bg text-black")
+			}
+		>
+			<nav className="flex items-center h-full px-4">
+				<section className="MOBILE-MENU flex lg:hidden w-8">
 					<div
 						className="HAMBURGER-ICON space-y-2 z-50"
 						onClick={() => setIsNavOpen(!isNavOpen)} // toggle isNavOpen state on click
 					>
-						<span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-						<span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-						<span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+						<span
+							className={
+								"block h-0.5 w-8 animate-pulse" +
+								(isDark ? " bg-white" : " bg-black")
+							}
+						></span>
+						<span
+							className={
+								"block h-0.5 w-8 animate-pulse" +
+								(isDark ? " bg-white" : " bg-black")
+							}
+						></span>
+						<span
+							className={
+								"block h-0.5 w-8 animate-pulse" +
+								(isDark ? " bg-white" : " bg-black")
+							}
+						></span>
 					</div>
 
 					<div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
@@ -54,6 +76,15 @@ function Nav({ isNavOpen, setIsNavOpen }) {
 						</ul>
 					</div>
 				</section>
+
+				<Classic
+					className={
+						"top-3 right-4 fixed text-4xl animate-pulse" +
+						(isNavOpen ? " hidden" : "")
+					}
+					toggled={isDark}
+					toggle={setIsDark}
+				/>
 
 				<ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
 					<li>

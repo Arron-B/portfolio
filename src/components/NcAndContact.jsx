@@ -1,7 +1,7 @@
 import { useState } from "react";
 import NorthcodersModal from "./NorthcodersModal";
 
-function Skills({ isDark, isNavOpen }) {
+function NcAndContact({ isDark, isNavOpen }) {
 	const [isNorthcodersModalOpen, setIsNorthcodersModalOpen] = useState(false);
 	const [isHovered, setIsHovered] = useState(false);
 
@@ -16,18 +16,11 @@ function Skills({ isDark, isNavOpen }) {
 			<section
 				className={
 					"h-[92dvh] w-vw px-4 pb-6 flex flex-col justify-evenly" +
-					(isDark ? " dark" : " light") +
+					(isDark ? " bg-dark-bg text-white" : " bg-light-bg text-black") +
 					(isNavOpen ? " hidden" : "")
 				}
 			>
-				<h2 className="text-white text-lg">Technologies I've Worked With</h2>
-				<div className="tech-stack h-[50%] mt-1">
-					<img
-						src="./src/assets/tech-stack.png"
-						className="object-fill h-full"
-					></img>
-				</div>
-				<h2 className="text-white text-lg">Northcoders</h2>
+				<h2 className="text-lg">Northcoders</h2>
 				<div
 					className="northcoders relative h-[50%] mt-1 bg-[url('./src/assets/August-cohort.jpg')] bg-cover bg-center"
 					onClick={() => {
@@ -49,9 +42,19 @@ function Skills({ isDark, isNavOpen }) {
 						<p className="text-white">Find Out More</p>
 					</div>
 				</div>
+				<div
+					className={
+						"h-[92dvh] w-full p-4" +
+						(isDark
+							? " bg-[url('./src/assets/dark-background.jpg')] bg-cover bg-center"
+							: " bg-[url('./src/assets/light-background.jpg')] bg-cover bg-center")
+					}
+				>
+					Contact Me
+				</div>
 			</section>
 		</>
 	);
 }
 
-export default Skills;
+export default NcAndContact;
