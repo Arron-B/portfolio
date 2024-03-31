@@ -3,8 +3,7 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Welcome from "./components/Welcome";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
+import NcAndContact from "./components/NcAndContact";
 
 import "@theme-toggles/react/css/Classic.css";
 import "./App.css";
@@ -37,14 +36,10 @@ function App() {
 				isDark={isDark}
 			/>
 
-			<Skills
+			<NcAndContact
 				isNavOpen={isNavOpen}
 				isDark={isDark}
 			/>
-			<Contact
-				isNavOpen={isNavOpen}
-				isDark={isDark}
-			></Contact>
 		</>
 	);
 }

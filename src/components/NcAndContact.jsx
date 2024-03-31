@@ -1,7 +1,7 @@
 import { useState } from "react";
 import NorthcodersModal from "./NorthcodersModal";
 
-function Skills({ isDark, isNavOpen }) {
+function NcAndContact({ isDark, isNavOpen }) {
 	const [isNorthcodersModalOpen, setIsNorthcodersModalOpen] = useState(false);
 	const [isHovered, setIsHovered] = useState(false);
 
@@ -41,6 +41,16 @@ function Skills({ isDark, isNavOpen }) {
 					>
 						<p className="text-white">Find Out More</p>
 					</div>
+				</div>
+				<div
+					className={
+						"h-[92dvh] w-full p-4" +
+						(isDark
+							? " bg-[url('./src/assets/dark-background.jpg')] bg-cover bg-center"
+							: " bg-[url('./src/assets/light-background.jpg')] bg-cover bg-center")
+					}
+				>
+					Contact Me
 				</div>
 			</section>
 		</>

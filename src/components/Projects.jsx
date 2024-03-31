@@ -24,12 +24,12 @@ function Projects({ isNavOpen, isDark }) {
 			) : null}
 			<div
 				className={
-					"full-stack-projects h-[46dvh] px-4 flex flex-col justify-between" +
+					"full-stack-projects h-[100dvh] px-4 py-12 flex flex-col justify-between" +
 					(isNavOpen ? " hidden" : "") +
 					(isDark ? " bg-dark-bg text-white" : " bg-light-bg text-black")
 				}
 			>
-				<h2 className="mt-2 text-white">Full-stack Projects</h2>
+				<h2 className="text-white">My Projects</h2>
 				<section
 					className="relative h-[40%] bg-[url('./src/assets/ncnews.png')] bg-cover flex"
 					onClick={() => {
