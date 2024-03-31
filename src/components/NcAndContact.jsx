@@ -16,8 +16,8 @@ function NcAndContact({ isDark, isNavOpen }) {
 			<section
 				className={
 					"h-[92dvh] w-vw px-4 pb-6 flex flex-col justify-evenly" +
-					(isDark ? " bg-dark-bg text-white" : " bg-light-bg text-black") +
-					(isNavOpen ? " hidden" : "")
+					(isNavOpen ? " hidden" : "") +
+					(isDark ? " text-white" : " text-black")
 				}
 			>
 				<h2 className="text-lg">Northcoders</h2>

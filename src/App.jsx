@@ -4,6 +4,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Welcome from "./components/Welcome";
 import NcAndContact from "./components/NcAndContact";
+import Background from "./components/Background";
 
 import "@theme-toggles/react/css/Classic.css";
 import "./App.css";
@@ -14,6 +15,11 @@ function App() {
 
 	return (
 		<>
+			<Background
+				isNavOpen={isNavOpen}
+				isDark={isDark}
+			></Background>
+
 			<Nav
 				isNavOpen={isNavOpen}
 				setIsNavOpen={setIsNavOpen}

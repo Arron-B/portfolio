@@ -6,7 +6,7 @@ function Welcome({ isNavOpen, isDark }) {
 			className={
 				"welcome h-[100dvh] px-4 flex flex-col justify-center items-center" +
 				(isNavOpen ? " hidden" : "") +
-				(isDark ? " bg-dark-bg text-white" : " bg-light-bg text-black")
+				(isDark ? " text-white" : " text-black")
 			}
 		>
 			<div className="flex">

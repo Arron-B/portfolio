@@ -5,7 +5,7 @@ function About({ isNavOpen, isDark }) {
 				className={
 					"h-[92dvh]" +
 					(isNavOpen ? " hidden" : "") +
-					(isDark ? " bg-dark-bg text-white" : " bg-light-bg text-black")
+					(isDark ? " text-white" : " text-black")
 				}
 			>
 				<div className="flex flex-col p-4 h-[60%] justify-center gap-4 items-center">
