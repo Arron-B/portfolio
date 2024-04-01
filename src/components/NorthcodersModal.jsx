@@ -1,10 +1,6 @@
 import { useState } from "react";
 
-function NorthcodersModal({
-	isNorthcodersModalOpen,
-	setIsNorthcodersModalOpen,
-	isDark,
-}) {
+function NorthcodersModal({ isDark, setIsNorthcodersModalOpen }) {
 	const [isMatchHovered, setIsMatchHovered] = useState(false);
 	const [isEvoHovered, setIsEvoHovered] = useState(false);
 	const [isFlashcardsHovered, setIsFlashcardsHovered] = useState(false);
@@ -19,8 +15,7 @@ function NorthcodersModal({
 			></div>
 			<div
 				className={
-					"h-[90dvh] w-[90vw] fixed z-[100] top-[5%] left-[5%] flex flex-col justify-around" +
-					(isDark ? " text-white" : " text-black")
+					"h-[90dvh] w-[90vw] fixed z-[100] top-[5%] left-[5%] flex flex-col gap-1 justify-around text-white"
 				}
 			>
 				<button
@@ -32,14 +27,14 @@ function NorthcodersModal({
 				>
 					close
 				</button>
-				<h1>My Time At Northcoders</h1>
+				<h1 className="underline decoration-my-red">My Time At Northcoders</h1>
 
 				<img
 					className="w-full max-h-[30%] object-scale-down"
 					src="./src/assets/August-cohort.jpg"
 					alt=""
 				/>
-				<p className="text-sm">
+				<p className="text-xs">
 					During my 3 months on the Northcoders software development bootcamp I
 					gained extensive problem solving experience with Javascript. We
 					utilised paired programming with Git/Github and test-driven
@@ -49,7 +44,9 @@ function NorthcodersModal({
 				</p>
 
 				<div className="grid gap-2 w-full h-[30%] grid-rows-[10%_45%_45%] grid-cols-2 justify-center items-center">
-					<h3 className="col-span-2">Small Learning Projects</h3>
+					<h3 className="col-span-2 my-1 underline decoration-my-red">
+						Small Learning Projects
+					</h3>
 
 					<a
 						className="row-start-3 col-1 h-full w-full"

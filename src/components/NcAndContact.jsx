@@ -1,9 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NorthcodersModal from "./NorthcodersModal";
 
 function NcAndContact({ isDark, isNavOpen }) {
-	const [isNorthcodersModalOpen, setIsNorthcodersModalOpen] = useState(false);
 	const [isHovered, setIsHovered] = useState(false);
+	const [isNorthcodersModalOpen, setIsNorthcodersModalOpen] = useState(false);
+
+	useEffect(() => {
+		if (isNorthcodersModalOpen) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "unset";
+		}
+	}, [isNorthcodersModalOpen]);
 
 	return (
 		<>
