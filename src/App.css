@@ -30,23 +30,34 @@ html,
 .bubbles {
 	position: relative;
 	display: flex;
+	justify-content: space-around;
 }
 
 .bubbles span {
 	position: relative;
-	width: 1rem;
-	height: 1rem;
-	background: #4fc3dc;
-	margin: 0 0.5rem;
+	width: 1vw;
+	height: 1vw;
+	background: #3216bb;
 	border-radius: 50%;
-	box-shadow: 0 0 0 0.3rem #4fc3dc44, 0 0 1.5rem #4fc3dc, 0 0 3rem #4fc3dc;
+
 	animation: animate 15s linear infinite;
 	animation-duration: calc(180s / var(--i));
 }
 
-.bubbles span:nth-child(even) {
-	background: #ff2d75;
-	box-shadow: 0 0 0 0.3rem #ff2d7544, 0 0 1.5rem #ff2d75, 0 0 3rem #ff2d75;
+.bubble-light {
+	box-shadow: 0 0 0 0.3rem #3216bb10, 0 0 3rem, 0 0 3rem;
+}
+.bubble-dark {
+	box-shadow: 0 0 0 0.3rem #3216bb44, 0 0 3rem, 0 0 3rem;
+}
+
+.bubble-light:nth-child(even) {
+	background: #fd0000;
+	box-shadow: 0 0 0 0.3rem #fd000010, 0 0 1.5rem #fd0000, 0 0 3rem #fd0000;
+}
+.bubble-dark:nth-child(even) {
+	background: #fd0000;
+	box-shadow: 0 0 0 0.3rem #fd000010, 0 0 1.5rem #fd0000, 0 0 3rem #fd0000;
 }
 @keyframes animate {
 	0% {
