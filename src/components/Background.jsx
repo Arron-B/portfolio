@@ -11,6 +11,7 @@ function Background({ isNavOpen, isDark }) {
 					<div className="bubbles relative flex w-full mx-auto">
 						{[...Array(20)].map((bubble, i) => (
 							<span
+								className={isDark ? "bubble-dark" : "bubble-light"}
 								key={i}
 								style={{ "--i": Math.random() * (30 - 10) + 10 }}
 							></span>
