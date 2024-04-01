@@ -11,6 +11,7 @@ function NcAndContact({ isDark, isNavOpen }) {
 				<NorthcodersModal
 					isNorthcodersModalOpen={isNorthcodersModalOpen}
 					setIsNorthcodersModalOpen={setIsNorthcodersModalOpen}
+					isDark={isDark}
 				/>
 			) : null}
 			<section
