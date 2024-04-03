@@ -18,6 +18,7 @@ function Projects({ isNavOpen, isDark }) {
 					</h2>
 					<div className="red-line z-0 bg-my-red relative w-[7.5rem] h-2.5 -left-[32%] -translate-y-2.5"></div>
 				</div>
+
 				<section className="nc-news relative top-12 h-[30%] w-[100vw] flex hover:scale-95">
 					<div className="w-[70vw] h-full absolute z-[1] bg-[#3216bb]"></div>
 					<img

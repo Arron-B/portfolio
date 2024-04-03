@@ -27,7 +27,10 @@ function NorthcodersModal({ isDark, setIsNorthcodersModalOpen }) {
 				>
 					close
 				</button>
-				<h1 className="underline decoration-my-red">My Time At Northcoders</h1>
+				<img
+					className="w-[50%] mx-auto"
+					src="./src/assets/northcoders-title.png"
+				></img>
 
 				<img
 					className="w-full max-h-[30%] object-scale-down"
@@ -44,9 +47,10 @@ function NorthcodersModal({ isDark, setIsNorthcodersModalOpen }) {
 				</p>
 
 				<div className="grid gap-2 w-full h-[30%] grid-rows-[10%_45%_45%] grid-cols-2 justify-center items-center">
-					<h3 className="col-span-2 my-1 underline decoration-my-red">
-						Small Learning Projects
-					</h3>
+					<img
+						className="w-[50%] col-span-2 mx-auto"
+						src="./src/assets/small-proj-title.png"
+					></img>
 
 					<a
 						className="row-start-3 col-1 h-full w-full"
