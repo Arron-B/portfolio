@@ -31,25 +31,52 @@ function Projects({ isNavOpen, isDark }) {
 							Express.js and PostgreSQL
 						</p>
 						<a
-							className="text-sm underline decoration-my-red underline-offset-2"
+							className="text-sm"
 							href="https://arron-nc-news.netlify.app/?sort_by=created_at&order=desc&topic="
 							target="_blank"
 						>
-							LIVE APP
+							<div
+								className={
+									"relative w-[60%] overflow-hidden border-b-4 border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full px-1" +
+									(isDark
+										? " text-white hover:text-dark-bg"
+										: " text-black hover:text-light-bg")
+								}
+							>
+								<span className="relative z-10 text-sm">LIVE APP</span>
+							</div>
 						</a>
 						<a
-							className="text-sm underline decoration-my-red underline-offset-2"
+							className="text-sm"
 							href="https://github.com/Arron-B/nc-news"
 							target="_blank"
 						>
-							REPO
+							<div
+								className={
+									"relative w-[55%] overflow-hidden border-b-4 border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full px-1" +
+									(isDark
+										? " text-white hover:text-dark-bg"
+										: " text-black hover:text-light-bg")
+								}
+							>
+								<span className="relative z-10 text-sm">REPO</span>
+							</div>
 						</a>
 						<a
-							className="text-sm underline decoration-my-red underline-offset-2"
+							className="text-sm"
 							href="https://github.com/Arron-B/API-nc-news"
 							target="_blank"
 						>
-							API
+							<div
+								className={
+									"relative w-[50%] overflow-hidden border-b-4 border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full px-1" +
+									(isDark
+										? " text-white hover:text-dark-bg"
+										: " text-black hover:text-light-bg")
+								}
+							>
+								<span className="relative z-10 text-sm">API</span>
+							</div>
 						</a>
 					</div>
 				</section>
@@ -89,18 +116,36 @@ function Projects({ isNavOpen, isDark }) {
 							of the team had any prior experience with.
 						</p>
 						<a
-							className="text-sm underline decoration-my-red underline-offset-2"
+							className="text-sm"
 							href="https://travel-app-npm-jog.netlify.app/home?utm_source=pocket_saves"
 							target="_blank"
 						>
-							LIVE APP
+							<div
+								className={
+									"relative w-[60%] overflow-hidden border-b-4 border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full px-1" +
+									(isDark
+										? " text-white hover:text-dark-bg"
+										: " text-black hover:text-light-bg")
+								}
+							>
+								<span className="relative z-10 text-sm">LIVE APP</span>
+							</div>
 						</a>
 						<a
-							className="text-sm underline decoration-my-red underline-offset-2"
+							className="text-sm"
 							href="https://github.com/npm-jog/travel-proj"
 							target="_blank"
 						>
-							REPO
+							<div
+								className={
+									"relative w-[55%] overflow-hidden border-b-4 border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full px-1" +
+									(isDark
+										? " text-white hover:text-dark-bg"
+										: " text-black hover:text-light-bg")
+								}
+							>
+								<span className="relative z-10 text-sm">REPO</span>
+							</div>
 						</a>
 					</div>
 				</section>
