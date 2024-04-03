@@ -20,15 +20,21 @@ function About({ isNavOpen, isDark }) {
 						src="./src/assets/default-profile.jpg"
 						alt=""
 					/>
-					<p className="text-md">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut non
-						adipisci id asperiores dignissimos nulla officia ipsum magnam
-						dolores quasi?
+					<p className="text-sm">
+						React, TailwindCSS and SQL are my main go to technologies. I'm
+						interested in developing web apps, but in the future would like to
+						makes games as a hobby with Godot or Unreal Engine. <br></br> In my
+						free time you'll find me playing table tennis, badminton, games,
+						board games, at the gym or just bingeing my favourite tv series.
 					</p>
 				</div>
 				<img
-					src="./src/assets/tech-stack.png"
-					className="mx-auto h-[40%]"
+					src="./src/assets/tech-stack-dark.png"
+					className={"mx-auto h-[40%]" + (isDark ? "" : " hidden")}
+				></img>
+				<img
+					src="./src/assets/tech-stack-light.png"
+					className={"mx-auto h-[40%]" + (!isDark ? "" : " hidden")}
 				></img>
 			</div>
 		</>
