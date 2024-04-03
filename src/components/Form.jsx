@@ -9,29 +9,39 @@ function Form({ isDark }) {
 
 	const sendEmail = (e) => {
 		e.preventDefault();
-
-		emailjs
-			.sendForm("service_zz8xsjl", "template_e1tgbro", form.current, {
-				publicKey: "pvE2yssw6DJ_7sUcR",
-			})
-			.then(
-				() => {
+		document.querySelectorAll(".form-input").forEach((input, i) => {
+			if (input.value.length < 1) {
+				setSubmitMsg("Fill all fields");
+				setSubmitStatus("failed");
+				setTimeout(() => {
+					setSubmitMsg("");
 					setSubmitStatus("success");
-					setSubmitMsg("Message Sent");
-					setTimeout(() => {
-						setSubmitMsg("");
-					}, 5000);
-					e.target.reset();
-				},
-				(error) => {
-					setSubmitStatus("failed");
-					setSubmitMsg("Message Failed");
-					setTimeout(() => {
-						setSubmitMsg("");
-						setSubmitStatus("success");
-					}, 5000);
-				}
-			);
+				}, 3000);
+			} else if (input.value.length >= 1 && i === 2) {
+				emailjs
+					.sendForm("service_zz8xsjl", "template_e1tgbro", form.current, {
+						publicKey: "pvE2yssw6DJ_7sUcR",
+					})
+					.then(
+						() => {
+							setSubmitStatus("success");
+							setSubmitMsg("Message Sent");
+							setTimeout(() => {
+								setSubmitMsg("");
+							}, 5000);
+							e.target.reset();
+						},
+						(error) => {
+							setSubmitStatus("failed");
+							setSubmitMsg("Message Failed");
+							setTimeout(() => {
+								setSubmitMsg("");
+								setSubmitStatus("success");
+							}, 3000);
+						}
+					);
+			}
+		});
 	};
 
 	return (
@@ -42,7 +52,7 @@ function Form({ isDark }) {
 		>
 			<input
 				className={
-					"w-full h-5 pl-1 text-sm" +
+					"form-input w-full h-5 pl-1 text-sm" +
 					(isDark
 						? " bg-dark-secondary placeholder-white"
 						: " bg-light-secondary placeholder-black")
@@ -54,7 +64,7 @@ function Form({ isDark }) {
 
 			<input
 				className={
-					"w-full h-5 pl-1 text-sm" +
+					"form-input w-full h-5 pl-1 text-sm" +
 					(isDark
 						? " bg-dark-secondary placeholder-white"
 						: " bg-light-secondary placeholder-black")
@@ -67,7 +77,7 @@ function Form({ isDark }) {
 			<textarea
 				name="message"
 				className={
-					"w-full h-28 pl-1 text-sm" +
+					"form-input w-full h-28 pl-1 text-sm" +
 					(isDark
 						? " bg-dark-secondary placeholder-white"
 						: " bg-light-secondary placeholder-black")
@@ -89,6 +99,7 @@ function Form({ isDark }) {
 				<button
 					type="submit"
 					value="Send"
+					disabled={submitMsg.length > 0 ? true : false}
 					className={
 						"relative w-[25%] overflow-hidden border-b-4 border-my-red shadow-2xl transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full" +
 						(isDark
