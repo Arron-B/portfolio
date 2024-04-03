@@ -1,4 +1,10 @@
 function Footer({ isDark }) {
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	};
 	return (
 		<div
 			className={
