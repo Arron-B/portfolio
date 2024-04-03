@@ -65,7 +65,7 @@ function NcAndContact({ isDark, isNavOpen }) {
 							: " bg-[url('./src/assets/light-background.jpg')] bg-cover bg-center")
 					}
 				>
-					<div className="absolute left-[50%]">
+					<div className="absolute left-[50%] mt-5">
 						<h2 className="text-[1.2rem] relative z-10 -left-[50%]">
 							Contact Me
 						</h2>

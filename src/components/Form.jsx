@@ -1,8 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function Form({ isDark }) {
 	const form = useRef();
+
+	const [submitMsg, setSubmitMsg] = useState("");
+	const [submitStatus, setSubmitStatus] = useState("success");
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -13,11 +16,20 @@ function Form({ isDark }) {
 			})
 			.then(
 				() => {
-					console.log("SUCCESS!");
+					setSubmitStatus("success");
+					setSubmitMsg("Message Sent");
+					setTimeout(() => {
+						setSubmitMsg("");
+					}, 5000);
 					e.target.reset();
 				},
 				(error) => {
-					console.log("FAILED...", error.text);
+					setSubmitStatus("failed");
+					setSubmitMsg("Message Failed");
+					setTimeout(() => {
+						setSubmitMsg("");
+						setSubmitStatus("success");
+					}, 5000);
 				}
 			);
 	};
@@ -62,19 +74,31 @@ function Form({ isDark }) {
 				}
 				placeholder="Message"
 			/>
-
-			<button
-				type="submit"
-				value="Send"
-				class={
-					"relative w-[25%] ml-auto overflow-hidden border-b-4 border-my-red shadow-2xl transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full" +
-					(isDark
-						? " text-white hover:text-dark-bg"
-						: " text-black hover:text-light-bg")
-				}
-			>
-				<span class="relative z-10 text-sm">Submit</span>
-			</button>
+			<div className="w-full flex justify-end">
+				<span
+					className={
+						"submit-notification w-[40%] h-full text-sm" +
+						(submitMsg.length > 0
+							? " flex items-center justify-center"
+							: " hidden") +
+						(submitStatus === "success" ? " bg-green-700" : " bg-my-red")
+					}
+				>
+					{submitMsg}
+				</span>
+				<button
+					type="submit"
+					value="Send"
+					className={
+						"relative w-[25%] overflow-hidden border-b-4 border-my-red shadow-2xl transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full" +
+						(isDark
+							? " text-white hover:text-dark-bg"
+							: " text-black hover:text-light-bg")
+					}
+				>
+					<span className="relative z-10 text-sm">Submit</span>
+				</button>
+			</div>
 		</form>
 	);
 }
