@@ -25,13 +25,13 @@ function NcAndContact({ isDark, isNavOpen }) {
 			) : null}
 			<section
 				className={
-					"h-[92dvh] w-vw flex flex-col justify-evenly gap-1" +
+					"h-[84dvh] w-vw flex flex-col justify-evenly gap-1" +
 					(isNavOpen ? " hidden" : "") +
 					(isDark ? " text-white" : " text-black")
 				}
 			>
 				<div
-					className="northcoders relative h-[50%] mt-12 mx-2 bg-[url('./src/assets/August-cohort.jpg')] bg-cover bg-center"
+					className="northcoders-section relative h-[40%] mt-12 mx-2 bg-[url('./src/assets/August-cohort.jpg')] bg-cover bg-center"
 					onClick={() => {
 						setIsNorthcodersModalOpen(true);
 					}}
@@ -59,7 +59,7 @@ function NcAndContact({ isDark, isNavOpen }) {
 				</div>
 				<div
 					className={
-						"h-[92dvh] w-full p-4" +
+						"contact-section h-[60%] w-full p-4 grid grid-rows-[20%_80%]" +
 						(isDark
 							? " bg-[url('./src/assets/dark-background.jpg')] bg-cover bg-center"
 							: " bg-[url('./src/assets/light-background.jpg')] bg-cover bg-center")

@@ -46,7 +46,7 @@ function Form({ isDark }) {
 
 	return (
 		<form
-			className="w-[70%] h-full flex flex-col gap-2 mx-auto justify-center items-center"
+			className="w-[70%] h-full flex flex-col gap-2 mx-auto justify-center items-center row-start-2"
 			ref={form}
 			onSubmit={sendEmail}
 		>
