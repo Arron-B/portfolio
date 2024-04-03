@@ -75,13 +75,6 @@ function Form({ isDark }) {
 			>
 				<span class="relative z-10 text-sm">Submit</span>
 			</button>
-
-			{/* <button
-				className="w-[25%] ml-auto"
-				
-			>
-				Submit
-			</button> */}
 		</form>
 	);
 }
