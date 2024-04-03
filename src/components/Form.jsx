@@ -63,14 +63,22 @@ function Form({ isDark }) {
 				placeholder="Message"
 			/>
 
-			<button class="relative w-[25%] ml-auto overflow-hidden border-b-4 border-my-red shadow-2xl transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full">
-				<span class="relative z-10 text-sm">Smoosh</span>
+			<button
+				type="submit"
+				value="Send"
+				class={
+					"relative w-[25%] ml-auto overflow-hidden border-b-4 border-my-red shadow-2xl transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full" +
+					(isDark
+						? " text-white hover:text-dark-bg"
+						: " text-black hover:text-light-bg")
+				}
+			>
+				<span class="relative z-10 text-sm">Submit</span>
 			</button>
 
 			{/* <button
 				className="w-[25%] ml-auto"
-				type="submit"
-				value="Send"
+				
 			>
 				Submit
 			</button> */}
