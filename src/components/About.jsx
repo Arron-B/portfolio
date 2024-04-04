@@ -1,15 +1,13 @@
-function About({ isNavOpen, isDark }) {
+function About({ isDark }) {
 	return (
 		<>
-			<div
-				className={
-					"h-[92dvh]" +
-					(isNavOpen ? " hidden" : "") +
-					(isDark ? " text-white" : " text-black")
-				}
-			>
+			<div className={"h-[92dvh]" + (isDark ? " text-white" : " text-black")}>
 				<div className="flex flex-col p-4 h-[60%] justify-center gap-4 items-center">
 					<div className="relative">
+						<a
+							id="about"
+							className="absolute -top-24"
+						></a>
 						<h2 className="text-2xl z-10 w-32 absolute -translate-x-[50%] -top-8">
 							About Me
 						</h2>

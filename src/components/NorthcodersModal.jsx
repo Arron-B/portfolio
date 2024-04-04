@@ -18,15 +18,36 @@ function NorthcodersModal({ isDark, setIsNorthcodersModalOpen }) {
 					"h-[90dvh] w-[90vw] fixed z-[100] top-[5%] left-[5%] flex flex-col gap-1 justify-around text-white"
 				}
 			>
-				<button
-					className="z-[100] fixed top-1 right-2"
+				<div
+					className="CROSS-ICON fixed top-1 right-2"
 					onClick={(e) => {
 						e.preventDefault();
 						setIsNorthcodersModalOpen(false);
 					}}
 				>
-					close
-				</button>
+					<svg
+						className="h-8 w-8 text-gray-600"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						strokeWidth="2"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+					>
+						<line
+							x1="18"
+							y1="6"
+							x2="6"
+							y2="18"
+						/>
+						<line
+							x1="6"
+							y1="6"
+							x2="18"
+							y2="18"
+						/>
+					</svg>
+				</div>
 				<img
 					className="w-[50%] mx-auto"
 					src="./src/assets/northcoders-title.png"

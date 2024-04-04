@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Projects({ isNavOpen, isDark }) {
+function Projects({ isDark }) {
 	const [isHovered, setIsHovered] = useState(false);
 
 	return (
@@ -8,10 +8,13 @@ function Projects({ isNavOpen, isDark }) {
 			<div
 				className={
 					"projects relative h-[100dvh] py-12 flex flex-col justify-around" +
-					(isNavOpen ? " hidden" : "") +
 					(isDark ? " text-white" : " text-black")
 				}
 			>
+				<a
+					id="projects"
+					className="absolute -top-12"
+				></a>
 				<div className="absolute left-[50%] top-10">
 					<h2 className="text-2xl z-10 w-32 relative -left-[50%]">
 						My Projects
