@@ -1,4 +1,4 @@
-function Background({ isNavOpen, isDark }) {
+function Background({ isDark }) {
 	return (
 		<>
 			<div

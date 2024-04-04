@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import NorthcodersModal from "./NorthcodersModal";
 import Form from "./Form";
 
-function NcAndContact({ isDark, isNavOpen }) {
+function NcAndContact({ isDark }) {
 	const [isHovered, setIsHovered] = useState(false);
 	const [isNorthcodersModalOpen, setIsNorthcodersModalOpen] = useState(false);
 
@@ -24,9 +24,9 @@ function NcAndContact({ isDark, isNavOpen }) {
 				/>
 			) : null}
 			<section
+				id="northcoders"
 				className={
 					"h-[84dvh] w-vw flex flex-col justify-evenly gap-1" +
-					(isNavOpen ? " hidden" : "") +
 					(isDark ? " text-white" : " text-black")
 				}
 			>

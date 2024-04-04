@@ -16,41 +16,23 @@ function App() {
 
 	return (
 		<>
-			<Background
-				isNavOpen={isNavOpen}
-				isDark={isDark}
-			></Background>
+			<Background isDark={isDark}></Background>
 
 			<Nav
-				isNavOpen={isNavOpen}
-				setIsNavOpen={setIsNavOpen}
 				isDark={isDark}
 				setIsDark={setIsDark}
+				isNavOpen={isNavOpen}
+				setIsNavOpen={setIsNavOpen}
 			/>
 
-			<Welcome
-				isNavOpen={isNavOpen}
-				isDark={isDark}
-			></Welcome>
+			<Welcome isDark={isDark}></Welcome>
 
-			<About
-				isNavOpen={isNavOpen}
-				isDark={isDark}
-			></About>
+			<About isDark={isDark}></About>
 
-			<Projects
-				isNavOpen={isNavOpen}
-				isDark={isDark}
-			/>
+			<Projects isDark={isDark} />
 
-			<NcAndContact
-				isNavOpen={isNavOpen}
-				isDark={isDark}
-			/>
-			<Footer
-				isDark={isDark}
-				isNavOpen={isNavOpen}
-			></Footer>
+			<NcAndContact isDark={isDark} />
+			<Footer isDark={isDark}></Footer>
 		</>
 	);
 }

@@ -4,15 +4,22 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
 	return (
 		<div
 			className={
-				"fixed z-40 h-[8dvh] w-full" +
-				(isDark ? " bg-dark-bg text-white" : " bg-light-bg text-black")
+				"fixed z-[99] h-[8dvh] w-full" +
+				(isDark ? " bg-dark-bg" : " bg-light-bg")
 			}
 		>
-			<nav className="flex items-center h-full px-4">
-				<section className="MOBILE-MENU flex lg:hidden w-8">
+			<nav
+				className={
+					"items-center h-full w-full" +
+					(isDark ? " bg-dark-bg text-white" : " bg-light-bg text-black")
+				}
+			>
+				<section className="MOBILE-MENU flex lg:hidden w-full">
 					<div
-						className="HAMBURGER-ICON space-y-2 z-50"
-						onClick={() => setIsNavOpen(!isNavOpen)} // toggle isNavOpen state on click
+						className="HAMBURGER-ICON space-y-2 fixed top-4 left-4 z-50"
+						onClick={() => {
+							setIsNavOpen(!isNavOpen);
+						}} // toggle isNavOpen state on click
 					>
 						<span
 							className={
@@ -34,10 +41,22 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
 						></span>
 					</div>
 
-					<div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
-						{" "}
+					<div
+						className={
+							"backdrop fixed z-[98] flex flex-col justify-center w-full h-[100dvh] ease-in-out duration-300 delay-200 bg-[rgba(0,0,0,0.9)]" +
+							(isNavOpen ? " -translate-x-0" : " -translate-x-full")
+						}
+						onClick={() => setIsNavOpen(false)}
+					></div>
+					<div
+						className={
+							"menu fixed z-[99] flex flex-col justify-center w-1/2 h-[100dvh] ease-in-out duration-300" +
+							(isNavOpen ? " -translate-x-0" : " -translate-x-full") +
+							(isDark ? " bg-dark-bg" : " bg-light-bg")
+						}
+					>
 						<div
-							className="CROSS-ICON absolute top-0 right-0 px-5 py-5"
+							className="CROSS-ICON absolute top-3 right-3 z-[100]"
 							onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
 						>
 							<svg
@@ -64,24 +83,53 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
 							</svg>
 						</div>
 						<ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
-							<li className="my-8 uppercase">
-								<a href="/welcome">Welcome</a>
+							<li className="my-8 uppercase hover:scale-110">
+								<a
+									href="
+								#welcome"
+									onClick={() => setIsNavOpen(false)}
+								>
+									Home
+								</a>
 							</li>
-							<li className="my-8 uppercase">
-								<a href="/about">About</a>
+							<li className="my-8 uppercase hover:scale-110">
+								<a
+									href="#about"
+									onClick={() => setIsNavOpen(false)}
+								>
+									About Me
+								</a>
 							</li>
-							<li className="my-8 uppercase">
-								<a href="/contact">Contact</a>
+							<li className="my-8 uppercase hover:scale-110">
+								<a
+									href="#projects"
+									onClick={() => setIsNavOpen(false)}
+								>
+									My Projects
+								</a>
+							</li>
+							<li className="my-8 uppercase hover:scale-110">
+								<a
+									href="#northcoders"
+									onClick={() => setIsNavOpen(false)}
+								>
+									Northcoders
+								</a>
+							</li>
+							<li className="my-8 uppercase hover:scale-110">
+								<a
+									href="#northcoders"
+									onClick={() => setIsNavOpen(false)}
+								>
+									Contact
+								</a>
 							</li>
 						</ul>
 					</div>
 				</section>
 
 				<Classic
-					className={
-						"top-3 right-4 fixed text-4xl animate-pulse" +
-						(isNavOpen ? " hidden" : "")
-					}
+					className="top-3 right-4 fixed text-4xl animate-pulse z-40"
 					toggled={isDark}
 					toggle={setIsDark}
 				/>
