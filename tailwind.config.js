@@ -17,6 +17,7 @@ export default {
 			height: {
 				screen: ["100vh", "100dvh"], //fallback for browsers not supporting dvh
 				nc: ["84vh", "84dvh"],
+				modal: ["90vh", "90dvh"],
 				nav: ["8vh", "8dvh"],
 			},
 			padding: {

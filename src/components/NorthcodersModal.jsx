@@ -8,14 +8,14 @@ function NorthcodersModal({ isDark, setIsNorthcodersModalOpen }) {
 	return (
 		<>
 			<div
-				className="backdrop h-[100vh] w-[100vw] fixed z-[99] bg-[rgba(0,0,0,0.9)] top-0"
+				className="backdrop h-screen w-[100vw] fixed z-[99] bg-[rgba(0,0,0,0.9)] top-0"
 				onClick={() => {
 					setIsNorthcodersModalOpen(false);
 				}}
 			></div>
 			<div
 				className={
-					"h-[90dvh] w-[90vw] fixed z-[100] top-[5%] left-[5%] flex flex-col gap-1 justify-around text-white"
+					"h-modal w-[90vw] fixed z-[100] top-[5%] left-[5%] flex flex-col gap-1 justify-around text-white"
 				}
 			>
 				<div
