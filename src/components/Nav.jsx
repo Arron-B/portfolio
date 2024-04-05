@@ -1,6 +1,15 @@
 import { Classic } from "@theme-toggles/react";
+import { useEffect } from "react";
 
 function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
+	useEffect(() => {
+		if (isNavOpen) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "unset";
+		}
+	}, [isNavOpen]);
+
 	return (
 		<div
 			className={
