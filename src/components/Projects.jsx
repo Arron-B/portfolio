@@ -7,7 +7,7 @@ function Projects({ isDark }) {
 		<>
 			<div
 				className={
-					"projects relative h-[100dvh] py-12 flex flex-col justify-around" +
+					"projects relative h-screen mt-nav py-12 flex flex-col justify-around" +
 					(isDark ? " text-white" : " text-black")
 				}
 			>

@@ -13,8 +13,7 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
 	return (
 		<div
 			className={
-				"fixed z-[99] h-[8dvh] w-full" +
-				(isDark ? " bg-dark-bg" : " bg-light-bg")
+				"fixed z-[99] h-nav w-full" + (isDark ? " bg-dark-bg" : " bg-light-bg")
 			}
 		>
 			<nav
@@ -23,7 +22,7 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
 					(isDark ? " bg-dark-bg text-white" : " bg-light-bg text-black")
 				}
 			>
-				<section className="MOBILE-MENU flex lg:hidden w-full">
+				<section className="MOBILE-MENU flex ls:hidden w-full">
 					<div
 						className="HAMBURGER-ICON space-y-2 fixed top-4 left-4 z-50"
 						onClick={() => {
@@ -52,14 +51,14 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
 
 					<div
 						className={
-							"backdrop fixed z-[98] flex flex-col justify-center w-full h-[100dvh] ease-in-out duration-300 delay-200 bg-[rgba(0,0,0,0.9)]" +
+							"backdrop fixed z-[98] flex flex-col justify-center w-full h-screen ease-in-out duration-300 delay-200 bg-[rgba(0,0,0,0.9)]" +
 							(isNavOpen ? " -translate-x-0" : " -translate-x-full")
 						}
 						onClick={() => setIsNavOpen(false)}
 					></div>
 					<div
 						className={
-							"menu fixed z-[99] flex flex-col justify-center w-1/2 h-[100dvh] ease-in-out duration-300" +
+							"menu fixed z-[99] flex flex-col justify-center w-1/2 h-screen ease-in-out duration-300" +
 							(isNavOpen ? " -translate-x-0" : " -translate-x-full") +
 							(isDark ? " bg-dark-bg" : " bg-light-bg")
 						}
@@ -143,15 +142,26 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
 					toggle={setIsDark}
 				/>
 
-				<ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
-					<li>
-						<a href="/welcome">Welcome</a>
+				<ul className="DESKTOP-MENU hidden space-x-8 ls:flex ls:h-nav ls:items-center ls:pl-3">
+					<li className="my-8 uppercase hover:scale-110">
+						<a
+							href="
+								#welcome"
+						>
+							Home
+						</a>
 					</li>
-					<li>
-						<a href="/about">About</a>
+					<li className="my-8 uppercase hover:scale-110">
+						<a href="#about">About Me</a>
 					</li>
-					<li>
-						<a href="/contact">Contact</a>
+					<li className="my-8 uppercase hover:scale-110">
+						<a href="#projects">My Projects</a>
+					</li>
+					<li className="my-8 uppercase hover:scale-110">
+						<a href="#northcoders">Northcoders</a>
+					</li>
+					<li className="my-8 uppercase hover:scale-110">
+						<a href="#northcoders">Contact</a>
 					</li>
 				</ul>
 			</nav>
