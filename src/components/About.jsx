@@ -2,25 +2,28 @@ function About({ isDark }) {
 	return (
 		<>
 			<div
-				className={"h-screen pt-nav" + (isDark ? " text-white" : " text-black")}
+				className={
+					"about h-screen pt-nav grid grid-rows-9 px-2" +
+					(isDark ? " text-white" : " text-black")
+				}
 			>
-				<div className="flex flex-col p-4 h-[60%] justify-center gap-4 items-center">
-					<div className="relative">
-						<a
-							id="about"
-							className="absolute -top-24"
-						></a>
-						<h2 className="text-2xl z-10 w-32 absolute -translate-x-[50%] -top-8">
-							About Me
-						</h2>
-						<div className="red-line z-0 bg-my-red absolute w-[6.5rem] h-2 -translate-x-9 -translate-y-2.5"></div>
-					</div>
+				<div className="title relative flex mx-auto items-center row-start-1">
+					<a
+						id="about"
+						className="absolute -top-12"
+					></a>
+					<h2 className="text-2xl z-10 w-32 absolute -translate-x-[50%]">
+						About Me
+					</h2>
+					<div className="red-line z-0 bg-my-red absolute w-[6.5rem] h-2 -translate-x-9 translate-y-[0.63rem]"></div>
+				</div>
+				<div className="profile row-start-2 row-span-5 flex flex-col justify-center gap-4">
 					<img
-						className="rounded-full h-40"
+						className="rounded-full pt:max-ls:w-1/2 mx-auto aspect-square ls:row-start-4 ls:row-span-5 ls:col-start-4 ls:col-span-2 ls:w-full"
 						src="./src/assets/default-profile.jpg"
 						alt=""
 					/>
-					<p className="text-sm">
+					<p className="text-sm ls:col-start-6 ls:row-start-4 ls:col-span-2 ls:row-span-5">
 						React, TailwindCSS and SQL are my main go to technologies. I'm
 						interested in developing web apps, but in the future would like to
 						makes games as a hobby with Godot or Unreal Engine. <br></br> In my
@@ -30,14 +33,135 @@ function About({ isDark }) {
 				</div>
 				<img
 					src="./src/assets/tech-stack-dark.png"
-					className={"mx-auto h-[40%]" + (isDark ? "" : " hidden")}
+					className={
+						"mx-auto ls:hidden row-start-7 row-span-3 h-full" +
+						(isDark ? "" : " hidden")
+					}
 				></img>
 				<img
 					src="./src/assets/tech-stack-light.png"
-					className={"mx-auto h-[40%]" + (!isDark ? "" : " hidden")}
+					className={
+						"mx-auto ls:hidden row-start-7 row-span-3 h-full" +
+						(!isDark ? "" : " hidden")
+					}
 				></img>
 			</div>
 		</>
+
+		// <>
+		// 	<div
+		// 		className={
+		// 			"about h-screen pt-nav flex flex-col" +
+		// 			(isDark ? " text-white" : " text-black")
+		// 		}
+		// 	>
+		// 		<div className="flex pt:max-ls:flex-col p-4 pb-0 pt:max-ls:h-[65%] justify-center gap-4 items-center ls:grid ls:grid-cols-10 ls:grid-rows-11 ls:h-full">
+		// 			<div className="title h-[10%] relative ls:col-start-5 ls:col-span-2 ls:row-start-2 ls:mx-auto">
+		// 				<a
+		// 					id="about"
+		// 					className="absolute -top-24 ls:-top-40"
+		// 				></a>
+		// 				<h2 className="text-2xl z-10 w-32 absolute -translate-x-[50%] -top-8">
+		// 					About Me
+		// 				</h2>
+		// 				<div className="red-line z-0 bg-my-red absolute w-[6.5rem] h-2 -translate-x-9 -translate-y-2.5"></div>
+		// 			</div>
+		// <div className="profile h-[80%] flex flex-col gap-7 ls:flex-row justify-end">
+		// 	<img
+		// 		className="rounded-full pt:max-ls:w-1/2 mx-auto aspect-square ls:row-start-4 ls:row-span-5 ls:col-start-4 ls:col-span-2 ls:w-full"
+		// 		src="./src/assets/default-profile.jpg"
+		// 		alt=""
+		// 	/>
+		// 	<p className="text-sm ls:col-start-6 ls:row-start-4 ls:col-span-2 ls:row-span-5">
+		// 		React, TailwindCSS and SQL are my main go to technologies. I'm
+		// 		interested in developing web apps, but in the future would like to
+		// 		makes games as a hobby with Godot or Unreal Engine. <br></br> In
+		// 		my free time you'll find me playing table tennis, badminton,
+		// 		games, board games, at the gym or just bingeing my favourite tv
+		// 		series.
+		// 	</p>
+		// </div>
+		// 			<img
+		// 				className="pt:max-ls:hidden col-start-3 row-start-1"
+		// 				src="./src/assets/bootstrap.png"
+		// 				alt=""
+		// 			/>
+		// 			<img
+		// 				className="pt:max-ls:hidden col-start-8 row-start-1"
+		// 				src="./src/assets/bootstrap.png"
+		// 				alt=""
+		// 			/>
+		// 			<img
+		// 				className="pt:max-ls:hidden col-start-3 row-start-3"
+		// 				src="./src/assets/bootstrap.png"
+		// 				alt=""
+		// 			/>
+		// 			<img
+		// 				className="pt:max-ls:hidden col-start-8 row-start-3"
+		// 				src="./src/assets/bootstrap.png"
+		// 				alt=""
+		// 			/>
+		// 			<img
+		// 				className="pt:max-ls:hidden col-start-3 row-start-5"
+		// 				src="./src/assets/bootstrap.png"
+		// 				alt=""
+		// 			/>
+		// 			<img
+		// 				className="pt:max-ls:hidden col-start-8 row-start-5"
+		// 				src="./src/assets/bootstrap.png"
+		// 				alt=""
+		// 			/>
+		// 			<img
+		// 				className="pt:max-ls:hidden col-start-3 row-start-7"
+		// 				src="./src/assets/bootstrap.png"
+		// 				alt=""
+		// 			/>
+		// 			<img
+		// 				className="pt:max-ls:hidden col-start-8 row-start-7"
+		// 				src="./src/assets/bootstrap.png"
+		// 				alt=""
+		// 			/>
+		// 			<img
+		// 				className="pt:max-ls:hidden col-start-3 row-start-9"
+		// 				src="./src/assets/bootstrap.png"
+		// 				alt=""
+		// 			/>
+		// 			<img
+		// 				className="pt:max-ls:hidden col-start-8 row-start-9"
+		// 				src="./src/assets/bootstrap.png"
+		// 				alt=""
+		// 			/>
+		// 			<img
+		// 				className="pt:max-ls:hidden col-start-3 row-start-1"
+		// 				src="./src/assets/bootstrap.png"
+		// 				alt=""
+		// 			/>
+		// 			<img
+		// 				className="pt:max-ls:hidden col-start-8 row-start-1"
+		// 				src="./src/assets/bootstrap.png"
+		// 				alt=""
+		// 			/>
+		// 			<img
+		// 				className="pt:max-ls:hidden col-start-3 row-start-1"
+		// 				src="./src/assets/bootstrap.png"
+		// 				alt=""
+		// 			/>
+		// 			<img
+		// 				className="pt:max-ls:hidden col-start-8 row-start-1"
+		// 				src="./src/assets/bootstrap.png"
+		// 				alt=""
+		// 			/>
+		// 		</div>
+		// <img
+		// 	src="./src/assets/tech-stack-dark.png"
+		// 	className={"mx-auto h-[35%] ls:hidden" + (isDark ? "" : " hidden")}
+		// ></img>
+		// <img
+		// 	src="./src/assets/tech-stack-light.png"
+		// 	className={"mx-auto h-[35%] ls:hidden" + (!isDark ? "" : " hidden")}
+		// ></img>
+		// 	</div>
+		// </>
 	);
 }
 

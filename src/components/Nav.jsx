@@ -22,7 +22,7 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
 					(isDark ? " bg-dark-bg text-white" : " bg-light-bg text-black")
 				}
 			>
-				<section className="MOBILE-MENU flex lg:hidden w-full">
+				<section className="MOBILE-MENU flex ls:hidden w-full">
 					<div
 						className="HAMBURGER-ICON space-y-2 fixed top-4 left-4 z-50"
 						onClick={() => {
@@ -142,15 +142,26 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
 					toggle={setIsDark}
 				/>
 
-				<ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
-					<li>
-						<a href="/welcome">Welcome</a>
+				<ul className="DESKTOP-MENU hidden space-x-8 ls:flex ls:h-nav">
+					<li className="my-8 uppercase hover:scale-110">
+						<a
+							href="
+								#welcome"
+						>
+							Home
+						</a>
 					</li>
-					<li>
-						<a href="/about">About</a>
+					<li className="my-8 uppercase hover:scale-110">
+						<a href="#about">About Me</a>
 					</li>
-					<li>
-						<a href="/contact">Contact</a>
+					<li className="my-8 uppercase hover:scale-110">
+						<a href="#projects">My Projects</a>
+					</li>
+					<li className="my-8 uppercase hover:scale-110">
+						<a href="#northcoders">Northcoders</a>
+					</li>
+					<li className="my-8 uppercase hover:scale-110">
+						<a href="#northcoders">Contact</a>
 					</li>
 				</ul>
 			</nav>
