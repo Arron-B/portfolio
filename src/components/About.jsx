@@ -46,87 +46,123 @@ function About({ isDark }) {
 					}
 				></img>
 
-				<img
-					className="pt:max-ls:hidden col-start-5 row-start-3"
-					src="./src/assets/bootstrap.png"
-					alt=""
-				/>
-				<img
-					className="pt:max-ls:hidden col-start-3 row-start-4"
-					src="./src/assets/html.png"
-					alt=""
-				/>
-				<img
-					className="pt:max-ls:hidden col-start-4 row-start-6"
-					src="./src/assets/react.png"
-					alt=""
-				/>
-				<img
-					className="pt:max-ls:hidden col-start-3 row-start-8"
-					src="./src/assets/git.png"
-					alt=""
-				/>
-				<img
-					className="pt:max-ls:hidden col-start-5 row-start-9"
-					src="./src/assets/MongoDB.png"
-					alt=""
-				/>
-				<img
-					className="pt:max-ls:hidden col-start-[15] row-start-9"
-					src="./src/assets/jest.png"
-					alt=""
-				/>
-				<img
-					className="pt:max-ls:hidden col-start-[17] row-start-8"
-					src="./src/assets/github.png"
-					alt=""
-				/>
-				<img
-					className="pt:max-ls:hidden col-start-[16] row-start-6"
-					src="./src/assets/tailwind.png"
-					alt=""
-				/>
-				<img
-					className="pt:max-ls:hidden col-start-[17] row-start-4"
-					src="./src/assets/css.png"
-					alt=""
-				/>
-				<img
-					className="pt:max-ls:hidden col-start-[15] row-start-3"
-					src="./src/assets/Vue.png"
-					alt=""
-				/>
-				<img
-					className="pt:max-ls:hidden col-start-7 row-start-10"
-					src="./src/assets/javascript.png"
-					alt=""
-				/>
-				<img
-					className="pt:max-ls:hidden col-start-9 row-start-10 row-span-2 my-auto"
-					src="./src/assets/axios.png"
-					alt=""
-				/>
-				<img
+				<span className="pt:max-ls:hidden col-start-5 row-start-3">
+					<img
+						className=""
+						src="./src/assets/bootstrap.png"
+						alt=""
+					/>
+					Bootstrap
+				</span>
+
+				<span className="pt:max-ls:hidden col-start-3 row-start-4">
+					<img
+						src="./src/assets/html.png"
+						alt=""
+					/>{" "}
+					HTML
+				</span>
+				<span className="pt:max-ls:hidden col-start-4 row-start-6">
+					<img
+						src="./src/assets/react.png"
+						alt=""
+					/>
+					React
+				</span>
+				<span className="pt:max-ls:hidden col-start-2 col-span-3 row-start-8 flex items-center">
+					<img
+						className="w-3/4 mx-auto"
+						src="./src/assets/axios.png"
+						alt=""
+					/>
+				</span>
+				<span className="pt:max-ls:hidden col-start-5 row-start-9">
+					<img
+						src="./src/assets/MongoDB.png"
+						alt=""
+					/>
+					MongoDb
+				</span>
+				<span className="pt:max-ls:hidden col-start-[15] row-start-9">
+					<img
+						src="./src/assets/jest.png"
+						alt=""
+					/>
+					Jest.js
+				</span>
+				<span className="pt:max-ls:hidden col-start-[11] row-start-10 row-span-2 my-auto">
+					<img
+						src="./src/assets/github.png"
+						alt=""
+					/>
+					Github
+				</span>
+				<span className="pt:max-ls:hidden col-start-[16] row-start-6">
+					<img
+						src="./src/assets/tailwind.png"
+						alt=""
+					/>
+					TailwindCSS
+				</span>
+				<span className="pt:max-ls:hidden col-start-[17] row-start-4">
+					<img
+						src="./src/assets/css.png"
+						alt=""
+					/>
+					CSS
+				</span>
+				<span className="pt:max-ls:hidden col-start-[15] row-start-3">
+					<img
+						src="./src/assets/Vue.png"
+						alt=""
+					/>
+					Vue.js
+				</span>
+				<span className="pt:max-ls:hidden col-start-7 row-start-10">
+					<img
+						src="./src/assets/javascript.png"
+						alt=""
+					/>
+					JavaScript
+				</span>
+				<span className="pt:max-ls:hidden col-start-9 row-start-10 row-span-2 my-auto">
+					<img
+						src="./src/assets/git.png"
+						alt=""
+					/>
+					Git
+				</span>
+				<span
 					className={
-						"pt:max-ls:hidden col-start-11 row-start-10 row-span-2 my-auto" +
+						"pt:max-ls:hidden col-start-[16] col-span-3 row-start-8 flex items-center" +
 						(isDark ? "" : " hidden")
 					}
-					src="./src/assets/node-dark.png"
-					alt=""
-				/>
-				<img
+				>
+					<img
+						className="w-3/4 mx-auto"
+						src="./src/assets/node-dark.png"
+						alt=""
+					/>
+				</span>
+				<span
 					className={
-						"pt:max-ls:hidden col-start-11 row-start-10 row-span-2 my-auto" +
+						"pt:max-ls:hidden col-start-[16] col-span-3 row-start-8 flex items-center" +
 						(isDark ? " hidden" : "")
 					}
-					src="./src/assets/node-light.png"
-					alt=""
-				/>
-				<img
-					className="pt:max-ls:hidden col-start-13 row-start-10"
-					src="./src/assets/Postgresql.png"
-					alt=""
-				/>
+				>
+					<img
+						className="w-3/4 mx-auto"
+						src="./src/assets/node-light.png"
+						alt=""
+					/>
+				</span>
+				<span className="pt:max-ls:hidden col-start-13 row-start-10">
+					<img
+						src="./src/assets/Postgresql.png"
+						alt=""
+					/>
+					PostgreSQL
+				</span>
 			</div>
 		</>
 
