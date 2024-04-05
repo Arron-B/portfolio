@@ -142,7 +142,7 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
 					toggle={setIsDark}
 				/>
 
-				<ul className="DESKTOP-MENU hidden space-x-8 ls:flex ls:h-nav">
+				<ul className="DESKTOP-MENU hidden space-x-8 ls:flex ls:h-nav ls:items-center ls:pl-3">
 					<li className="my-8 uppercase hover:scale-110">
 						<a
 							href="

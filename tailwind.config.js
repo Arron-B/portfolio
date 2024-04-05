@@ -47,6 +47,9 @@ export default {
 				slideInRight: "slideInRight 1s ease-in-out",
 				slideOutRight: "slideOutRight 1s ease-in-out",
 			},
+			gridTemplateColumns: {
+				19: "repeat(19, minmax(0, 1fr))",
+			},
 		},
 	},
 	plugins: [],
