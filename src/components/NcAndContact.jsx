@@ -26,7 +26,7 @@ function NcAndContact({ isDark }) {
 			<section
 				id="northcoders"
 				className={
-					"h-[84dvh] w-vw flex flex-col justify-evenly gap-1" +
+					"h-nc w-vw flex flex-col justify-evenly gap-1" +
 					(isDark ? " text-white" : " text-black")
 				}
 			>

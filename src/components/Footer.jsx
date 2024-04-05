@@ -8,7 +8,7 @@ function Footer({ isDark }) {
 	return (
 		<div
 			className={
-				"h-[8dvh] w-full px-4 flex items-center" +
+				"h-nav w-full px-4 flex items-center" +
 				(isDark
 					? " bg-dark-secondary text-white"
 					: " bg-light-secondary text-black")

@@ -109,7 +109,7 @@ html,
 	/* big landscape tablets, laptops, and desktops */
 	html,
 	body {
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
 
@@ -117,7 +117,7 @@ html,
 	/* hi-res laptops and desktops */
 	html,
 	body {
-		font-size: 16px;
+		font-size: 22px;
 	}
 }
 @media (min-width: 3840px) {

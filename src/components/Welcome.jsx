@@ -5,7 +5,7 @@ function Welcome({ isDark }) {
 		<div
 			id="welcome"
 			className={
-				"welcome h-[100dvh] px-4 pb-[8dvh] flex flex-col justify-center items-center" +
+				"welcome h-screen px-4 pb-nav flex flex-col justify-center items-center" +
 				(isDark ? " text-white" : " text-black")
 			}
 		>

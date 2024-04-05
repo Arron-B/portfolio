@@ -14,6 +14,17 @@ export default {
 			ls3: "3840px",
 		},
 		extend: {
+			height: {
+				screen: ["100vh", "100dvh"], //fallback for browsers not supporting dvh
+				nc: ["84vh", "84dvh"],
+				nav: ["8vh", "8dvh"],
+			},
+			padding: {
+				nav: ["8vh", "8dvh"],
+			},
+			margin: {
+				nav: ["8vh", "8dvh"],
+			},
 			colors: {
 				"dark-bg": "#040A0E",
 				"light-bg": "#FAFAFA",
