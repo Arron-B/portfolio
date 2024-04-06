@@ -22,7 +22,7 @@ function Projects({ isDark }) {
 				<section
 					className={
 						"nc-news relative top-12 h-[30%] w-[100vw] flex hover:scale-95 transition-all duration-300 ls:col-start-1 ls:row-start-2 ls:row-span-2 ls:h-[90%] ls:w-[95%] ls:top-0 ls:flex-col ls:gap-4 ls:py-7 ls:pr-7" +
-						(isDark ? " bg-dark-secondary" : " bg-light-secondary")
+						(isDark ? " ls:bg-dark-secondary" : " ls:bg-light-secondary")
 					}
 				>
 					<div
