@@ -3,20 +3,21 @@ function About({ isDark }) {
 		<>
 			<div
 				className={
-					"about h-screen pt-nav w-full grid grid-rows-9 px-2 ls:mt-2 ls:grid-cols-19 ls:grid-rows-11" +
+					"about relative h-screen pt-nav w-full grid grid-rows-9 px-2 ls:mt-2 ls:grid-cols-19 ls:grid-rows-11" +
 					(isDark ? " text-white" : " text-black")
 				}
 			>
-				<div className="title relative flex mx-auto items-center ls:col-start-8 ls:col-span-5 ls:row-start-1 ls:row-span-2 ls:w-full">
-					<a
-						id="about"
-						className="absolute -top-12"
-					></a>
-					<h2 className="text-2xl z-10 w-32 absolute -translate-x-[50%] ls:text-4xl ls:w-full ls:-translate-x-0">
+				<a
+					id="about"
+					className="absolute top-2 ls:top-10"
+				></a>
+				<h2 className="relative h-10 top-10 text-3xl before:absolute before:border-b-[0.5rem] before:border-b-my-red before:-z-10 before:w-[8rem] before:h-1/2 before:top-3 before:translate-x-5 ls:col-start-8 ls:col-span-5 ls:row-start-1 ls:row-span-2 ls:top-20">
+					About Me
+					{/* <h2 className="text-2xl z-10 w-32 absolute -translate-x-[50%] ls:text-4xl ls:w-full ls:-translate-x-0">
 						About Me
 					</h2>
-					<div className="red-line z-0 bg-my-red absolute w-[6.5rem] h-2 -translate-x-9 translate-y-[0.63rem] ls:translate-x-[7.8rem] ls:w-[9.8rem] ls:h-[0.7rem] ls:translate-y-[0.9rem]"></div>
-				</div>
+					<div className="red-line z-0 bg-my-red absolute w-[6.5rem] h-2 -translate-x-9 translate-y-[0.63rem] ls:translate-x-[7.8rem] ls:w-[9.8rem] ls:h-[0.7rem] ls:translate-y-[0.9rem]"></div> */}
+				</h2>
 				<div className="profile row-start-2 row-span-5 flex flex-col justify-center gap-4 ls:flex-row ls:items-center ls:row-start-4 ls:row-span-5 ls:col-start-6 ls:col-span-9">
 					<img
 						className="rounded-full pt:max-ls:w-1/2 mx-auto aspect-square ls:w-1/2"
