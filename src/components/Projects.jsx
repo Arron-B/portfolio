@@ -21,7 +21,7 @@ function Projects({ isDark }) {
 
 				<section
 					className={
-						"nc-news relative top-12 h-[30%] w-[100vw] flex hover:scale-95 transition-all duration-300 ls:col-start-1 ls:row-start-2 ls:row-span-2 ls:h-[90%] ls:w-[95%] ls:top-0 ls:flex-col ls:gap-4 ls:py-7 ls:pr-7" +
+						"nc-news relative top-12 h-[30%] w-[100vw] flex hover:scale-95 active:scale-95 transition-all duration-300 ls:col-start-1 ls:row-start-2 ls:row-span-2 ls:h-[90%] ls:w-[95%] ls:top-0 ls:flex-col ls:gap-4 ls:py-7 ls:pr-7" +
 						(isDark ? " ls:bg-dark-secondary" : " ls:bg-light-secondary")
 					}
 				>
@@ -115,7 +115,7 @@ function Projects({ isDark }) {
 						className="w-[62vw] object-scale-down z-10 ls:w-full ls:h-[70%] ls:object-cover ls:order-2"
 						src="./src/assets/travel-buddy-screens-cropped.png"
 					></img>
-					<div className="absolute z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center ls:max-h-[30%] ls:static ls: order-1">
+					<div className="absolute pt:max-ls:mt-2 z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center ls:max-h-[30%] ls:static ls: order-1">
 						<h3 className="text-md">Travel Buddy</h3>
 						<p className="text-xs ls:text-sm">
 							A full-stack mobile app built in a team of 6 during my bootcamp.
