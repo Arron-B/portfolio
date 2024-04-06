@@ -19,7 +19,12 @@ function Projects({ isDark }) {
 					My Projects
 				</h2>
 
-				<section className="nc-news relative top-12 h-[30%] w-[100vw] flex hover:scale-95 ls:col-start-1 ls:row-start-2 ls:row-span-2 ls:h-full ls:w-[90%] ls:top-0">
+				<section
+					className={
+						"nc-news relative top-12 h-[30%] w-[100vw] flex hover:scale-95 transition-all duration-300 ls:col-start-1 ls:row-start-2 ls:row-span-2 ls:h-[90%] ls:w-[95%] ls:top-0 ls:border-t-[2rem] ls:border-r-[2rem]" +
+						(isDark ? " border-dark-secondary" : "border-light-secondary")
+					}
+				>
 					<div
 						className={
 							"w-[70vw] h-full absolute z-0 ls:w-full" +
@@ -88,7 +93,10 @@ function Projects({ isDark }) {
 				</section>
 
 				<section
-					className="travel-buddy relative h-[30%] w-[100vw] flex ml-auto justify-end hover:scale-95 ls:h-full ls:w-[90%] ls:mt-auto ls:col-start-2 ls:row-start-2 ls:row-span-2 ls:bottom-0"
+					className={
+						"travel-buddy relative h-[30%] w-[100vw] flex ml-auto justify-end hover:scale-95 transition-all duration-300 ls:h-[90%] ls:w-[95%] ls:mt-auto ls:col-start-2 ls:row-start-2 ls:row-span-2 ls:bottom-0 ls:border-b-[2rem] ls:border-l-[2rem]" +
+						(isDark ? " border-dark-secondary" : "border-light-secondary")
+					}
 					onMouseEnter={() => {
 						setIsHovered(true);
 					}}
