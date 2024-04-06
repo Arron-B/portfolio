@@ -7,22 +7,22 @@ function Projects({ isDark }) {
 		<>
 			<div
 				className={
-					"projects relative h-screen mt-nav mb-10 pb-12 flex flex-col justify-around ls:grid ls:grid-cols-2 ls:grid-rows-[15%_1fr_1fr]" +
+					"projects relative h-screen mt-nav mb-10 pb-12 flex flex-col justify-around ls:grid ls:grid-cols-2 ls:grid-rows-[15%_1fr_1fr] ls:mt-[6rem]" +
 					(isDark ? " text-white" : " text-black")
 				}
 			>
 				<a
 					id="projects"
-					className="absolute -top-0 ls:-top-12"
+					className="absolute -top-0 ls:-top-20"
 				></a>
-				<h2 className="relative h-10 top-10 text-3xl before:absolute before:border-b-[0.7rem] before:border-b-my-red before:-z-10 before:w-[9.2rem] before:h-1/2 before:top-4 before:translate-x-[1.6rem] ls:col-span-2">
+				<h2 className="relative h-10 top-10 text-3xl before:absolute before:border-b-[0.7rem] before:border-b-my-red before:-z-10 before:w-[9.2rem] before:h-1/2 before:top-4 before:translate-x-[1.6rem] ls:col-span-2 ls:top-0">
 					My Projects
 				</h2>
 
 				<section
 					className={
-						"nc-news relative top-12 h-[30%] w-[100vw] flex hover:scale-95 transition-all duration-300 ls:col-start-1 ls:row-start-2 ls:row-span-2 ls:h-[90%] ls:w-[95%] ls:top-0 ls:border-t-[2rem] ls:border-r-[2rem]" +
-						(isDark ? " border-dark-secondary" : "border-light-secondary")
+						"nc-news relative top-12 h-[30%] w-[100vw] flex hover:scale-95 transition-all duration-300 ls:col-start-1 ls:row-start-2 ls:row-span-2 ls:h-[90%] ls:w-[95%] ls:top-0 ls:flex-col ls:gap-4 ls:py-7 ls:pr-7" +
+						(isDark ? " bg-dark-secondary" : " bg-light-secondary")
 					}
 				>
 					<div
@@ -32,10 +32,10 @@ function Projects({ isDark }) {
 						}
 					></div>
 					<img
-						className="w-[62vw] object-scale-down z-[2] ls:w-full ls:mb-auto ls:h-[70%] ls:object-cover"
+						className="w-[62vw] object-scale-down z-[2] ls:w-full ls:h-[70%] ls:object-cover"
 						src="./src/assets/ncnews-cropped.png"
 					></img>
-					<div className="absolute z-[3] bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center ls:h-[30%] ls:bottom-0 ls:top-auto ls:w-[90%]">
+					<div className="absolute z-[3] bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center ls:h-[30%] ls:static ls:ml-auto ls:w-[90%]">
 						<h3 className="text-md ls:text-lg">Nc News</h3>
 						<p className="text-sm ls:text-[0.9rem] ls:my-1">
 							A full-stack news web app using React, Bootstrap, Node.js,
@@ -94,8 +94,8 @@ function Projects({ isDark }) {
 
 				<section
 					className={
-						"travel-buddy relative h-[30%] w-[100vw] flex ml-auto justify-end hover:scale-95 transition-all duration-300 ls:h-[90%] ls:w-[95%] ls:mt-auto ls:col-start-2 ls:row-start-2 ls:row-span-2 ls:bottom-0 ls:border-b-[2rem] ls:border-l-[2rem]" +
-						(isDark ? " border-dark-secondary" : "border-light-secondary")
+						"travel-buddy relative h-[30%] w-[100vw] flex ml-auto justify-end hover:scale-95 transition-all duration-300 ls:h-[90%] ls:w-[95%] ls:mt-auto ls:col-start-2 ls:row-start-2 ls:row-span-2 ls:-bottom-[30%] ls:flex-col ls:py-7 ls:pl-7 ls:gap-4" +
+						(isDark ? " ls:bg-dark-secondary" : " ls:bg-light-secondary")
 					}
 					onMouseEnter={() => {
 						setIsHovered(true);
@@ -106,33 +106,22 @@ function Projects({ isDark }) {
 				>
 					<div
 						className={
-							"bg-[rgba(0,0,0,0.54)] absolute z-20 h-full w-[70vw] flex flex-col justify-center items-center text-sm pl-6 ls:w-full ls:h-[70%] ls:bottom-0" +
-							(isHovered ? "" : " hidden")
-						}
-					>
-						<p className="ls:text-xl">Note:</p>
-						<p className="text-white ls:text-lg ls:w-3/4">
-							This app was not intended to be a web app and should be viewed in
-							a mobile viewport.
-						</p>
-					</div>
-					<div
-						className={
 							"w-[70vw] h-full absolute z-0 ls:w-full ls:bottom-0" +
 							(isDark ? " bg-dark-secondary" : "bg-light-secondary")
 						}
 					></div>
 
 					<img
-						className="w-[62vw] object-scale-down z-10 ls:w-full ls:mt-auto ls:h-[70%] ls:object-cover"
+						className="w-[62vw] object-scale-down z-10 ls:w-full ls:h-[70%] ls:object-cover ls:order-2"
 						src="./src/assets/travel-buddy-screens-cropped.png"
 					></img>
-					<div className="absolute z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center ls:h-[30%]">
+					<div className="absolute z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center ls:max-h-[30%] ls:static ls: order-1">
 						<h3 className="text-md">Travel Buddy</h3>
 						<p className="text-xs ls:text-sm">
 							A full-stack mobile app built in a team of 6 during my bootcamp.
 							It utilises Vue, Typescript, Axios, and MongoDB, all of which none
-							of the team had any prior experience with.
+							of the team had any prior experience with. Please use in a mobile
+							view.
 						</p>
 						<a
 							className="text-sm"

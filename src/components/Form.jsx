@@ -46,13 +46,16 @@ function Form({ isDark }) {
 
 	return (
 		<form
-			className="w-[70%] h-full flex flex-col gap-2 mx-auto justify-center items-center row-start-2"
+			className="w-[70%] h-full flex flex-col gap-2 mx-auto justify-center items-center row-start-2 ls:ml-[30%]"
 			ref={form}
 			onSubmit={sendEmail}
 		>
+			<h2 className="relative h-10 z-10 text-2xl before:absolute before:border-b-[0.7rem] before:-z-10 before:border-b-my-red before:w-[7.7rem] before:h-1/2 before:top-3 before:translate-x-[1rem]">
+				Contact Me
+			</h2>
 			<input
 				className={
-					"form-input w-full h-5 pl-1 text-sm" +
+					"form-input w-full h-5 pl-1 text-sm ls:h-8" +
 					(isDark
 						? " bg-dark-secondary placeholder-white"
 						: " bg-light-secondary placeholder-black")
@@ -64,7 +67,7 @@ function Form({ isDark }) {
 
 			<input
 				className={
-					"form-input w-full h-5 pl-1 text-sm" +
+					"form-input w-full h-5 pl-1 text-sm ls:h-8" +
 					(isDark
 						? " bg-dark-secondary placeholder-white"
 						: " bg-light-secondary placeholder-black")
@@ -77,7 +80,7 @@ function Form({ isDark }) {
 			<textarea
 				name="message"
 				className={
-					"form-input w-full h-28 pl-1 text-sm" +
+					"form-input w-full h-28 pl-1 text-sm ls:h-36" +
 					(isDark
 						? " bg-dark-secondary placeholder-white"
 						: " bg-light-secondary placeholder-black")
