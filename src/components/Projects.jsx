@@ -7,15 +7,15 @@ function Projects({ isDark }) {
 		<>
 			<div
 				className={
-					"projects relative h-screen mt-nav mb-10 pb-12 flex flex-col justify-around ls:grid ls:grid-cols-2 ls:grid-rows-[15%_1fr_1fr]" +
+					"projects relative h-screen mt-nav mb-10 pb-12 flex flex-col justify-around ls:grid ls:grid-cols-2 ls:grid-rows-[15%_1fr_1fr] ls:mt-[6rem]" +
 					(isDark ? " text-white" : " text-black")
 				}
 			>
 				<a
 					id="projects"
-					className="absolute -top-0 ls:-top-12"
+					className="absolute -top-0 ls:-top-20"
 				></a>
-				<h2 className="relative h-10 top-10 text-3xl before:absolute before:border-b-[0.7rem] before:border-b-my-red before:-z-10 before:w-[9.2rem] before:h-1/2 before:top-4 before:translate-x-[1.6rem] ls:col-span-2">
+				<h2 className="relative h-10 top-10 text-3xl before:absolute before:border-b-[0.7rem] before:border-b-my-red before:-z-10 before:w-[9.2rem] before:h-1/2 before:top-4 before:translate-x-[1.6rem] ls:col-span-2 ls:top-0">
 					My Projects
 				</h2>
 
@@ -94,7 +94,7 @@ function Projects({ isDark }) {
 
 				<section
 					className={
-						"travel-buddy relative h-[30%] w-[100vw] flex ml-auto justify-end hover:scale-95 transition-all duration-300 ls:h-[90%] ls:w-[95%] ls:mt-auto ls:col-start-2 ls:row-start-2 ls:row-span-2 ls:bottom-0 ls:flex-col ls:py-7 ls:pl-7 ls:gap-4" +
+						"travel-buddy relative h-[30%] w-[100vw] flex ml-auto justify-end hover:scale-95 transition-all duration-300 ls:h-[90%] ls:w-[95%] ls:mt-auto ls:col-start-2 ls:row-start-2 ls:row-span-2 ls:-bottom-[30%] ls:flex-col ls:py-7 ls:pl-7 ls:gap-4" +
 						(isDark ? " ls:bg-dark-secondary" : " ls:bg-light-secondary")
 					}
 					onMouseEnter={() => {
@@ -104,18 +104,6 @@ function Projects({ isDark }) {
 						setIsHovered(false);
 					}}
 				>
-					<div
-						className={
-							"bg-[rgba(0,0,0,0.54)] absolute z-20 h-full w-[70vw] flex flex-col justify-center items-center text-sm pl-6 ls:w-[96%] ls:-translate-y-7 ls:h-[60%] ls:bottom-0" +
-							(isHovered ? "" : " hidden")
-						}
-					>
-						<p className="ls:text-xl">Note:</p>
-						<p className="text-white ls:text-lg ls:w-3/4">
-							This app was not intended to be a web app and should be viewed in
-							a mobile viewport.
-						</p>
-					</div>
 					<div
 						className={
 							"w-[70vw] h-full absolute z-0 ls:w-full ls:bottom-0" +
@@ -132,7 +120,8 @@ function Projects({ isDark }) {
 						<p className="text-xs ls:text-sm">
 							A full-stack mobile app built in a team of 6 during my bootcamp.
 							It utilises Vue, Typescript, Axios, and MongoDB, all of which none
-							of the team had any prior experience with.
+							of the team had any prior experience with. Please use in a mobile
+							view.
 						</p>
 						<a
 							className="text-sm"
