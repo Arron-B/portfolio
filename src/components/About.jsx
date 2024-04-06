@@ -11,7 +11,7 @@ function About({ isDark }) {
 					id="about"
 					className="absolute top-2 ls:top-10"
 				></a>
-				<h2 className="relative h-10 top-10 text-3xl before:absolute before:border-b-[0.5rem] before:border-b-my-red before:-z-10 before:w-[8rem] before:h-1/2 before:top-3 before:translate-x-5 ls:col-start-8 ls:col-span-5 ls:row-start-1 ls:row-span-2 ls:top-20">
+				<h2 className="relative h-10 top-10 text-3xl before:absolute before:border-b-[0.7rem] before:border-b-my-red before:-z-10 before:w-[8rem] before:h-1/2 before:top-4 before:translate-x-5 ls:col-start-8 ls:col-span-5 ls:row-start-1 ls:row-span-2 ls:top-20">
 					About Me
 					{/* <h2 className="text-2xl z-10 w-32 absolute -translate-x-[50%] ls:text-4xl ls:w-full ls:-translate-x-0">
 						About Me

@@ -7,30 +7,32 @@ function Projects({ isDark }) {
 		<>
 			<div
 				className={
-					"projects relative h-screen mt-nav py-12 flex flex-col justify-around" +
+					"projects relative h-screen mt-nav mb-10 pb-12 flex flex-col justify-around ls:grid ls:grid-cols-2 ls:grid-rows-[15%_1fr_1fr]" +
 					(isDark ? " text-white" : " text-black")
 				}
 			>
 				<a
 					id="projects"
-					className="absolute -top-12"
+					className="absolute -top-0 ls:-top-12"
 				></a>
-				<div className="absolute left-[50%] top-10">
-					<h2 className="text-2xl z-10 w-32 relative -left-[50%]">
-						My Projects
-					</h2>
-					<div className="red-line z-0 bg-my-red relative w-[7.5rem] h-2.5 -left-[32%] -translate-y-2.5"></div>
-				</div>
+				<h2 className="relative h-10 top-10 text-3xl before:absolute before:border-b-[0.7rem] before:border-b-my-red before:-z-10 before:w-[9.2rem] before:h-1/2 before:top-4 before:translate-x-[1.6rem] ls:col-span-2">
+					My Projects
+				</h2>
 
-				<section className="nc-news relative top-12 h-[30%] w-[100vw] flex hover:scale-95">
-					<div className="w-[70vw] h-full absolute z-[1] bg-[#3216bb]"></div>
+				<section className="nc-news relative top-12 h-[30%] w-[100vw] flex hover:scale-95 ls:col-start-1 ls:row-start-2 ls:row-span-2 ls:h-full ls:w-[90%] ls:top-0">
+					<div
+						className={
+							"w-[70vw] h-full absolute z-0 ls:w-full" +
+							(isDark ? " bg-dark-secondary" : "bg-light-secondary")
+						}
+					></div>
 					<img
-						className="w-[62vw] object-scale-down z-[2]"
+						className="w-[62vw] object-scale-down z-[2] ls:w-full ls:mb-auto ls:h-[70%] ls:object-cover"
 						src="./src/assets/ncnews-cropped.png"
 					></img>
-					<div className="absolute z-[3] bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center">
-						<h3 className="text-md">Nc News</h3>
-						<p className="text-sm">
+					<div className="absolute z-[3] bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center ls:h-[30%] ls:bottom-0 ls:top-auto ls:w-[90%]">
+						<h3 className="text-md ls:text-lg">Nc News</h3>
+						<p className="text-sm ls:text-[0.9rem] ls:my-1">
 							A full-stack news web app using React, Bootstrap, Node.js,
 							Express.js and PostgreSQL
 						</p>
@@ -41,7 +43,7 @@ function Projects({ isDark }) {
 						>
 							<div
 								className={
-									"relative w-[60%] overflow-hidden border-b-4 border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full px-1" +
+									"relative w-[60%] overflow-hidden border-b-[0.35rem] border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full px-1 ls:w-[15%]" +
 									(isDark
 										? " text-white hover:text-dark-bg"
 										: " text-black hover:text-light-bg")
@@ -57,7 +59,7 @@ function Projects({ isDark }) {
 						>
 							<div
 								className={
-									"relative w-[55%] overflow-hidden border-b-4 border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full px-1" +
+									"relative w-[55%] overflow-hidden border-b-[0.35rem] border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full px-1 ls:w-[12%]" +
 									(isDark
 										? " text-white hover:text-dark-bg"
 										: " text-black hover:text-light-bg")
@@ -73,7 +75,7 @@ function Projects({ isDark }) {
 						>
 							<div
 								className={
-									"relative w-[50%] overflow-hidden border-b-4 border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full px-1" +
+									"relative w-[50%] overflow-hidden border-b-[0.35rem] border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full px-1 ls:w-[9%]" +
 									(isDark
 										? " text-white hover:text-dark-bg"
 										: " text-black hover:text-light-bg")
@@ -86,7 +88,7 @@ function Projects({ isDark }) {
 				</section>
 
 				<section
-					className="travel-buddy relative bottom-0 h-[30%] w-[100vw] flex ml-auto justify-end hover:scale-95"
+					className="travel-buddy relative h-[30%] w-[100vw] flex ml-auto justify-end hover:scale-95 ls:h-full ls:w-[90%] ls:mt-auto ls:col-start-2 ls:row-start-2 ls:row-span-2 ls:bottom-0"
 					onMouseEnter={() => {
 						setIsHovered(true);
 					}}
@@ -96,25 +98,30 @@ function Projects({ isDark }) {
 				>
 					<div
 						className={
-							"bg-[rgba(0,0,0,0.54)] absolute z-20 h-full w-[70vw] flex flex-col justify-center items-center text-sm pl-6" +
+							"bg-[rgba(0,0,0,0.54)] absolute z-20 h-full w-[70vw] flex flex-col justify-center items-center text-sm pl-6 ls:w-full ls:h-[70%] ls:bottom-0" +
 							(isHovered ? "" : " hidden")
 						}
 					>
-						<p>Note:</p>
-						<p className="text-white">
+						<p className="ls:text-xl">Note:</p>
+						<p className="text-white ls:text-lg ls:w-3/4">
 							This app was not intended to be a web app and should be viewed in
 							a mobile viewport.
 						</p>
 					</div>
-					<div className="w-[70vw] h-full absolute z-0 bg-[#3216bb]"></div>
+					<div
+						className={
+							"w-[70vw] h-full absolute z-0 ls:w-full ls:bottom-0" +
+							(isDark ? " bg-dark-secondary" : "bg-light-secondary")
+						}
+					></div>
 
 					<img
-						className="w-[62vw] object-scale-down z-10"
+						className="w-[62vw] object-scale-down z-10 ls:w-full ls:mt-auto ls:h-[70%] ls:object-cover"
 						src="./src/assets/travel-buddy-screens-cropped.png"
 					></img>
-					<div className="absolute z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center">
+					<div className="absolute z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center ls:h-[30%]">
 						<h3 className="text-md">Travel Buddy</h3>
-						<p className="text-xs">
+						<p className="text-xs ls:text-sm">
 							A full-stack mobile app built in a team of 6 during my bootcamp.
 							It utilises Vue, Typescript, Axios, and MongoDB, all of which none
 							of the team had any prior experience with.
@@ -126,7 +133,7 @@ function Projects({ isDark }) {
 						>
 							<div
 								className={
-									"relative w-[60%] overflow-hidden border-b-4 border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full px-1" +
+									"relative w-[60%] overflow-hidden border-b-[0.35rem] border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full px-1 ls:w-[15%]" +
 									(isDark
 										? " text-white hover:text-dark-bg"
 										: " text-black hover:text-light-bg")
@@ -142,7 +149,7 @@ function Projects({ isDark }) {
 						>
 							<div
 								className={
-									"relative w-[55%] overflow-hidden border-b-4 border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full px-1" +
+									"relative w-[55%] overflow-hidden border-b-[0.35rem] border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full px-1 ls:w-[12%]" +
 									(isDark
 										? " text-white hover:text-dark-bg"
 										: " text-black hover:text-light-bg")
