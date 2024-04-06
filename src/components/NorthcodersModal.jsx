@@ -15,7 +15,7 @@ function NorthcodersModal({ isDark, setIsNorthcodersModalOpen }) {
 			></div>
 			<div
 				className={
-					"h-modal w-[90vw] fixed z-[100] top-[5%] left-[5%] flex flex-col gap-1 justify-around text-white"
+					"h-modal w-[90vw] fixed z-[100] top-[5%] left-[5%] flex flex-col gap-1 justify-around text-white ls:grid ls:grid-cols-2 ls:grid-rows-[20%_40%_40%] pt-12"
 				}
 			>
 				<div
@@ -26,7 +26,7 @@ function NorthcodersModal({ isDark, setIsNorthcodersModalOpen }) {
 					}}
 				>
 					<svg
-						className="h-8 w-8 text-gray-600"
+						className="h-8 w-8 text-white"
 						viewBox="0 0 24 24"
 						fill="none"
 						stroke="currentColor"
@@ -49,16 +49,16 @@ function NorthcodersModal({ isDark, setIsNorthcodersModalOpen }) {
 					</svg>
 				</div>
 				<img
-					className="w-[50%] mx-auto"
+					className="w-[50%] mx-auto pt:max-ls:mb-3 ls:w-[25%] ls:col-start-1 ls:row-start-1"
 					src="./src/assets/northcoders-title.png"
 				></img>
 
 				<img
-					className="w-full max-h-[30%] object-scale-down"
+					className="w-full max-h-[30%] object-scale-down ls:col-start-1 ls:row-start-2 ls:max-h-full"
 					src="./src/assets/August-cohort.jpg"
 					alt=""
 				/>
-				<p className="text-xs">
+				<p className="text-xs ls:col-start-1 ls:row-start-3 ls: my-auto ls:w-1/2 ls:mx-auto">
 					During my 3 months on the Northcoders software development bootcamp I
 					gained extensive problem solving experience with Javascript. We
 					utilised paired programming with Git/Github and test-driven
@@ -67,9 +67,9 @@ function NorthcodersModal({ isDark, setIsNorthcodersModalOpen }) {
 					learning and problem solving skills.
 				</p>
 
-				<div className="grid gap-2 w-full h-[30%] grid-rows-[10%_45%_45%] grid-cols-2 justify-center items-center">
+				<div className="grid gap-2 w-full h-[30%] grid-rows-[10%_45%_45%] grid-cols-2 justify-center items-center ls:col-start-2 ls:row-start-1 ls:row-span-3 ls:h-3/4 ls:gap-10">
 					<img
-						className="w-[50%] col-span-2 mx-auto"
+						className="w-[50%] col-span-2 mx-auto ls:w-[30%]"
 						src="./src/assets/small-proj-title.png"
 					></img>
 
