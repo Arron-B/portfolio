@@ -19,7 +19,7 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
 			<nav
 				className={
 					"items-center h-full w-full" +
-					(isDark ? " bg-dark-bg text-white" : " bg-light-bg text-black")
+					(isDark ? " bg-dark-bg text-dark-text" : " bg-light-bg text-black")
 				}
 			>
 				<section className="MOBILE-MENU flex ls:hidden w-full">

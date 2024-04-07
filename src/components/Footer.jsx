@@ -14,7 +14,7 @@ function Footer({ isDark }) {
 			className={
 				"relative h-nav w-full px-4 flex items-center" +
 				(isDark
-					? " bg-dark-secondary text-white"
+					? " bg-dark-secondary text-dark-text"
 					: " bg-light-secondary text-black")
 			}
 		>

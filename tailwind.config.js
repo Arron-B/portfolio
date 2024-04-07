@@ -27,11 +27,14 @@ export default {
 				nav: ["8vh", "8dvh"],
 			},
 			colors: {
-				"dark-bg": "#040A0E",
+				"dark-bg": "#031926",
 				"light-bg": "#FAFAFA",
-				"my-red": "#fd0000",
+				"my-red-dark": "#fd0000",
+				"my-red-light": "#efa78d",
 				"dark-secondary": "#282828",
-				"light-secondary": "#DADADA",
+				"light-secondary": "#f2f8ff",
+				"dark-text": "#9DBEBB",
+				"light-text": "#DADADA",
 			},
 			keyframes: {
 				slideInRight: {

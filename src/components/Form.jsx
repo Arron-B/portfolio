@@ -49,7 +49,7 @@ function Form({ isDark }) {
 			className={
 				"w-full h-[50vh] ls:left-0 ls:w-[50vw]" +
 				(isDark
-					? " pt:max-ls:bg-[url('./src/assets/dark-background.jpg')] bg-cover bg-center text-white"
+					? " pt:max-ls:bg-[url('./src/assets/dark-background.jpg')] bg-cover bg-center text-dark-text"
 					: " pt:max-ls:bg-[url('./src/assets/light-background.jpg')] bg-cover bg-center text-black")
 			}
 		>
@@ -59,7 +59,14 @@ function Form({ isDark }) {
 				ref={form}
 				onSubmit={sendEmail}
 			>
-				<h2 className="relative h-10 z-10 text-2xl before:absolute before:border-b-[0.7rem] before:-z-10 before:border-b-my-red before:w-[7.7rem] before:h-1/2 before:top-3 before:translate-x-[1rem]">
+				<h2
+					className={
+						"relative h-10 z-10 text-2xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[8.7rem] before:h-1/2 before:top-3 before:translate-x-[1rem] font-bold" +
+						(isDark
+							? " before:border-b-my-red-dark"
+							: " before:border-b-my-red-light")
+					}
+				>
 					Contact Me
 				</h2>
 				<input
@@ -103,7 +110,7 @@ function Form({ isDark }) {
 							(submitMsg.length > 0
 								? " flex items-center justify-center"
 								: " hidden") +
-							(submitStatus === "success" ? " bg-green-700" : " bg-my-red")
+							(submitStatus === "success" ? " bg-green-700" : " bg-my-red-dark")
 						}
 					>
 						{submitMsg}
@@ -113,10 +120,10 @@ function Form({ isDark }) {
 						value="Send"
 						disabled={submitMsg.length > 0 ? true : false}
 						className={
-							"relative w-[25%] overflow-hidden border-b-4 border-my-red shadow-2xl transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full" +
+							"relative w-[25%] overflow-hidden border-b-4 shadow-2xl transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full  after:duration-500 hover:after:h-full" +
 							(isDark
-								? " text-white hover:text-dark-bg"
-								: " text-black hover:text-light-bg")
+								? " text-dark-text hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
+								: " text-black hover:text-light-bg border-my-red-light after:bg-my-red-light")
 						}
 					>
 						<span className="relative z-10 text-sm">Submit</span>
