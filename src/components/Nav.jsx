@@ -116,17 +116,10 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
 									My Projects
 								</a>
 							</li>
+
 							<li className="my-8 uppercase hover:scale-110">
 								<a
-									href="#northcoders"
-									onClick={() => setIsNavOpen(false)}
-								>
-									Northcoders
-								</a>
-							</li>
-							<li className="my-8 uppercase hover:scale-110">
-								<a
-									href="#northcoders"
+									href="#contact"
 									onClick={() => setIsNavOpen(false)}
 								>
 									Contact
@@ -157,11 +150,9 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
 					<li className="my-8 uppercase hover:scale-110">
 						<a href="#projects">My Projects</a>
 					</li>
+
 					<li className="my-8 uppercase hover:scale-110">
-						<a href="#northcoders">Northcoders</a>
-					</li>
-					<li className="my-8 uppercase hover:scale-110">
-						<a href="#northcoders">Contact</a>
+						<a href="#contact">Contact</a>
 					</li>
 				</ul>
 			</nav>

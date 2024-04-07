@@ -3,7 +3,7 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Welcome from "./components/Welcome";
-import NcAndContact from "./components/NcAndContact";
+import Form from "./components/Form";
 import Background from "./components/Background";
 import Footer from "./components/Footer";
 
@@ -31,7 +31,7 @@ function App() {
 
 			<Projects isDark={isDark} />
 
-			<NcAndContact isDark={isDark} />
+			<Form isDark={isDark} />
 			<Footer isDark={isDark}></Footer>
 		</>
 	);
