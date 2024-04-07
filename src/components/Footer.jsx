@@ -7,6 +7,7 @@ function Footer({ isDark }) {
 	};
 	return (
 		<div
+			id="contact"
 			className={
 				"h-nav w-full px-4 flex items-center" +
 				(isDark

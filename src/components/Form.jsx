@@ -47,7 +47,7 @@ function Form({ isDark }) {
 	return (
 		<div
 			className={
-				"w-full h-[50vh]" +
+				"w-full h-[50vh] ls:left-0 ls:w-[50vw]" +
 				(isDark
 					? " pt:max-ls:bg-[url('./src/assets/dark-background.jpg')] bg-cover bg-center text-white"
 					: " pt:max-ls:bg-[url('./src/assets/light-background.jpg')] bg-cover bg-center text-black")
@@ -55,7 +55,7 @@ function Form({ isDark }) {
 		>
 			{" "}
 			<form
-				className="w-[70%] h-full flex flex-col gap-2 mx-auto justify-center items-center row-start-2 ls:ml-[30%]"
+				className="w-[70%] h-full flex flex-col gap-2 mx-auto justify-center items-center row-start-2 ls:w-1/2 ls:gap-3"
 				ref={form}
 				onSubmit={sendEmail}
 			>
@@ -64,7 +64,7 @@ function Form({ isDark }) {
 				</h2>
 				<input
 					className={
-						"form-input w-full h-5 pl-1 text-sm ls:h-8" +
+						"form-input w-full h-5 pl-1 text-sm ls:h-12 ls:pl-6 ls:mt-4" +
 						(isDark
 							? " bg-dark-secondary placeholder-white"
 							: " bg-light-secondary placeholder-black")
@@ -76,7 +76,7 @@ function Form({ isDark }) {
 
 				<input
 					className={
-						"form-input w-full h-5 pl-1 text-sm ls:h-8" +
+						"form-input w-full h-5 pl-1 text-sm ls:h-12 ls:pl-6" +
 						(isDark
 							? " bg-dark-secondary placeholder-white"
 							: " bg-light-secondary placeholder-black")
@@ -89,7 +89,7 @@ function Form({ isDark }) {
 				<textarea
 					name="message"
 					className={
-						"form-input w-full h-28 pl-1 text-sm ls:h-36" +
+						"form-input w-full h-28 pl-1 text-sm ls:h-40 ls:pl-6 ls:pt-2" +
 						(isDark
 							? " bg-dark-secondary placeholder-white"
 							: " bg-light-secondary placeholder-black")

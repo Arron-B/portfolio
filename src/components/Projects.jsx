@@ -7,7 +7,7 @@ function Projects({ isDark }) {
 		<>
 			<div
 				className={
-					"projects relative mt-nav mb-10 flex flex-col justify-around pt:max-ls:gap-32 ls:grid ls:grid-cols-2 ls:grid-rows-[1fr_2fr_2fr_2fr_2fr] ls:mt-[6rem]" +
+					"projects relative mt-nav mb-10 flex flex-col justify-around pt:max-ls:gap-32 ls:h-[170vh] ls:grid ls:grid-cols-2 ls:grid-rows-[5rem_1fr_1fr_1fr_1fr] ls:mt-[6rem]" +
 					(isDark ? " text-white" : " text-black")
 				}
 			>
@@ -27,12 +27,12 @@ function Projects({ isDark }) {
 				>
 					<div
 						className={
-							"w-[70vw] h-[115%] absolute z-0 ls:w-full" +
+							"w-[70vw] h-[115%] absolute z-0 ls:w-full ls:h-full" +
 							(isDark ? " bg-dark-secondary" : "bg-light-secondary")
 						}
 					></div>
 					<img
-						className="w-[62vw] object-scale-down mt-[7%] z-[2] ls:w-full ls:h-[70%] ls:object-cover"
+						className="w-[62vw] object-scale-down mt-[7%] z-[2] ls:w-full ls:h-[70%] ls:object-cover ls:mt-0"
 						src="./src/assets/ncnews-cropped.png"
 					></img>
 					<div className="absolute z-[3] bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center ls:h-[30%] ls:static ls:ml-auto ls:w-[90%]">
@@ -106,13 +106,13 @@ function Projects({ isDark }) {
 				>
 					<div
 						className={
-							"w-[70vw] h-[115%] absolute z-0 ls:w-full ls:bottom-0" +
+							"w-[70vw] h-[115%] absolute z-0 ls:w-full ls:bottom-0 ls:h-full" +
 							(isDark ? " bg-dark-secondary" : "bg-light-secondary")
 						}
 					></div>
 
 					<img
-						className="w-[62vw] mt-[7%] object-scale-down z-10 ls:w-full ls:h-[70%] ls:object-cover ls:order-2"
+						className="w-[62vw] mt-[7%] object-scale-down z-10 ls:w-full ls:h-[70%] ls:object-cover ls:order-2 ls:object-right-top"
 						src="./src/assets/travel-buddy-screens-cropped.png"
 					></img>
 					<div className="absolute pt:max-ls:mt-2 z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center ls:max-h-[30%] ls:static ls: order-1">
@@ -159,19 +159,19 @@ function Projects({ isDark }) {
 				</section>
 				<section
 					className={
-						"portfolio-proj relative h-[30%] w-[100vw] flex hover:scale-95 active:scale-95 transition-all duration-300 ls:col-start-1 ls:row-start-2 ls:row-span-2 ls:h-[90%] ls:w-[95%] ls:top-0 ls:flex-col ls:gap-4 ls:py-7 ls:pr-7" +
+						"portfolio-proj relative h-[30%] w-[100vw] flex hover:scale-95 active:scale-95 transition-all duration-300 ls:col-start-1 ls:row-start-4 ls:row-span-2 ls:h-[90%] ls:w-[95%] ls:flex-col ls:gap-4 ls:py-7 ls:pr-7 ls:translate-y-[5%]" +
 						(isDark ? " ls:bg-dark-secondary" : " ls:bg-light-secondary")
 					}
 				>
 					<div
 						className={
-							"w-[70vw] h-[115%] absolute z-0 ls:w-full" +
+							"w-[70vw] h-[115%] absolute z-0 ls:w-full ls:h-full" +
 							(isDark ? " bg-dark-secondary" : "bg-light-secondary")
 						}
 					></div>
 					<img
-						className="w-[62vw] mt-[7%] object-scale-down z-[2] ls:w-full ls:h-[70%] ls:object-cover"
-						src="./src/assets/ncnews-cropped.png"
+						className="w-[62vw] mt-[7%] object-scale-down z-[2] ls:w-full ls:h-[70%] ls:object-cover ls:mt-0 ls:object-right-top"
+						src="./src/assets/portfolio-image.png"
 					></img>
 					<div className="absolute z-[3] bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center ls:h-[30%] ls:static ls:ml-auto ls:w-[90%]">
 						<h3 className="text-md ls:text-lg">Portfolio</h3>
@@ -201,7 +201,7 @@ function Projects({ isDark }) {
 
 				<section
 					className={
-						"pokematch relative h-[30%] w-[100vw] flex ml-auto justify-end hover:scale-95 transition-all duration-300 ls:h-[90%] ls:w-[95%] ls:mt-auto ls:col-start-2 ls:row-start-2 ls:row-span-2 ls:-bottom-[30%] ls:flex-col ls:py-7 ls:pl-7 ls:gap-4" +
+						"pokematch relative h-[30%] w-[100vw] flex ml-auto justify-end hover:scale-95 transition-all duration-300 ls:h-[120%] ls:w-[95%] ls:mt-auto ls:col-start-2 ls:row-start-4 ls:row-span-2 ls:-bottom-[40%] ls:flex-col ls:py-7 ls:pl-7 ls:gap-4" +
 						(isDark ? " ls:bg-dark-secondary" : " ls:bg-light-secondary")
 					}
 					onMouseEnter={() => {
@@ -213,16 +213,16 @@ function Projects({ isDark }) {
 				>
 					<div
 						className={
-							"w-[70vw] h-[110%] absolute z-0 ls:w-full ls:bottom-0" +
+							"w-[70vw] h-[110%] absolute z-0 ls:w-full ls:bottom-0 ls:h-full" +
 							(isDark ? " bg-dark-secondary" : "bg-light-secondary")
 						}
 					></div>
 
 					<img
-						className="w-[62vw] mt-[7%] object-scale-down z-10 ls:w-full ls:h-[70%] ls:object-cover ls:order-2"
+						className="w-[62vw] mt-[7%] object-scale-down z-10 ls:w-full ls:h-[90%] ls:object-cover ls:order-2 ls:mt-2 ls:object-left-top"
 						src="./src/assets/poke-match.png"
 					></img>
-					<div className="absolute pt:max-ls:mt-2 z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center ls:max-h-[30%] ls:static ls: order-1">
+					<div className="absolute pt:max-ls:mt-2 z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center ls:max-h-[10%] ls:static ls: order-1">
 						<h3 className="text-md">Pokematch</h3>
 						<p className="text-xs ls:text-sm">
 							A quick and fun front-end only game to play around with the DOM.
