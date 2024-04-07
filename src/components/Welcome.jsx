@@ -9,7 +9,7 @@ function Welcome({ isDark }) {
 			id="welcome"
 			className={
 				"welcome h-screen px-4 pb-nav flex flex-col justify-center items-center" +
-				(isDark ? " text-white" : " text-black")
+				(isDark ? " text-dark-text" : " text-black")
 			}
 		>
 			<div className="flex">
@@ -18,7 +18,7 @@ function Welcome({ isDark }) {
 						return (
 							<p
 								key={`${word}${i}`}
-								className="text-my-red text-2xl"
+								className="text-my-red-dark text-2xl ls:text-5xl"
 							>
 								{word}
 							</p>
@@ -27,7 +27,7 @@ function Welcome({ isDark }) {
 						return (
 							<p
 								key={`${word}${i}`}
-								className="mr-1 text-2xl"
+								className="mr-1 text-2xl ls:text-5xl"
 							>
 								{word}
 							</p>
@@ -35,10 +35,10 @@ function Welcome({ isDark }) {
 					}
 				})}
 			</div>
-			<p className="text-2xl">a full-stack developer.</p>
+			<p className="text-2xl ls:text-5xl">a full-stack developer.</p>
 			<a href="#about">
 				<FontAwesomeIcon
-					className="absolute text-4xl left-1/2 top-1/2 -translate-x-1/2 translate-y-[1rem] animate-pulse hover:scale-125"
+					className="absolute text-4xl left-1/2 top-1/2 -translate-x-1/2 translate-y-[1rem] animate-pulse hover:scale-125 ls:translate-y-[3rem]"
 					icon={faAngleDoubleDown}
 				/>
 			</a>
