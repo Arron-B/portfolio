@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
+
 function Welcome({ isDark }) {
 	const welcomeLine1 = ["Hello,", "I'm", "Arron", ","];
 
@@ -33,6 +36,12 @@ function Welcome({ isDark }) {
 				})}
 			</div>
 			<p className="text-2xl">a full-stack developer.</p>
+			<a href="#about">
+				<FontAwesomeIcon
+					className="absolute text-4xl left-1/2 top-1/2 -translate-x-1/2 translate-y-[1rem] animate-pulse hover:scale-125"
+					icon={faAngleDoubleDown}
+				/>
+			</a>
 		</div>
 	);
 }
