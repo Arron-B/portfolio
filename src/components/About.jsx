@@ -1,7 +1,8 @@
-function About({ isDark }) {
+function About({ isDark, sectionRef }) {
 	return (
 		<>
 			<div
+				ref={sectionRef}
 				className={
 					"about relative h-screen pt-nav w-full grid grid-rows-9 px-2 ls:mt-2 ls:grid-cols-19 ls:grid-rows-11" +
 					(isDark ? " text-dark-text" : " text-black")

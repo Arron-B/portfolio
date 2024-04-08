@@ -1,11 +1,12 @@
 import { useState } from "react";
 
-function Projects({ isDark }) {
+function Projects({ isDark, sectionRef }) {
 	const [isHovered, setIsHovered] = useState(false);
 
 	return (
 		<>
 			<div
+				ref={sectionRef}
 				className={
 					"projects relative mt-nav mb-10 flex flex-col justify-around pt:max-ls:gap-32 ls:h-[170vh] ls:grid ls:grid-cols-2 ls:grid-rows-[5rem_1fr_1fr_1fr_1fr] ls:mt-[6rem]" +
 					(isDark ? " text-dark-text" : " text-black")

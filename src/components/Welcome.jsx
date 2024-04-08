@@ -1,12 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 
-function Welcome({ isDark }) {
+function Welcome({ isDark, sectionRef }) {
 	const welcomeLine1 = ["Hello,", "I'm", "Arron", ","];
 
 	return (
 		<div
 			id="welcome"
+			ref={sectionRef}
 			className={
 				"welcome h-screen px-4 pb-nav flex flex-col justify-center items-center" +
 				(isDark ? " text-dark-text" : " text-black")

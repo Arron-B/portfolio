@@ -1,7 +1,7 @@
 import { Classic } from "@theme-toggles/react";
 import { useEffect } from "react";
 
-function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
+function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 	useEffect(() => {
 		if (isNavOpen) {
 			document.body.style.overflow = "hidden";
@@ -136,7 +136,11 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
 				/>
 
 				<ul className="DESKTOP-MENU hidden space-x-8 ls:flex ls:h-nav ls:items-center ls:pl-3">
-					<li className="my-8 uppercase hover:scale-110">
+					<li
+						className={
+							"my-8 uppercase hover:scale-110" + (currEl === 0 ? " active" : "")
+						}
+					>
 						<a
 							href="
 								#welcome"
@@ -144,14 +148,26 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark }) {
 							Home
 						</a>
 					</li>
-					<li className="my-8 uppercase hover:scale-110">
+					<li
+						className={
+							"my-8 uppercase hover:scale-110" + (currEl === 1 ? " active" : "")
+						}
+					>
 						<a href="#about">About Me</a>
 					</li>
-					<li className="my-8 uppercase hover:scale-110">
+					<li
+						className={
+							"my-8 uppercase hover:scale-110" + (currEl === 2 ? " active" : "")
+						}
+					>
 						<a href="#projects">My Projects</a>
 					</li>
 
-					<li className="my-8 uppercase hover:scale-110">
+					<li
+						className={
+							"my-8 uppercase hover:scale-110" + (currEl === 3 ? " active" : "")
+						}
+					>
 						<a href="#contact">Contact</a>
 					</li>
 				</ul>
