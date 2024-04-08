@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-function Form({ isDark }) {
+function Form({ isDark, sectionRef }) {
 	const form = useRef();
 
 	const [submitMsg, setSubmitMsg] = useState("");
@@ -46,6 +46,7 @@ function Form({ isDark }) {
 
 	return (
 		<div
+			ref={sectionRef}
 			className={
 				"w-full h-[50vh] ls:left-0 ls:w-[50vw]" +
 				(isDark
