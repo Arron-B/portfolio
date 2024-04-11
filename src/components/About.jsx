@@ -1,4 +1,23 @@
+import { useEffect } from "react";
+
 function About({ isDark, sectionRef }) {
+	useEffect(() => {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				const me = entry.target.querySelector(".me");
+				const meText = entry.target.querySelector(".me-text");
+				if (entry.isIntersecting) {
+					me.classList.add("animate-slideInLeft");
+					meText.classList.add("animate-slideInRight");
+
+					return;
+				}
+			});
+		});
+
+		observer.observe(document.querySelector(".profile"));
+	}, []);
+
 	return (
 		<>
 			<div
@@ -24,11 +43,11 @@ function About({ isDark, sectionRef }) {
 				</h2>
 				<div className="profile row-start-2 row-span-5 flex flex-col justify-center gap-4 ls:flex-row ls:items-center ls:row-start-4 ls:row-span-5 ls:col-start-6 ls:col-span-9">
 					<img
-						className="rounded-full pt:max-ls:w-1/2 mx-auto aspect-square ls:w-1/2"
+						className="me -translate-x-[100vw] rounded-full pt:max-ls:w-1/2 mx-auto aspect-square ls:w-1/2"
 						src="./src/assets/default-profile.jpg"
 						alt=""
 					/>
-					<p className="text-sm ls:w-1/2 ls:text-lg">
+					<p className="me-text text-sm ls:w-1/2 ls:text-lg">
 						React, TailwindCSS and SQL are my main go to technologies. I'm
 						interested in developing web apps, but in the future would like to
 						makes games as a hobby with Godot or Unreal Engine. <br></br> In my

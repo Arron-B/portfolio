@@ -41,9 +41,20 @@ export default {
 					"0%": { opacity: "0" },
 					"100%": { opacity: "100%" },
 				},
+				slideInLeft: {
+					"0%": { transform: "translate(-100vw)" },
+					"100%": { transform: "translate(0vw)" },
+				},
+				slideInRight: {
+					"0%": { transform: "translate(100vw)" },
+					"100%": { transform: "translate(0vw)" },
+				},
 			},
 			animation: {
-				fadeIn: "fadeIn 2s ease-in 7.5s 1 normal forwards",
+				fadeInDelayed: "fadeIn 2s ease-in 7.5s 1 normal forwards",
+				fadeIn: "fadeIn 2s ease-in 1 forwards",
+				slideInLeft: "slideInLeft 1s ease-in-out 1 forwards",
+				slideInRight: "slideInRight 1s ease-in-out 1 forwards",
 			},
 			gridTemplateColumns: {
 				19: "repeat(19, minmax(0, 1fr))",
