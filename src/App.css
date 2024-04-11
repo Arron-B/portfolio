@@ -78,7 +78,7 @@ html,
 	white-space: nowrap;
 	overflow: hidden;
 	width: 0;
-	animation: typing1 3s, cursor 0.4s step-end infinite alternate;
+	animation: typing1 2.5s linear, cursor 0.4s step-end infinite alternate;
 	animation-delay: 2s;
 	animation-fill-mode: forwards;
 }
@@ -88,8 +88,8 @@ html,
 	overflow: hidden;
 	letter-spacing: normal;
 	width: 0;
-	animation: typing2 3s, cursor 0.4s step-end infinite alternate;
-	animation-delay: 4.8s;
+	animation: typing2 2.5s linear, cursor 0.4s step-end infinite alternate;
+	animation-delay: 4.5s;
 	animation-fill-mode: forwards;
 }
 

@@ -51,7 +51,7 @@ export default {
 				},
 			},
 			animation: {
-				fadeInDelayed: "fadeIn 2s ease-in 7.5s 1 normal forwards",
+				fadeInDelayed: "fadeIn 2s ease-in 7s 1 normal forwards",
 				fadeIn: "fadeIn 2s ease-in 1 forwards",
 				slideInLeft: "slideInLeft 1s ease-in-out 1 forwards",
 				slideInRight: "slideInRight 1s ease-in-out 1 forwards",
