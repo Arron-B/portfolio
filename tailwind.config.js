@@ -34,21 +34,16 @@ export default {
 				"dark-secondary": "#282828",
 				"light-secondary": "#f2f8ff",
 				"dark-text": "#9DBEBB",
-				"light-text": "#DADADA",
+				"light-text": "black",
 			},
 			keyframes: {
-				slideInRight: {
-					"0%": { left: "-100%" },
-					"100%": { left: "0" },
-				},
-				slideOutRight: {
-					"0%": { left: "0" },
-					"100%": { left: "-100%" },
+				fadeIn: {
+					"0%": { opacity: "0" },
+					"100%": { opacity: "100%" },
 				},
 			},
 			animation: {
-				slideInRight: "slideInRight 1s ease-in-out",
-				slideOutRight: "slideOutRight 1s ease-in-out",
+				fadeIn: "fadeIn 2s ease-in 7.5s 1 normal forwards",
 			},
 			gridTemplateColumns: {
 				19: "repeat(19, minmax(0, 1fr))",
