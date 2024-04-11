@@ -11,9 +11,12 @@ function Background({ isDark }) {
 					<div className="bubbles relative flex w-full mx-auto">
 						{[...Array(20)].map((bubble, i) => (
 							<span
-								className={isDark ? "bubble-dark" : "bubble-light"}
+								className={
+									"w-[1vw] h-[1vw] ls:w-[0.4vw] ls:h-[0.4vw]" +
+									(isDark ? " bubble-dark" : " bubble-light")
+								}
 								key={i}
-								style={{ "--i": Math.random() * (30 - 10) + 10 }}
+								style={{ "--i": Math.random() * (30 - 10) + 20 }}
 							></span>
 						))}
 					</div>

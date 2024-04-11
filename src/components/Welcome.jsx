@@ -28,7 +28,7 @@ function Welcome({ isDark, sectionRef }) {
 						return (
 							<p
 								key={`${word}${i}`}
-								className="mr-1 text-2xl ls:text-5xl"
+								className="mr-2 text-2xl ls:text-5xl"
 							>
 								{word}
 							</p>

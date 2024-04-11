@@ -43,8 +43,6 @@ html,
 
 .bubbles span {
 	position: relative;
-	width: 1vw;
-	height: 1vw;
 	background: #3216bb;
 	border-radius: 50%;
 
