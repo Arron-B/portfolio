@@ -1,21 +1,29 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function About({ isDark, sectionRef }) {
+	const [fadesActivated, setFadesActivated] = useState(false);
+
 	useEffect(() => {
 		const observer = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				const me = entry.target.querySelector(".me");
 				const meText = entry.target.querySelector(".me-text");
-				const logo = entry.target.querySelectorAll(".logo");
+				const logos = entry.target.querySelectorAll(".logo");
 				if (entry.isIntersecting) {
-					me.classList.add("animate-slideInLeft");
-					meText.classList.add("animate-slideInRight");
+					me.classList.add("ls:animate-slideInLeft");
+					meText.classList.add("ls:animate-slideInRight");
 					let delay;
 
-					logo.forEach((el) => {
+					logos.forEach((el, i) => {
+						console.log(logos.length);
 						delay = Math.random() * (2.5 - 0.5) + 0.5;
 						el.style.animationDelay = `${delay}s`;
 						el.classList.add(`animate-[fadeIn_2s_ease-in_forwards]`);
+						if (i >= logos.length - 1) {
+							setTimeout(() => {
+								setFadesActivated(true);
+							}, 4000);
+						}
 					});
 					return;
 				}
@@ -50,7 +58,7 @@ function About({ isDark, sectionRef }) {
 				</h2>
 				<div className="profile row-start-2 row-span-5 flex flex-col justify-center gap-4 ls:flex-row ls:items-center ls:row-start-4 ls:row-span-5 ls:col-start-6 ls:col-span-9">
 					<img
-						className="me -translate-x-[100vw] rounded-full pt:max-ls:w-1/2 mx-auto aspect-square ls:w-1/2"
+						className="me ls:-translate-x-[100vw] rounded-full pt:max-ls:w-1/2 mx-auto aspect-square ls:w-1/2"
 						src="./src/assets/default-profile.jpg"
 						alt=""
 					/>
@@ -162,14 +170,29 @@ function About({ isDark, sectionRef }) {
 					/>
 					Git
 				</span>
-				<span className="logo opacity-0 pt:max-ls:hidden col-start-[16] col-span-3 row-start-8 flex items-center">
+				<span
+					className={
+						"opacity-0 pt:max-ls:hidden col-start-[16] col-span-3 row-start-8 flex items-center" +
+						(isDark ? "" : " hidden") +
+						(fadesActivated ? " opacity-100" : " logo")
+					}
+				>
 					<img
 						className="w-3/4 mx-auto"
-						src={
-							isDark
-								? "./src/assets/node-dark.png"
-								: "./src/assets/node-light.png"
-						}
+						src="./src/assets/node-dark.png"
+						alt=""
+					/>
+				</span>
+				<span
+					className={
+						"opacity-0 pt:max-ls:hidden col-start-[16] col-span-3 row-start-8 flex items-center" +
+						(isDark ? " hidden" : "") +
+						(fadesActivated ? " opacity-100" : " logo")
+					}
+				>
+					<img
+						className="w-3/4 mx-auto"
+						src="./src/assets/node-light.png"
 						alt=""
 					/>
 				</span>
