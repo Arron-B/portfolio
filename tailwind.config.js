@@ -34,21 +34,27 @@ export default {
 				"dark-secondary": "#282828",
 				"light-secondary": "#f2f8ff",
 				"dark-text": "#9DBEBB",
-				"light-text": "#DADADA",
+				"light-text": "black",
 			},
 			keyframes: {
-				slideInRight: {
-					"0%": { left: "-100%" },
-					"100%": { left: "0" },
+				fadeIn: {
+					"0%": { opacity: "0" },
+					"100%": { opacity: "100%" },
 				},
-				slideOutRight: {
-					"0%": { left: "0" },
-					"100%": { left: "-100%" },
+				slideInLeft: {
+					"0%": { transform: "translate(-100vw)" },
+					"100%": { transform: "translate(0vw)" },
+				},
+				slideInRight: {
+					"0%": { transform: "translate(100vw)" },
+					"100%": { transform: "translate(0vw)" },
 				},
 			},
 			animation: {
-				slideInRight: "slideInRight 1s ease-in-out",
-				slideOutRight: "slideOutRight 1s ease-in-out",
+				fadeInDelayed: "fadeIn 2s ease-in 7s 1 normal forwards",
+				fadeIn: "fadeIn 2s ease-in 1 forwards",
+				slideInLeft: "slideInLeft 1s ease-in-out 1 forwards",
+				slideInRight: "slideInRight 1s ease-in-out 1 forwards",
 			},
 			gridTemplateColumns: {
 				19: "repeat(19, minmax(0, 1fr))",
