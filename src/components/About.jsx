@@ -59,8 +59,8 @@ function About({ isDark, sectionRef }) {
 				<div className="profile row-start-2 row-span-5 flex flex-col justify-center gap-4 ls:flex-row ls:items-center ls:row-start-4 ls:row-span-5 ls:col-start-6 ls:col-span-9">
 					<img
 						className="me ls:-translate-x-[100vw] rounded-full pt:max-ls:w-1/2 mx-auto aspect-square ls:w-1/2"
-						src="./src/assets/default-profile.jpg"
-						alt=""
+						src="https://i.ibb.co/dBqsGWd/default-profile-Copy.jpg"
+						alt="Profile Photo"
 					/>
 					<p className="me-text text-sm ls:w-1/2 ls:text-lg">
 						React, TailwindCSS and SQL are my main go to technologies. I'm
@@ -71,14 +71,16 @@ function About({ isDark, sectionRef }) {
 					</p>
 				</div>
 				<img
-					src="./src/assets/tech-stack-dark.png"
+					src="https://i.ibb.co/41PZ6N4/tech-stack-dark.png"
+					alt="logos of my tech-stack"
 					className={
 						"mx-auto ls:hidden row-start-7 row-span-3 h-full" +
 						(isDark ? "" : " hidden")
 					}
 				></img>
 				<img
-					src="./src/assets/tech-stack-light.png"
+					src="https://i.ibb.co/gVLF8JJ/tech-stack-light.png"
+					alt="logos of my tech-stack"
 					className={
 						"mx-auto ls:hidden row-start-7 row-span-3 h-full" +
 						(!isDark ? "" : " hidden")
@@ -87,86 +89,86 @@ function About({ isDark, sectionRef }) {
 
 				<span className="logo opacity-0 pt:max-ls:hidden col-start-5 row-start-3">
 					<img
-						src="./src/assets/bootstrap.png"
-						alt=""
+						src="https://i.ibb.co/9tJYD52/Bootstrap-Copy.png"
+						alt="Bootstrap"
 					/>
 					Bootstrap
 				</span>
 
 				<span className="logo opacity-0 pt:max-ls:hidden col-start-3 row-start-4">
 					<img
-						src="./src/assets/html.png"
-						alt=""
-					/>{" "}
+						src="https://i.ibb.co/pzw0CfT/html-Copy.png"
+						alt="HTML5"
+					/>
 					HTML
 				</span>
 				<span className="logo opacity-0 pt:max-ls:hidden col-start-4 row-start-6">
 					<img
-						src="./src/assets/react.png"
-						alt=""
+						src="https://i.ibb.co/h9GWy1r/React.png"
+						alt="React"
 					/>
 					React
 				</span>
 				<span className="logo opacity-0 pt:max-ls:hidden col-start-2 col-span-3 row-start-8 flex items-center">
 					<img
 						className="w-3/4 mx-auto"
-						src="./src/assets/axios.png"
-						alt=""
+						src="https://i.ibb.co/YTJZLw4/axios-Copy.png"
+						alt="Axios"
 					/>
 				</span>
 				<span className="logo opacity-0 pt:max-ls:hidden col-start-5 row-start-9">
 					<img
-						src="./src/assets/MongoDB.png"
-						alt=""
+						src="https://i.ibb.co/74Yfcwq/Mongo-DB-Copy.png"
+						alt="MongoDB"
 					/>
 					MongoDb
 				</span>
 				<span className="logo opacity-0 pt:max-ls:hidden col-start-[15] row-start-9">
 					<img
-						src="./src/assets/jest.png"
-						alt=""
+						src="https://i.ibb.co/hstPrCp/jest-Copy.png"
+						alt="Jestjs"
 					/>
 					Jest.js
 				</span>
 				<span className="logo opacity-0 pt:max-ls:hidden col-start-[11] row-start-10 row-span-2 my-auto">
 					<img
-						src="./src/assets/github.png"
-						alt=""
+						src="https://i.ibb.co/TqjG6vP/github-Copy.png"
+						alt="Github"
 					/>
 					Github
 				</span>
 				<span className="logo opacity-0 pt:max-ls:hidden col-start-[16] row-start-6">
 					<img
-						src="./src/assets/tailwind.png"
-						alt=""
+						src="https://i.ibb.co/s3m5qLS/tailwind.png"
+						alt="TailwindCSS"
 					/>
 					TailwindCSS
 				</span>
 				<span className="logo opacity-0 pt:max-ls:hidden col-start-[17] row-start-4">
 					<img
-						src="./src/assets/css.png"
-						alt=""
+						src="https://i.ibb.co/0rSggx8/css-Copy.png"
+						alt="CSS3"
 					/>
 					CSS
 				</span>
 				<span className="logo opacity-0 pt:max-ls:hidden col-start-[15] row-start-3">
 					<img
-						src="./src/assets/Vue.png"
-						alt=""
+						src="https://i.ibb.co/MDBzDWc/Vue.png"
+						alt="Vuejs"
 					/>
 					Vue.js
 				</span>
 				<span className="logo opacity-0 pt:max-ls:hidden col-start-7 row-start-10">
 					<img
-						src="./src/assets/javascript.png"
-						alt=""
+						src="https://i.ibb.co/K0zSnw1/javascript-Copy.png"
+						alt="JavaScript"
 					/>
 					JavaScript
 				</span>
 				<span className="logo opacity-0 pt:max-ls:hidden col-start-9 row-start-10 row-span-2 my-auto">
 					<img
-						src="./src/assets/git.png"
-						alt=""
+						src="https://i.ibb.co/hMnZzg8/git-Copy.png"
+						alt="Git"
 					/>
 					Git
 				</span>
@@ -179,8 +181,8 @@ function About({ isDark, sectionRef }) {
 				>
 					<img
 						className="w-3/4 mx-auto"
-						src="./src/assets/node-dark.png"
-						alt=""
+						src="https://i.ibb.co/LznVfVR/node-dark.png"
+						alt="Nodejs"
 					/>
 				</span>
 				<span
@@ -192,15 +194,15 @@ function About({ isDark, sectionRef }) {
 				>
 					<img
 						className="w-3/4 mx-auto"
-						src="./src/assets/node-light.png"
-						alt=""
+						src="https://i.ibb.co/yQ4Zkxx/node-light.png"
+						alt="Nodejs"
 					/>
 				</span>
 
 				<span className="logo opacity-0 pt:max-ls:hidden col-start-13 row-start-10">
 					<img
-						src="./src/assets/Postgresql.png"
-						alt=""
+						src="https://i.ibb.co/rb3CvFy/Postgresql.png"
+						alt="PostgreSQL"
 					/>
 					PostgreSQL
 				</span>

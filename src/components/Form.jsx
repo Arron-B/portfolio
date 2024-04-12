@@ -50,8 +50,8 @@ function Form({ isDark, sectionRef }) {
 			className={
 				"w-full h-[50vh] ls:left-0 ls:w-[50vw]" +
 				(isDark
-					? " pt:max-ls:bg-[url('./src/assets/dark-background.jpg')] bg-cover bg-center text-dark-text"
-					: " pt:max-ls:bg-[url('./src/assets/light-background.jpg')] bg-cover bg-center text-black")
+					? " pt:max-ls:bg-[url('https://i.ibb.co/HgdgLkb/dark-background-Copy.jpg')] bg-cover bg-center text-dark-text"
+					: " pt:max-ls:bg-[url('https://i.ibb.co/zJfpKrH/light-background-Copy.jpg')] bg-cover bg-center text-black")
 			}
 		>
 			{" "}
@@ -121,10 +121,10 @@ function Form({ isDark, sectionRef }) {
 						value="Send"
 						disabled={submitMsg.length > 0 ? true : false}
 						className={
-							"relative w-[25%] overflow-hidden border-b-4 shadow-2xl transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full  after:duration-500 hover:after:h-full" +
+							"relative w-[25%] overflow-hidden border-b-4 shadow-2xl transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full  after:duration-500 ls:hover:after:h-full" +
 							(isDark
-								? " text-dark-text hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-								: " text-black hover:text-light-bg border-my-red-light after:bg-my-red-light")
+								? " text-dark-text ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
+								: " text-black ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 						}
 					>
 						<span className="relative z-10 text-sm">Submit</span>

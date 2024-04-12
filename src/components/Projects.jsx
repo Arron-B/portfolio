@@ -29,7 +29,7 @@ function Projects({ isDark, sectionRef }) {
 
 				<section
 					className={
-						"nc-news relative h-[30%] w-[100vw] flex hover:scale-95 active:scale-95 transition-all duration-300 ls:col-start-1 ls:row-start-2 ls:row-span-2 ls:h-[90%] ls:w-[95%] ls:top-0 ls:flex-col ls:gap-7 ls:py-7 ls:pr-7" +
+						"nc-news relative h-[30%] w-[100vw] flex ls:hover:scale-95 active:scale-95 transition-all duration-300 ls:col-start-1 ls:row-start-2 ls:row-span-2 ls:h-[90%] ls:w-[95%] ls:top-0 ls:flex-col ls:gap-7 ls:py-7 ls:pr-7" +
 						(isDark ? " ls:bg-dark-secondary" : " ls:bg-light-secondary")
 					}
 				>
@@ -41,7 +41,8 @@ function Projects({ isDark, sectionRef }) {
 					></div>
 					<img
 						className="w-[62vw] object-scale-down mt-[7%] z-[2] ls:w-full ls:h-[70%] ls:object-cover ls:mt-0"
-						src="./src/assets/ncnews-cropped.png"
+						src="https://i.ibb.co/3STZsVM/ncnews-cropped-Copy.png"
+						alt="nc-news app"
 					></img>
 					<div className="absolute z-[3] bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center ls:h-[30%] ls:static ls:ml-auto ls:w-[90%] ls:top-0">
 						<h3 className="text-md ls:text-lg font-semibold">Nc News</h3>
@@ -56,10 +57,10 @@ function Projects({ isDark, sectionRef }) {
 						>
 							<div
 								className={
-									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 hover:after:h-full px-1 ls:w-[15%]" +
+									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 ls:hover:after:h-full px-1 ls:w-[15%]" +
 									(isDark
-										? " text-dark-text hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-										: " text-black hover:text-light-bg border-my-red-light after:bg-my-red-light")
+										? " text-dark-text ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
+										: " text-black ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
 								<span className="relative z-10 text-sm">LIVE APP</span>
@@ -72,10 +73,10 @@ function Projects({ isDark, sectionRef }) {
 						>
 							<div
 								className={
-									"relative w-[55%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 hover:after:h-full px-1 ls:w-[12%]" +
+									"relative w-[55%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 ls:hover:after:h-full px-1 ls:w-[12%]" +
 									(isDark
-										? " text-dark-text hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-										: " text-black hover:text-light-bg border-my-red-light after:bg-my-red-light")
+										? " text-dark-text ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
+										: " text-black ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
 								<span className="relative z-10 text-sm">REPO</span>
@@ -88,10 +89,10 @@ function Projects({ isDark, sectionRef }) {
 						>
 							<div
 								className={
-									"relative w-[50%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 hover:after:h-full px-1 ls:w-[9%]" +
+									"relative w-[50%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 ls:hover:after:h-full px-1 ls:w-[9%]" +
 									(isDark
-										? " text-dark-text hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-										: " text-black hover:text-light-bg border-my-red-light after:bg-my-red-light")
+										? " text-dark-text ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
+										: " text-black ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
 								<span className="relative z-10 text-sm">API</span>
@@ -102,7 +103,7 @@ function Projects({ isDark, sectionRef }) {
 
 				<section
 					className={
-						"travel-buddy relative h-[30%] w-[100vw] flex ml-auto justify-end hover:scale-95 transition-all duration-300 ls:h-[90%] ls:w-[95%] ls:mt-auto ls:col-start-2 ls:row-start-2 ls:row-span-2 ls:-bottom-[30%] ls:flex-col ls:py-7 ls:pl-7 ls:gap-4" +
+						"travel-buddy relative h-[30%] w-[100vw] flex ml-auto justify-end ls:hover:scale-95 transition-all duration-300 ls:h-[90%] ls:w-[95%] ls:mt-auto ls:col-start-2 ls:row-start-2 ls:row-span-2 ls:-bottom-[30%] ls:flex-col ls:py-7 ls:pl-7 ls:gap-4" +
 						(isDark ? " ls:bg-dark-secondary" : " ls:bg-light-secondary")
 					}
 					onMouseEnter={() => {
@@ -121,7 +122,8 @@ function Projects({ isDark, sectionRef }) {
 
 					<img
 						className="w-[62vw] mt-[7%] object-scale-down z-10 ls:w-full ls:h-[70%] ls:object-cover ls:order-2 ls:object-right-top"
-						src="./src/assets/travel-buddy-screens-cropped.png"
+						src="https://i.ibb.co/mh1mtD8/travel-buddy-screens-cropped.png"
+						alt="Travel Buddy mobile app"
 					></img>
 					<div className="absolute pt:max-ls:mt-2 z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center ls:max-h-[30%] ls:static ls: order-1">
 						<h3 className="text-md font-semibold">Travel Buddy</h3>
@@ -138,10 +140,10 @@ function Projects({ isDark, sectionRef }) {
 						>
 							<div
 								className={
-									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 hover:after:h-full px-1 ls:w-[15%]" +
+									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 ls:hover:after:h-full px-1 ls:w-[15%]" +
 									(isDark
-										? " text-dark-text hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-										: " text-black hover:text-light-bg border-my-red-light after:bg-my-red-light")
+										? " text-dark-text ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
+										: " text-black ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
 								<span className="relative z-10 text-sm">LIVE APP</span>
@@ -154,10 +156,10 @@ function Projects({ isDark, sectionRef }) {
 						>
 							<div
 								className={
-									"relative w-[55%] overflow-hidden border-b-[0.35rem] border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 hover:after:h-full px-1 ls:w-[12%]" +
+									"relative w-[55%] overflow-hidden border-b-[0.35rem] border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 ls:hover:after:h-full px-1 ls:w-[12%]" +
 									(isDark
-										? " text-dark-text hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-										: " text-black hover:text-light-bg border-my-red-light after:bg-my-red-light")
+										? " text-dark-text ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
+										: " text-black ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
 								<span className="relative z-10 text-sm">REPO</span>
@@ -167,7 +169,7 @@ function Projects({ isDark, sectionRef }) {
 				</section>
 				<section
 					className={
-						"portfolio-proj relative h-[30%] w-[100vw] flex hover:scale-95 active:scale-95 transition-all duration-300 ls:col-start-1 ls:row-start-4 ls:row-span-2 ls:h-[90%] ls:w-[95%] ls:flex-col ls:gap-4 ls:py-7 ls:pr-7 ls:translate-y-[5%]" +
+						"portfolio-proj relative h-[30%] w-[100vw] flex ls:hover:scale-95 active:scale-95 transition-all duration-300 ls:col-start-1 ls:row-start-4 ls:row-span-2 ls:h-[90%] ls:w-[95%] ls:flex-col ls:gap-4 ls:py-7 ls:pr-7 ls:translate-y-[5%]" +
 						(isDark ? " ls:bg-dark-secondary" : " ls:bg-light-secondary")
 					}
 				>
@@ -179,7 +181,8 @@ function Projects({ isDark, sectionRef }) {
 					></div>
 					<img
 						className="w-[62vw] mt-[7%] object-scale-down z-[2] ls:w-full ls:h-[70%] ls:object-cover ls:mt-0 ls:object-right-top"
-						src="./src/assets/portfolio-image.png"
+						src="https://i.ibb.co/KGnmhqd/portfolio-image.png"
+						alt="Github repo for my portfolio"
 					></img>
 					<div className="absolute z-[3] bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center ls:h-[30%] ls:static ls:ml-auto ls:w-[90%]">
 						<h3 className="text-md ls:text-lg font-semibold">Portfolio</h3>
@@ -195,10 +198,10 @@ function Projects({ isDark, sectionRef }) {
 						>
 							<div
 								className={
-									"relative w-[50%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full  after:duration-500 hover:after:h-full px-1 ls:w-[15%]" +
+									"relative w-[50%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full  after:duration-500 ls:hover:after:h-full px-1 ls:w-[15%]" +
 									(isDark
-										? " text-dark-text hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-										: " text-black hover:text-light-bg border-my-red-light after:bg-my-red-light")
+										? " text-dark-text ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
+										: " text-black ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
 								<span className="relative z-10 text-sm">REPO</span>
@@ -209,7 +212,7 @@ function Projects({ isDark, sectionRef }) {
 
 				<section
 					className={
-						"pokematch relative h-[30%] w-[100vw] flex ml-auto justify-end hover:scale-95 transition-all duration-300 ls:h-[120%] ls:w-[95%] ls:mt-auto ls:col-start-2 ls:row-start-4 ls:row-span-2 ls:-bottom-[40%] ls:flex-col ls:py-7 ls:pl-7 ls:gap-4" +
+						"pokematch relative h-[30%] w-[100vw] flex ml-auto justify-end ls:hover:scale-95 transition-all duration-300 ls:h-[120%] ls:w-[95%] ls:mt-auto ls:col-start-2 ls:row-start-4 ls:row-span-2 ls:-bottom-[40%] ls:flex-col ls:py-7 ls:pl-7 ls:gap-4" +
 						(isDark ? " ls:bg-dark-secondary" : " ls:bg-light-secondary")
 					}
 					onMouseEnter={() => {
@@ -228,7 +231,8 @@ function Projects({ isDark, sectionRef }) {
 
 					<img
 						className="w-[62vw] mt-[7%] object-scale-down z-10 ls:w-full ls:h-[90%] ls:object-cover ls:order-2 ls:mt-2 ls:object-left-top"
-						src="./src/assets/poke-match.png"
+						src="https://i.ibb.co/Wyxr3s4/poke-match.png"
+						alt="pokemon matching game"
 					></img>
 					<div className="absolute pt:max-ls:mt-2 z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center ls:max-h-[10%] ls:static ls: order-1">
 						<h3 className="text-md font-semibold">Pokematch</h3>
@@ -242,10 +246,10 @@ function Projects({ isDark, sectionRef }) {
 						>
 							<div
 								className={
-									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 hover:after:h-full px-1 ls:w-[15%]" +
+									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 ls:hover:after:h-full px-1 ls:w-[15%]" +
 									(isDark
-										? " text-dark-text hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-										: " text-black hover:text-light-bg border-my-red-light after:bg-my-red-light")
+										? " text-dark-text ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
+										: " text-black ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
 								<span className="relative z-10 text-sm">LIVE APP</span>
