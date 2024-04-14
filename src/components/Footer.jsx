@@ -19,6 +19,7 @@ function Footer({ isDark }) {
 					: " bg-light-secondary text-black")
 			}
 		>
+			<p className="hidden">Arron Bent</p>
 			<p className="text-xs ls:absolute ls:right-1/4">Arron Bent @2024</p>
 			<a href="#welcome">
 				<FontAwesomeIcon

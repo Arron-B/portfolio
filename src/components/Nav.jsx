@@ -26,6 +26,7 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 						: " ls:bg-light-bg text-black")
 				}
 			>
+				<p className="hidden">Arron Bent</p>
 				<section className="MOBILE-MENU flex ls:hidden w-full">
 					<div
 						className="HAMBURGER-ICON space-y-2 fixed top-4 left-4 z-50"
