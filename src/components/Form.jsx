@@ -9,6 +9,7 @@ function Form({ isDark, sectionRef }) {
 
 	const sendEmail = (e) => {
 		e.preventDefault();
+		let fieldsFilled = 0;
 		document.querySelectorAll(".form-input").forEach((input, i) => {
 			if (input.value.length < 1) {
 				setSubmitMsg("Fill all fields");
@@ -17,7 +18,9 @@ function Form({ isDark, sectionRef }) {
 					setSubmitMsg("");
 					setSubmitStatus("success");
 				}, 3000);
-			} else if (input.value.length >= 1 && i === 2) {
+			} else if (input.value.length >= 1 && fieldsFilled < 2) {
+				fieldsFilled++;
+			} else if (input.value.length >= 1 && fieldsFilled === 2) {
 				emailjs
 					.sendForm("service_zz8xsjl", "template_e1tgbro", form.current, {
 						publicKey: "pvE2yssw6DJ_7sUcR",
