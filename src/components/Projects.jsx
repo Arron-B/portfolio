@@ -18,7 +18,7 @@ function Projects({ isDark, sectionRef }) {
 				></a>
 				<h2
 					className={
-						"relative h-10 top-10 text-3xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[10.5rem] before:h-1/2 before:top-4 before:translate-x-[1.6rem] ls:col-span-2 ls:top-0 font-bold" +
+						"relative h-10 top-10 text-3xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[10rem] ls:before:w-[10.5rem] before:h-1/2 before:top-4 before:translate-x-[1.6rem] ls:col-span-2 ls:top-0 font-bold" +
 						(isDark
 							? " before:border-b-my-red-dark"
 							: " before:border-b-my-red-light")
@@ -45,13 +45,13 @@ function Projects({ isDark, sectionRef }) {
 						alt="nc-news app"
 					></img>
 					<div className="absolute z-[3] bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center ls:h-[30%] ls:static ls:ml-auto ls:w-[90%] ls:top-0">
-						<h3 className="text-md ls:text-lg font-semibold">Nc News</h3>
-						<p className="text-sm ls:text-[0.9rem] ls:my-1">
+						<h3 className="text-md pt2:text-lg font-semibold">Nc News</h3>
+						<p className="text-sm pt2:max-ls:text-base ls:text-[0.9rem] ls:my-1">
 							A full-stack news web app using React, Bootstrap, Node.js,
 							Express.js and PostgreSQL
 						</p>
 						<a
-							className="text-sm"
+							className="text-sm pt2:max-ls:w-2/3"
 							href="https://arron-nc-news.netlify.app/?sort_by=created_at&order=desc&topic="
 							target="_blank"
 						>
@@ -67,7 +67,7 @@ function Projects({ isDark, sectionRef }) {
 							</div>
 						</a>
 						<a
-							className="text-sm"
+							className="text-sm pt2:max-ls:w-2/3"
 							href="https://github.com/Arron-B/nc-news"
 							target="_blank"
 						>
@@ -83,7 +83,7 @@ function Projects({ isDark, sectionRef }) {
 							</div>
 						</a>
 						<a
-							className="text-sm"
+							className="text-sm pt2:max-ls:w-2/3"
 							href="https://github.com/Arron-B/API-nc-news"
 							target="_blank"
 						>
@@ -126,15 +126,15 @@ function Projects({ isDark, sectionRef }) {
 						alt="Travel Buddy mobile app"
 					></img>
 					<div className="absolute pt:max-ls:mt-2 z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center ls:max-h-[30%] ls:static ls: order-1">
-						<h3 className="text-md font-semibold">Travel Buddy</h3>
-						<p className="text-xs ls:text-sm">
+						<h3 className="text-md pt2:text-lg font-semibold">Travel Buddy</h3>
+						<p className="text-xs pt2:max-ls:text-base ls:text-sm">
 							A full-stack mobile app built in a team of 6 during my bootcamp.
 							It utilises Vue, Typescript, Axios, and MongoDB, all of which none
 							of the team had any prior experience with. Please use in a mobile
 							view.
 						</p>
 						<a
-							className="text-sm"
+							className="text-sm pt2:max-ls:w-2/3"
 							href="https://travel-app-npm-jog.netlify.app/home?utm_source=pocket_saves"
 							target="_blank"
 						>
@@ -150,7 +150,7 @@ function Projects({ isDark, sectionRef }) {
 							</div>
 						</a>
 						<a
-							className="text-sm"
+							className="text-sm pt2:max-ls:w-2/3"
 							href="https://github.com/npm-jog/travel-proj"
 							target="_blank"
 						>
@@ -185,14 +185,14 @@ function Projects({ isDark, sectionRef }) {
 						alt="Github repo for my portfolio"
 					></img>
 					<div className="absolute z-[3] bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center ls:h-[30%] ls:static ls:ml-auto ls:w-[90%]">
-						<h3 className="text-md ls:text-lg font-semibold">Portfolio</h3>
-						<p className="text-sm ls:text-[0.9rem] ls:my-1">
+						<h3 className="text-md pt2:text-lg font-semibold">Portfolio</h3>
+						<p className="text-sm pt2:max-ls:text-base ls:text-[0.9rem] ls:my-1">
 							This portfolio was built with React and TailwindCSS. It was my
 							first time using Tailwind and this project really helped step my
 							front-end skills up a level.
 						</p>
 						<a
-							className="text-sm"
+							className="text-sm pt2:max-ls:w-2/3"
 							href="https://github.com/Arron-B/portfolio/tree/main"
 							target="_blank"
 						>
@@ -235,12 +235,12 @@ function Projects({ isDark, sectionRef }) {
 						alt="pokemon matching game"
 					></img>
 					<div className="absolute pt:max-ls:mt-2 z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center ls:max-h-[10%] ls:static ls: order-1">
-						<h3 className="text-md font-semibold">Pokematch</h3>
-						<p className="text-xs ls:text-sm">
+						<h3 className="text-md pt2:text-lg font-semibold">Pokematch</h3>
+						<p className="text-xs pt2:max-ls:text-base ls:text-sm">
 							A quick and fun front-end only game to play around with the DOM.
 						</p>
 						<a
-							className="text-sm"
+							className="text-sm pt2:max-ls:w-2/3"
 							href="https://arron-b.github.io/pokemon-memory-game/"
 							target="_blank"
 						>

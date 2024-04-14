@@ -3,11 +3,11 @@ function Background({ isDark }) {
 		<>
 			<div
 				className={
-					"background fixed -z-20 h-[100dvh] w-[100vw]" +
+					"background fixed -z-20 h-[100vh] w-[100vw]" +
 					(isDark ? " bg-dark-bg" : " bg-light-bg")
 				}
 			>
-				<div className="relative w-full h-full overflow-hidden mt-16 z-40">
+				<div className="relative w-full h-full overflow-hidden z-40">
 					<div className="bubbles relative flex w-full mx-auto">
 						{[...Array(20)].map((bubble, i) => (
 							<span

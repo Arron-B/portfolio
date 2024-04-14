@@ -13,13 +13,16 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 	return (
 		<div
 			className={
-				"fixed z-[99] h-nav w-full" + (isDark ? " bg-dark-bg" : " bg-light-bg")
+				"fixed z-[99] h-nav w-full" +
+				(isDark ? " ls:bg-dark-bg" : " ls:bg-light-bg")
 			}
 		>
 			<nav
 				className={
 					"items-center h-full w-full" +
-					(isDark ? " bg-dark-bg text-dark-text" : " bg-light-bg text-black")
+					(isDark
+						? " ls:bg-dark-bg text-dark-text"
+						: " ls:bg-light-bg text-black")
 				}
 			>
 				<section className="MOBILE-MENU flex ls:hidden w-full">

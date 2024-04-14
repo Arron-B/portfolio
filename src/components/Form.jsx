@@ -62,7 +62,7 @@ function Form({ isDark, sectionRef }) {
 			>
 				<h2
 					className={
-						"relative h-10 z-10 text-2xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[8.7rem] before:h-1/2 before:top-3 before:translate-x-[1rem] font-bold" +
+						"relative h-10 z-10 text-2xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[8.2rem] ls:before:w-[8.7rem] before:h-1/2 before:top-3 before:translate-x-[1rem] font-bold" +
 						(isDark
 							? " before:border-b-my-red-dark"
 							: " before:border-b-my-red-light")
