@@ -103,7 +103,7 @@ function Projects({ isDark, sectionRef }) {
 
 				<section
 					className={
-						"travel-buddy relative h-[30%] w-[100vw] flex ml-auto justify-end ls:hover:scale-95 transition-all duration-300 ls:h-[90%] ls:w-[95%] ls:mt-auto ls:col-start-2 ls:row-start-2 ls:row-span-2 ls:-bottom-[30%] ls:flex-col ls:py-7 ls:pl-7 ls:gap-4" +
+						"travel-buddy relative h-[30%] w-[100vw] flex ml-auto justify-end ls:hover:scale-95 transition-all duration-300 ls:h-[90%] ls:w-[95%] ls:mt-auto ls:col-start-2 ls:row-start-2 ls:row-span-2 ls:-bottom-[30%] ls:flex-col ls:py-7 ls:pl-7" +
 						(isDark ? " ls:bg-dark-secondary" : " ls:bg-light-secondary")
 					}
 					onMouseEnter={() => {
@@ -121,7 +121,7 @@ function Projects({ isDark, sectionRef }) {
 					></div>
 
 					<img
-						className="w-[62vw] mt-[7%] object-scale-down z-10 ls:w-full ls:h-[70%] ls:object-cover ls:order-2 ls:object-right-top"
+						className="w-[62vw] mt-[3%] object-scale-down z-10 ls:w-full ls:h-[67%] ls:object-cover ls:order-2 ls:object-right-top"
 						src="https://i.ibb.co/mh1mtD8/travel-buddy-screens-cropped.png"
 						alt="Travel Buddy mobile app"
 					></img>
@@ -212,7 +212,7 @@ function Projects({ isDark, sectionRef }) {
 
 				<section
 					className={
-						"pokematch relative h-[30%] w-[100vw] flex ml-auto justify-end ls:hover:scale-95 transition-all duration-300 ls:h-[120%] ls:w-[95%] ls:mt-auto ls:col-start-2 ls:row-start-4 ls:row-span-2 ls:-bottom-[40%] ls:flex-col ls:py-7 ls:pl-7 ls:gap-4" +
+						"pokematch relative h-[30%] w-[100vw] flex ml-auto justify-end ls:hover:scale-95 transition-all duration-300 ls:h-[110%] ls:w-[95%] ls:mt-auto ls:col-start-2 ls:row-start-4 ls:row-span-2 ls:-bottom-[40%] ls:flex-col ls:py-7 ls:pl-7 ls:gap-4" +
 						(isDark ? " ls:bg-dark-secondary" : " ls:bg-light-secondary")
 					}
 					onMouseEnter={() => {
@@ -224,13 +224,13 @@ function Projects({ isDark, sectionRef }) {
 				>
 					<div
 						className={
-							"w-[70vw] h-[110%] absolute z-0 ls:w-full ls:bottom-0 ls:h-full" +
+							"w-[70vw] h-[100%] absolute z-0 ls:w-full ls:bottom-0 ls:h-full" +
 							(isDark ? " bg-dark-secondary" : " bg-light-secondary")
 						}
 					></div>
 
 					<img
-						className="w-[62vw] mt-[7%] object-scale-down z-10 ls:w-full ls:h-[90%] ls:object-cover ls:order-2 ls:mt-2 ls:object-left-top"
+						className="w-[62vw] mt-[7%] object-scale-down z-10 ls:w-full ls:h-[85%] ls:object-cover ls:order-2 ls:mt-2 ls:object-left-top"
 						src="https://i.ibb.co/Wyxr3s4/poke-match.png"
 						alt="pokemon matching game"
 					></img>
