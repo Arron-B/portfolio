@@ -15,7 +15,6 @@ function About({ isDark, sectionRef }) {
 					let delay;
 
 					logos.forEach((el, i) => {
-						console.log(logos.length);
 						delay = Math.random() * (2.5 - 0.5) + 0.5;
 						el.style.animationDelay = `${delay}s`;
 						el.classList.add(`animate-[fadeIn_2s_ease-in_forwards]`);

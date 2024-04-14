@@ -3,10 +3,11 @@ import { useEffect } from "react";
 
 function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 	useEffect(() => {
+		console.log("useEffect nav");
 		if (isNavOpen) {
-			document.body.style.overflow = "hidden";
+			document.getElementsByTagName("html")[0].style.overflow = "hidden";
 		} else {
-			document.body.style.overflow = "unset";
+			document.getElementsByTagName("html")[0].style.overflow = "unset";
 		}
 	}, [isNavOpen]);
 
@@ -54,14 +55,14 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 
 					<div
 						className={
-							"backdrop fixed z-[98] flex flex-col justify-center w-full h-screen ease-in-out duration-300 delay-200 bg-[rgba(0,0,0,0.9)]" +
+							"backdrop fixed z-[98] flex flex-col justify-center w-full h-dynamic ease-in-out duration-300 delay-200 bg-[rgba(0,0,0,0.9)]" +
 							(isNavOpen ? " -translate-x-0" : " -translate-x-full")
 						}
 						onClick={() => setIsNavOpen(false)}
 					></div>
 					<div
 						className={
-							"menu fixed z-[99] flex flex-col justify-center w-1/2 h-screen ease-in-out duration-300" +
+							"menu fixed z-[99] flex flex-col justify-center w-1/2 h-dynamic ease-in-out duration-300" +
 							(isNavOpen ? " -translate-x-0" : " -translate-x-full") +
 							(isDark ? " bg-dark-bg" : " bg-light-bg")
 						}
