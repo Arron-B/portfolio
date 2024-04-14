@@ -57,7 +57,7 @@ function Form({ isDark, sectionRef }) {
 		>
 			{" "}
 			<form
-				className="w-[70%] h-full flex flex-col gap-2 mx-auto justify-center items-center row-start-2 ls:w-1/2 ls:gap-3"
+				className="w-[70%] pt2:max-ls:w-1/2 h-full flex flex-col gap-2 mx-auto justify-center items-center row-start-2 ls:w-1/2 ls:gap-3"
 				ref={form}
 				onSubmit={sendEmail}
 			>
