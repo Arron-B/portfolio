@@ -56,26 +56,39 @@ function About({ isDark, sectionRef }) {
 				>
 					About Me
 				</h2>
-				<div className="profile-ls pt:max-ls:hidden row-start-2 row-span-5 flex flex-col justify-center gap-4 ls:flex-row ls:items-center ls:row-start-4 ls:row-span-5 ls:col-start-6 ls:col-span-9">
-					<p className="me-text text-sm pt2:max-ls:w-3/4 mx-auto ls:w-1/2 ls:text-lg">
-						React, TailwindCSS and SQL are my main go to technologies. I'm
-						interested in developing web apps, but in the future would like to
-						makes games as a hobby with Godot or Unreal Engine. <br></br> In my
-						free time you'll find me playing table tennis, badminton, games,
-						board games, at the gym or just bingeing my favourite tv series.
+				<div className="profile-ls my-auto flow-root pt:max-ls:hidden px-4 pb-4 row-start-2 row-span-5 justify-center gap-4 ls:flex-row ls:items-center ls:row-start-4 ls:row-span-6 ls:col-start-6 ls:col-span-9">
+					<img
+						className="me float-left w-1/3"
+						src="https://i.ibb.co/ssm1sNM/profile-jpg.jpg"
+						alt="Profile Photo"
+					/>
+					<p className="me-text text-left w-full h-[100%] text-lg">
+						React, TailwindCSS, Express.js and SQL are my main stack. My time on
+						the Northcoders software development bootcamp gave me extensive
+						problem solving experience with Javascript and introduced me to many
+						of the technologies you see on this page. <br></br> I have my Lvl 4
+						in IT (Software) and intend to complete my degree part-time while I
+						work. Web apps are my career focus, but in the future I'd like to
+						makes games as a hobby with Godot or Unreal Engine. In my free time
+						you'll find me playing table tennis, badminton, games, board games,
+						at the gym or just bingeing my favourite tv series.
 					</p>{" "}
 				</div>
 				<img
-					className="me ls:hidden rounded-full pt:max-ls:w-1/2 mx-auto aspect-square ls:w-1/2"
-					src="https://i.ibb.co/dBqsGWd/default-profile-Copy.jpg"
+					className="ls:hidden rounded-full pt:max-ls:w-1/2 mx-auto aspect-square ls:w-1/2"
+					src="https://i.ibb.co/ssm1sNM/profile-jpg.jpg"
 					alt="Profile Photo"
 				/>
 				<p className="me-text text-sm pt2:max-ls:w-3/4 mx-auto ls:hidden">
-					React, TailwindCSS and SQL are my main go to technologies. I'm
-					interested in developing web apps, but in the future would like to
-					makes games as a hobby with Godot or Unreal Engine. <br></br> In my
-					free time you'll find me playing table tennis, badminton, games, board
-					games, at the gym or just bingeing my favourite tv series.
+					React, TailwindCSS, Express.js and SQL are my main stack. My time on
+					the Northcoders software development bootcamp gave me extensive
+					problem solving experience with Javascript and introduced me to many
+					of the technologies you see on this page. <br></br> I have my Lvl 4 in
+					IT (Software) and intend to complete my degree part-time while I work.
+					Web apps are my career focus, but in the future I'd like to makes
+					games as a hobby with Godot or Unreal Engine. In my free time you'll
+					find me playing table tennis, badminton, games, board games, at the
+					gym or just bingeing my favourite tv series.
 				</p>
 
 				<img

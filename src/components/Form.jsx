@@ -49,9 +49,7 @@ function Form({ isDark, sectionRef }) {
 			ref={sectionRef}
 			className={
 				"w-full h-[50vh] ls:left-0 ls:w-[50vw]" +
-				(isDark
-					? " pt:max-ls:bg-[url('https://i.ibb.co/HgdgLkb/dark-background-Copy.jpg')] bg-cover bg-center text-dark-text"
-					: " pt:max-ls:bg-[url('https://i.ibb.co/zJfpKrH/light-background-Copy.jpg')] bg-cover bg-center text-black")
+				(isDark ? " text-dark-text" : " text-black")
 			}
 		>
 			{" "}

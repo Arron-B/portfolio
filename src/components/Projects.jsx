@@ -36,7 +36,7 @@ function Projects({ isDark, sectionRef }) {
 					<div
 						className={
 							"w-[70vw] h-[115%] absolute z-0 ls:w-full ls:h-full" +
-							(isDark ? " bg-dark-secondary" : "bg-light-secondary")
+							(isDark ? " bg-dark-secondary" : " bg-light-secondary")
 						}
 					></div>
 					<img
@@ -116,7 +116,7 @@ function Projects({ isDark, sectionRef }) {
 					<div
 						className={
 							"w-[70vw] h-[115%] absolute z-0 ls:w-full ls:bottom-0 ls:h-full" +
-							(isDark ? " bg-dark-secondary" : "bg-light-secondary")
+							(isDark ? " bg-dark-secondary" : " bg-light-secondary")
 						}
 					></div>
 
@@ -176,7 +176,7 @@ function Projects({ isDark, sectionRef }) {
 					<div
 						className={
 							"w-[70vw] h-[115%] absolute z-0 ls:w-full ls:h-full" +
-							(isDark ? " bg-dark-secondary" : "bg-light-secondary")
+							(isDark ? " bg-dark-secondary" : " bg-light-secondary")
 						}
 					></div>
 					<img
@@ -225,7 +225,7 @@ function Projects({ isDark, sectionRef }) {
 					<div
 						className={
 							"w-[70vw] h-[110%] absolute z-0 ls:w-full ls:bottom-0 ls:h-full" +
-							(isDark ? " bg-dark-secondary" : "bg-light-secondary")
+							(isDark ? " bg-dark-secondary" : " bg-light-secondary")
 						}
 					></div>
 

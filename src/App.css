@@ -93,6 +93,12 @@ html,
 	animation-fill-mode: forwards;
 }
 
+.me {
+	border-radius: 50%;
+	shape-outside: circle(50%);
+	margin-right: 1rem;
+}
+
 @keyframes cursor {
 	50% {
 		border-color: transparent;
@@ -177,10 +183,19 @@ html,
 		font-size: 22px;
 	}
 }
+
+@media (min-width: 2300px) {
+	/* hi-res laptops and desktops */
+	html,
+	body {
+		font-size: 30px;
+	}
+}
+
 @media (min-width: 3840px) {
 	/* 4k */
 	html,
 	body {
-		font-size: 35px;
+		font-size: 40px;
 	}
 }

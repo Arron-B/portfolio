@@ -11,7 +11,8 @@ export default {
 			// => @media (min-width: 961px) { ... }
 			ls1: "1025px",
 			ls2: "1281px",
-			ls3: "3840px",
+			ls3: "2300px",
+			ls4: "3840px",
 		},
 		extend: {
 			height: {
