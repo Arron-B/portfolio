@@ -121,7 +121,7 @@ function Projects({ isDark, sectionRef }) {
 					></div>
 
 					<img
-						className="w-[62vw] mt-[3%] object-scale-down z-10 ls:w-full ls:h-[67%] ls:object-cover ls:order-2 ls:object-right-top"
+						className="w-[62vw] mt-[7%] ls:mt-[3%] object-scale-down z-10 ls:w-full ls:h-[67%] ls:object-cover ls:order-2 ls:object-right-top"
 						src="https://i.ibb.co/mh1mtD8/travel-buddy-screens-cropped.png"
 						alt="Travel Buddy mobile app"
 					></img>
@@ -224,7 +224,7 @@ function Projects({ isDark, sectionRef }) {
 				>
 					<div
 						className={
-							"w-[70vw] h-[100%] absolute z-0 ls:w-full ls:bottom-0 ls:h-full" +
+							"w-[70vw] h-[110%] absolute z-0 ls:w-full ls:bottom-0 ls:h-full" +
 							(isDark ? " bg-dark-secondary" : " bg-light-secondary")
 						}
 					></div>
