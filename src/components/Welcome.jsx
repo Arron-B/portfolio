@@ -9,11 +9,11 @@ function Welcome({ isDark, sectionRef }) {
 			id="welcome"
 			ref={sectionRef}
 			className={
-				"welcome h-screen px-4 pb-nav flex flex-col justify-center items-center" +
+				"welcome h-screen px-4 flex flex-col justify-center items-center pt:max-ls:pb-nav" +
 				(isDark ? " text-dark-text" : " text-light-text")
 			}
 		>
-			<div className="inline-block">
+			<div>
 				<p className="welcome-msg-1 mr-2 text-2xl ls:text-5xl">
 					Hello I'm <span className="text-my-red-dark">Arron</span>,
 				</p>
@@ -25,7 +25,7 @@ function Welcome({ isDark, sectionRef }) {
 			</div>
 			<a href="#about">
 				<FontAwesomeIcon
-					className="absolute opacity-0 animate-fadeInDelayed text-4xl left-1/2 top-1/2 -translate-x-1/2 translate-y-[1rem] hover:scale-125 ls:translate-y-[3rem]"
+					className="absolute opacity-0 animate-fadeInDelayed text-4xl left-1/2 top-1/2 -translate-x-1/2 translate-y-[1rem] hover:scale-125 ls:translate-y-[4rem]"
 					icon={faAngleDoubleDown}
 				/>
 			</a>

@@ -9,6 +9,7 @@ function Form({ isDark, sectionRef }) {
 
 	const sendEmail = (e) => {
 		e.preventDefault();
+		let fieldsFilled = 0;
 		document.querySelectorAll(".form-input").forEach((input, i) => {
 			if (input.value.length < 1) {
 				setSubmitMsg("Fill all fields");
@@ -17,7 +18,9 @@ function Form({ isDark, sectionRef }) {
 					setSubmitMsg("");
 					setSubmitStatus("success");
 				}, 3000);
-			} else if (input.value.length >= 1 && i === 2) {
+			} else if (input.value.length >= 1 && fieldsFilled < 2) {
+				fieldsFilled++;
+			} else if (input.value.length >= 1 && fieldsFilled === 2) {
 				emailjs
 					.sendForm("service_zz8xsjl", "template_e1tgbro", form.current, {
 						publicKey: "pvE2yssw6DJ_7sUcR",
@@ -49,9 +52,7 @@ function Form({ isDark, sectionRef }) {
 			ref={sectionRef}
 			className={
 				"w-full h-[50vh] ls:left-0 ls:w-[50vw]" +
-				(isDark
-					? " pt:max-ls:bg-[url('https://i.ibb.co/HgdgLkb/dark-background-Copy.jpg')] bg-cover bg-center text-dark-text"
-					: " pt:max-ls:bg-[url('https://i.ibb.co/zJfpKrH/light-background-Copy.jpg')] bg-cover bg-center text-black")
+				(isDark ? " text-dark-text" : " text-black")
 			}
 		>
 			{" "}
@@ -62,7 +63,7 @@ function Form({ isDark, sectionRef }) {
 			>
 				<h2
 					className={
-						"relative h-10 z-10 text-2xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[8.7rem] before:h-1/2 before:top-3 before:translate-x-[1rem] font-bold" +
+						"relative h-10 z-10 text-2xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[8.2rem] ls:before:w-[8.7rem] before:h-1/2 before:top-3 before:translate-x-[1rem] font-bold" +
 						(isDark
 							? " before:border-b-my-red-dark"
 							: " before:border-b-my-red-light")
