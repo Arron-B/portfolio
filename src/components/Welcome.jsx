@@ -13,6 +13,23 @@ function Welcome({ isDark, sectionRef }) {
 				(isDark ? " text-dark-text" : " text-light-text")
 			}
 		>
+			<div className="absolute w-full h-full overflow-hidden -z-20">
+				<div className="bubbles relative flex w-full mx-auto">
+					{[...Array(10)].map((bubble, i) => (
+						<span
+							className={
+								"w-[1vw] h-[1vw] ls:w-[0.4vw] ls:h-[0.4vw]" +
+								(isDark ? " bubble-dark" : " bubble-light")
+							}
+							key={i}
+							style={{
+								"--i": Math.random() * (30 - 10) + 20,
+								"--d": Math.random() * 3,
+							}}
+						></span>
+					))}
+				</div>
+			</div>
 			<div>
 				<p className="welcome-msg-1 mr-2 text-2xl ls:text-5xl">
 					Hello I'm <span className="text-my-red-dark">Arron</span>,

@@ -13,9 +13,9 @@ function Footer({ isDark }) {
 		<div
 			id="contact"
 			className={
-				"relative h-nav w-full px-4 flex items-center" +
+				"relative h-nav w-full px-4 flex items-center ls:mt-2" +
 				(isDark
-					? " bg-dark-secondary text-dark-text"
+					? " bg-[#282828] text-dark-text"
 					: " bg-light-secondary text-black")
 			}
 		>

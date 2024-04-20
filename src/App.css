@@ -48,6 +48,7 @@ html,
 
 	animation: animate 15s linear infinite;
 	animation-duration: calc(180s / var(--i));
+	animation-delay: calc(1s * var(--d));
 }
 
 .bubble-light {
@@ -180,7 +181,7 @@ html,
 	/* hi-res laptops and desktops */
 	html,
 	body {
-		font-size: 22px;
+		font-size: 15px;
 	}
 }
 
@@ -188,7 +189,7 @@ html,
 	/* hi-res laptops and desktops */
 	html,
 	body {
-		font-size: 30px;
+		font-size: 25px;
 	}
 }
 

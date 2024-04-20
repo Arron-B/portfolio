@@ -8,7 +8,7 @@ function Projects({ isDark, sectionRef }) {
 			<div
 				ref={sectionRef}
 				className={
-					"projects relative mt-nav mb-10 flex flex-col justify-around pt:max-ls:gap-32 ls:h-[170vh] ls:grid ls:grid-cols-2 ls:grid-rows-[5rem_1fr_1fr_1fr_1fr] ls:mt-[6rem]" +
+					"projects relative mt-nav mb-10 flex flex-col justify-around pt:max-ls:gap-32 ls:h-[170vh] ls:grid ls:grid-cols-2 ls:grid-rows-[5rem_1fr_1fr_1fr_1fr] ls:mt-[6rem] overflow-x-clip" +
 					(isDark ? " text-dark-text" : " text-black")
 				}
 			>
@@ -45,8 +45,10 @@ function Projects({ isDark, sectionRef }) {
 						alt="nc-news app"
 					></img>
 					<div className="absolute z-[3] bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center ls:h-[30%] ls:static ls:ml-auto ls:w-[90%] ls:top-0">
-						<h3 className="text-md pt2:text-lg font-semibold">Nc News</h3>
-						<p className="text-sm pt2:max-ls:text-base ls:text-[0.9rem] ls:my-1">
+						<h3 className="text-md pt2:text-lg font-semibold ls:text-[1.3vw]">
+							Nc News
+						</h3>
+						<p className="text-sm pt2:max-ls:text-base ls:text-[1.2vw] ls:leading-tight ls:my-1">
 							A full-stack news web app using React, Bootstrap, Node.js,
 							Express.js and PostgreSQL
 						</p>
@@ -126,8 +128,10 @@ function Projects({ isDark, sectionRef }) {
 						alt="Travel Buddy mobile app"
 					></img>
 					<div className="absolute pt:max-ls:mt-2 z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center ls:max-h-[30%] ls:static ls: order-1">
-						<h3 className="text-md pt2:text-lg font-semibold">Travel Buddy</h3>
-						<p className="text-xs pt2:max-ls:text-base ls:text-sm">
+						<h3 className="text-md pt2:text-lg ls:text-[1.3vw] font-semibold">
+							Travel Buddy
+						</h3>
+						<p className="text-xs pt2:max-ls:text-base ls:text-[1.2vw] ls:leading-tight">
 							A full-stack mobile app built in a team of 6 during my bootcamp.
 							It utilises Vue, Typescript, Axios, and MongoDB, all of which none
 							of the team had any prior experience with. Please use in a mobile
@@ -140,7 +144,7 @@ function Projects({ isDark, sectionRef }) {
 						>
 							<div
 								className={
-									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 ls:hover:after:h-full px-1 ls:w-[15%]" +
+									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 ls:hover:after:h-full px-1 ls2:w-[15%] ls:max-ls2:w-[18%]" +
 									(isDark
 										? " text-dark-text ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
 										: " text-black ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
@@ -150,7 +154,7 @@ function Projects({ isDark, sectionRef }) {
 							</div>
 						</a>
 						<a
-							className="text-sm pt2:max-ls:w-2/3"
+							className="text-sm pt2:max-ls:w-2/3 ls:mb-1"
 							href="https://github.com/npm-jog/travel-proj"
 							target="_blank"
 						>
@@ -185,8 +189,10 @@ function Projects({ isDark, sectionRef }) {
 						alt="Github repo for my portfolio"
 					></img>
 					<div className="absolute z-[3] bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center ls:h-[30%] ls:static ls:ml-auto ls:w-[90%]">
-						<h3 className="text-md pt2:text-lg font-semibold">Portfolio</h3>
-						<p className="text-sm pt2:max-ls:text-base ls:text-[0.9rem] ls:my-1">
+						<h3 className="text-md pt2:text-lg font-semibold ls:text-[1.3vw]">
+							Portfolio
+						</h3>
+						<p className="text-sm pt2:max-ls:text-base ls:text-[1.2vw] ls:leading-tight ls:my-1">
 							This portfolio was built with React and TailwindCSS. It was my
 							first time using Tailwind and this project really helped step my
 							front-end skills up a level.
@@ -235,8 +241,10 @@ function Projects({ isDark, sectionRef }) {
 						alt="pokemon matching game"
 					></img>
 					<div className="absolute pt:max-ls:mt-2 z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center ls:max-h-[10%] ls:static ls: order-1">
-						<h3 className="text-md pt2:text-lg font-semibold">Pokematch</h3>
-						<p className="text-xs pt2:max-ls:text-base ls:text-sm">
+						<h3 className="text-md pt2:text-lg font-semibold ls:text-[1.3vw]">
+							Pokematch
+						</h3>
+						<p className="text-xs pt2:max-ls:text-base ls:text-[1.2vw] ls:leading-tight">
 							A quick and fun front-end only game to play around with the DOM.
 						</p>
 						<a
@@ -246,7 +254,7 @@ function Projects({ isDark, sectionRef }) {
 						>
 							<div
 								className={
-									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 ls:hover:after:h-full px-1 ls:w-[15%]" +
+									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 ls:hover:after:h-full px-1 ls2:w-[15%] ls:max-ls2:w-[18%]" +
 									(isDark
 										? " text-dark-text ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
 										: " text-black ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
