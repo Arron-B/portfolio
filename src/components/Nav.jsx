@@ -5,16 +5,16 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 	useEffect(() => {
 		console.log("useEffect nav");
 		if (isNavOpen) {
-			document.getElementsByTagName("html")[0].style.overflow = "hidden";
+			document.getElementsByTagName("html")[0].style.overflowY = "hidden";
 		} else {
-			document.getElementsByTagName("html")[0].style.overflow = "unset";
+			document.getElementsByTagName("html")[0].style.overflowY = "unset";
 		}
 	}, [isNavOpen]);
 
 	return (
 		<div
 			className={
-				"fixed z-[99] h-nav w-full" +
+				"fixed z-[99] h-nav ls3:h-[6vh] w-full" +
 				(isDark ? " ls:bg-dark-bg" : " ls:bg-light-bg")
 			}
 		>
@@ -140,7 +140,7 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 					toggle={setIsDark}
 				/>
 
-				<ul className="DESKTOP-MENU hidden space-x-8 ls:flex ls:h-nav ls:items-center ls:pl-3">
+				<ul className="DESKTOP-MENU hidden space-x-8 ls:flex ls:h-nav ls3:h-[6vh] ls:items-center ls:pl-3">
 					<li
 						className={
 							"my-8 uppercase hover:scale-110" + (currEl === 0 ? " active" : "")

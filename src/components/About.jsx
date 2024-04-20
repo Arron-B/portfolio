@@ -43,11 +43,11 @@ function About({ isDark, sectionRef }) {
 			>
 				<a
 					id="about"
-					className="absolute top-4 ls:top-10"
+					className="absolute top-4 ls:top-16"
 				></a>
 				<h2
 					className={
-						"relative h-10 text-3xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[8.5rem] ls:before:w-[9rem] before:h-1/2 before:top-4 before:translate-x-5 ls:col-start-8 ls:col-span-5 ls:row-start-1 ls:row-span-2 ls:top-20 font-bold" +
+						"relative h-10 text-3xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[8.5rem] ls:before:w-[9rem] before:h-1/2 before:top-4 before:translate-x-5 ls:col-start-8 ls:col-span-5 ls:row-start-2 ls:row-span-2 ls:top-20 font-bold" +
 						(isDark
 							? " before:border-b-my-red-dark"
 							: " before:border-b-my-red-light")
@@ -61,7 +61,7 @@ function About({ isDark, sectionRef }) {
 						src="https://i.ibb.co/ssm1sNM/profile-jpg.jpg"
 						alt="Profile Photo"
 					/>
-					<p className="me-text text-left w-full h-[100%] text-lg">
+					<p className="me-text text-left w-full h-[100%] text-[1.2vw]">
 						React, TailwindCSS, Express.js and SQL are my main stack. My time on
 						the Northcoders software development bootcamp gave me extensive
 						problem solving experience with Javascript and introduced me to many

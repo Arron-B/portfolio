@@ -33,7 +33,7 @@ export default {
 				"light-bg": "#FAFAFA",
 				"my-red-dark": "#fd0000",
 				"my-red-light": "#efa78d",
-				"dark-secondary": "#282828",
+				"dark-secondary": "#042233",
 				"light-secondary": "#f2f8ff",
 				"dark-text": "#9DBEBB",
 				"light-text": "black",
