@@ -37,7 +37,7 @@ function About({ isDark, sectionRef }) {
 			<div
 				ref={sectionRef}
 				className={
-					"about relative h-screen pt-nav w-full flex flex-col justify-around px-2 landscape:mt-2 landscape:grid landscape:grid-cols-19 landscape:grid-rows-11" +
+					"about relative h-screen pt-nav w-full flex flex-col justify-around px-2 landscape:mt-2 landscape:grid landscape:grid-cols-19 landscape:grid-rows-11 landscape:pt:max-ls1:h-[100vh]" +
 					(isDark ? " text-dark-text" : " text-black")
 				}
 			>
