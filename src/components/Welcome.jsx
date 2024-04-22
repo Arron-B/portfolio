@@ -13,12 +13,12 @@ function Welcome({ isDark, sectionRef }) {
 				(isDark ? " text-dark-text" : " text-light-text")
 			}
 		>
-			<div className="absolute w-full h-full overflow-hidden z-[2]">
-				<div className="bubbles relative flex w-full mx-auto">
+			<div className="absolute w-full h-full overflow-hidden z-10">
+				<div className="bubbles relative flex w-full mx-auto z-10">
 					{[...Array(10)].map((bubble, i) => (
 						<span
 							className={
-								"w-[1vw] h-[1vw] landscape:w-[0.4vw] landscape:h-[0.4vw]" +
+								"w-[1vw] h-[1vw] landscape:w-[0.4vw] landscape:h-[0.4vw] z-10 opacity-[0.99]" +
 								(isDark ? " bubble-dark" : " bubble-light")
 							}
 							key={i}
