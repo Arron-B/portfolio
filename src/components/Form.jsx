@@ -51,19 +51,19 @@ function Form({ isDark, sectionRef }) {
 		<div
 			ref={sectionRef}
 			className={
-				"w-full h-[50vh] ls:left-0 ls:w-[50vw]" +
+				"w-full h-[50vh] landscape:left-0 landscape:w-[50vw]" +
 				(isDark ? " text-dark-text" : " text-black")
 			}
 		>
 			{" "}
 			<form
-				className="w-[70%] pt2:max-ls:w-1/2 h-full flex flex-col gap-2 mx-auto justify-center items-center row-start-2 ls:w-1/2 ls:gap-3"
+				className="w-[70%] portrait:pt2:w-1/2 h-full flex flex-col gap-2 mx-auto justify-center items-center row-start-2 landscape:w-1/2 landscape:gap-3"
 				ref={form}
 				onSubmit={sendEmail}
 			>
 				<h2
 					className={
-						"relative h-10 z-10 text-2xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[8.2rem] ls:before:w-[8.7rem] before:h-1/2 before:top-3 before:translate-x-[1rem] font-bold" +
+						"relative h-10 z-10 text-2xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[8.2rem] landscape:before:w-[8.7rem] before:h-1/2 before:top-3 before:translate-x-[1rem] font-bold" +
 						(isDark
 							? " before:border-b-my-red-dark"
 							: " before:border-b-my-red-light")
@@ -73,9 +73,9 @@ function Form({ isDark, sectionRef }) {
 				</h2>
 				<input
 					className={
-						"form-input w-full h-5 pl-1 text-sm ls:h-12 ls:pl-6 ls:mt-4" +
+						"form-input w-full h-5 pl-1 text-sm landscape:h-12 landscape:pl-6 landscape:mt-4" +
 						(isDark
-							? " bg-[#282828] placeholder-white"
+							? " bg-[#282828] placeholder-dark-text"
 							: " bg-light-secondary placeholder-black")
 					}
 					type="text"
@@ -85,9 +85,9 @@ function Form({ isDark, sectionRef }) {
 
 				<input
 					className={
-						"form-input w-full h-5 pl-1 text-sm ls:h-12 ls:pl-6" +
+						"form-input w-full h-5 pl-1 text-sm landscape:h-12 landscape:pl-6" +
 						(isDark
-							? " bg-[#282828] placeholder-white"
+							? " bg-[#282828] placeholder-dark-text"
 							: " bg-light-secondary placeholder-black")
 					}
 					type="email"
@@ -98,9 +98,9 @@ function Form({ isDark, sectionRef }) {
 				<textarea
 					name="message"
 					className={
-						"form-input w-full h-28 pl-1 text-sm ls:h-40 ls:pl-6 ls:pt-2" +
+						"form-input w-full h-28 pl-1 text-sm landscape:h-40 landscape:pl-6 landscape:pt-2" +
 						(isDark
-							? " bg-[#282828] placeholder-white"
+							? " bg-[#282828] placeholder-dark-text"
 							: " bg-light-secondary placeholder-black")
 					}
 					placeholder="Message"
@@ -122,10 +122,10 @@ function Form({ isDark, sectionRef }) {
 						value="Send"
 						disabled={submitMsg.length > 0 ? true : false}
 						className={
-							"relative w-[25%] overflow-hidden border-b-4 shadow-2xl transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full  after:duration-500 ls:hover:after:h-full" +
+							"relative w-[25%] overflow-hidden border-b-4 shadow-2xl transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full  after:duration-500 landscape:ls:hover:after:h-full" +
 							(isDark
-								? " text-dark-text ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-								: " text-black ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
+								? " text-dark-text landscape:ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
+								: " text-black landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 						}
 					>
 						<span className="relative z-10 text-sm">Submit</span>
