@@ -35,6 +35,10 @@ html,
 	align-items: center;
 }
 
+.bubble-container {
+	transform: translateZ(100px);
+}
+
 .bubbles {
 	position: relative;
 	display: flex;
