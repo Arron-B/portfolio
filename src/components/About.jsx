@@ -78,7 +78,7 @@ function About({ isDark, sectionRef }) {
 					src="https://i.ibb.co/ssm1sNM/profile-jpg.jpg"
 					alt="Profile Photo"
 				/>
-				<p className="me-text text-sm portrait:pt2:w-3/4 mx-auto portrait:text-[2vw] portrait:ls:leading-snug landscape:hidden">
+				<p className="me-text text-sm portrait:pt2:w-3/4 mx-auto landscape:hidden">
 					React, TailwindCSS, Express.js and SQL are my main stack. My time on
 					the Northcoders software development bootcamp gave me extensive
 					problem solving experience with Javascript and introduced me to many
