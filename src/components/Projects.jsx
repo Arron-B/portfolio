@@ -29,7 +29,7 @@ function Projects({ isDark, sectionRef }) {
 
 				<section
 					className={
-						"nc-news relative h-[30%] w-[100vw] flex landscape:landscape:ls:hover:scale-95 active:scale-95 transition-all duration-300 landscape:col-start-1 landscape:row-start-2 landscape:row-span-2 landscape:h-[90%] landscape:w-[95%] landscape:top-0 landscape:flex-col landscape:gap-7 landscape:py-7 landscape:pr-7" +
+						"nc-news relative h-[30%] w-[100vw] flex landscape:landscape:ls:hover:scale-95 active:scale-95 transition-all duration-300 landscape:col-start-1 landscape:row-start-2 landscape:row-span-2 landscape:h-[90%] landscape:w-[95%] landscape:top-0 landscape:flex-col landscape:py-7 landscape:pr-7 landscape:justify-center" +
 						(isDark
 							? " landscape:bg-dark-secondary"
 							: " landscape:bg-light-secondary")
@@ -42,64 +42,70 @@ function Projects({ isDark, sectionRef }) {
 						}
 					></div>
 					<img
-						className="w-[62vw] object-scale-down mt-[7%] z-[2] landscape:w-full landscape:h-[70%] landscape:object-fill landscape:mt-0"
+						className="w-[62vw] object-scale-down mt-[7%] z-[2] landscape:w-full landscape:h-[65%] landscape:object-cover landscape:object-right-top landscape:mt-0"
 						src="https://i.ibb.co/3STZsVM/ncnews-cropped-Copy.png"
 						alt="nc-news app"
 					></img>
-					<div className="absolute z-[3] bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center landscape:h-[30%] landscape:static landscape:ml-auto landscape:w-[90%] landscape:top-0">
-						<h3 className="text-md portrait:pt2:text-lg font-semibold landscape:ls:text-[1.3vw]">
+					<div className="absolute z-[3] bg-transparent portrait:h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center landscape:h-[35%] landscape:static landscape:ml-auto landscape:w-[90%]  landscape:pt:max-ls1:float-start landscape:pt:max-ls1:grid landscape:pt:max-ls1:grid-cols-[70%_30%] landscape:pt:max-ls1:grid-rows-[1fr_1fr_1fr] landscape:pt:max-ls1:items-center landscape:pt:max-ls1:mt-3">
+						<h3 className="text-md portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:text-lg font-semibold landscape:ls:text-[1.3vw] landscape:pt:max-ls1:col-start-1 landscape:pt:max-ls1:row-start-1">
 							Nc News
 						</h3>
-						<p className="text-sm portrait:pt2:max-ls:text-base landscape:text-[1.2vw] landscape:leading-tight landscape:my-1">
+						<p className="text-sm portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:max-ls:text-base landscape:text-[1.2vw] landscape:leading-tight landscape:my-1 landscape:pt:max-ls1:col-start-1 landscape:pt:max-ls1:row-start-2 landscape:pt:max-ls1:row-span-2">
 							A full-stack news web app using React, Bootstrap, Node.js,
 							Express.js and PostgreSQL
 						</p>
 						<a
-							className="text-sm portrait:pt2:max-ls:w-2/3"
+							className="text-sm  portrait:pt2:max-ls:w-2/3  landscape:pt:max-ls1:w-[60%] landscape:pt:max-ls1:col-start-2 landscape:pt:max-ls1:h-full"
 							href="https://arron-nc-news.netlify.app/?sort_by=created_at&order=desc&topic="
 							target="_blank"
 						>
 							<div
 								className={
-									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 landscape:landscape:ls:hover:after:h-full px-1 landscape:w-[15%]" +
+									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 landscape:landscape:ls1:hover:after:h-full px-1 landscape:w-[15%] landscape:pt:max-ls1:border-b-2 landscape:pt:max-ls1:w-full" +
 									(isDark
 										? " text-dark-text landscape:landscape:ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
 										: " text-black landscape:landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
-								<span className="relative z-10 text-sm">LIVE APP</span>
+								<span className="relative z-10 text-sm portrait:max-pt1:text-[3.5vw] landscape:pt:max-ls1:text-[0.9vw]">
+									LIVE APP
+								</span>
 							</div>
 						</a>
 						<a
-							className="text-sm portrait:pt2:max-ls:w-2/3"
+							className="text-sm portrait:pt2:max-ls:w-2/3 landscape:pt:max-ls1:w-[40%] landscape:pt:max-ls1:col-start-2 landscape:pt:max-ls1:h-full"
 							href="https://github.com/Arron-B/nc-news"
 							target="_blank"
 						>
 							<div
 								className={
-									"relative w-[55%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 landscape:landscape:ls:hover:after:h-full px-1 landscape:w-[12%]" +
+									"relative w-[55%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 landscape:landscape:ls1:hover:after:h-full px-1 landscape:w-[12%] landscape:pt:max-ls1:border-b-2 landscape:pt:max-ls1:w-full" +
 									(isDark
 										? " text-dark-text landscape:landscape:ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
 										: " text-black landscape:landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
-								<span className="relative z-10 text-sm">REPO</span>
+								<span className="relative z-10 text-sm portrait:max-pt1:text-[3.5vw] landscape:pt:max-ls1:text-[0.9vw]">
+									REPO
+								</span>
 							</div>
 						</a>
 						<a
-							className="text-sm portrait:pt2:max-ls:w-2/3"
+							className="text-sm portrait:pt2:max-ls:w-2/3 landscape:pt:max-ls1:w-[30%] landscape:pt:max-ls1:col-start-2 landscape:pt:max-ls1:h-full"
 							href="https://github.com/Arron-B/API-nc-news"
 							target="_blank"
 						>
 							<div
 								className={
-									"relative w-[50%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 landscape:landscape:ls:hover:after:h-full px-1 landscape:w-[9%]" +
+									"relative w-[50%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 landscape:landscape:ls1:hover:after:h-full px-1 landscape:w-[9%] landscape:pt:max-ls1:border-b-2  landscape:pt:max-ls1:w-full" +
 									(isDark
 										? " text-dark-text landscape:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
 										: " text-black landscape:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
-								<span className="relative z-10 text-sm">API</span>
+								<span className="relative z-10 text-sm portrait:max-pt1:text-[3.5vw] landscape:pt:max-ls1:text-[0.9vw]">
+									API
+								</span>
 							</div>
 						</a>
 					</div>
@@ -107,7 +113,7 @@ function Projects({ isDark, sectionRef }) {
 
 				<section
 					className={
-						"travel-buddy relative h-[30%] w-[100vw] flex ml-auto justify-end landscape:landscape:ls:hover:scale-95 transition-all duration-300 landscape:h-[90%] landscape:w-[95%] landscape:mt-auto landscape:col-start-2 landscape:row-start-2 landscape:row-span-2 landscape:-bottom-[30%] landscape:flex-col landscape:py-7 landscape:pl-7" +
+						"travel-buddy relative h-[30%] w-[100vw] flex ml-auto justify-end landscape:landscape:ls:hover:scale-95 transition-all duration-300 landscape:h-[90%] landscape:w-[95%] landscape:mt-auto landscape:col-start-2 landscape:row-start-2 landscape:row-span-2 landscape:-bottom-[30%] landscape:flex-col landscape:py-7 landscape:pl-7 landscape:pt:max-ls1:h-full landscape:justify-center" +
 						(isDark
 							? " landscape:bg-dark-secondary"
 							: " landscape:bg-light-secondary")
@@ -127,15 +133,15 @@ function Projects({ isDark, sectionRef }) {
 					></div>
 
 					<img
-						className="w-[62vw] mt-[7%] landscape:mt-[3%] object-scale-down z-10 landscape:w-full landscape:h-[67%] landscape:object-cover landscape:order-2 landscape:object-right-top"
+						className="w-[62vw] mt-[7%] landscape:mt-[3%] object-scale-down z-10 landscape:w-full landscape:h-[67%] landscape:object-cover landscape:order-2 landscape:object-right-top landscape:pt:max-ls1:h-[55%]"
 						src="https://i.ibb.co/mh1mtD8/travel-buddy-screens-cropped.png"
 						alt="Travel Buddy mobile app"
 					></img>
-					<div className="absolute portrait:mt-2 z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center landscape:static landscape:order-1">
-						<h3 className="text-md portrait:pt2:text-lg landscape:text-[1.3vw] font-semibold">
+					<div className="absolute portrait:mt-2 z-30 bg-transparent portrait:h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center landscape:static landscape:order-1 landscape:w-[90%]">
+						<h3 className="text-md portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:text-lg landscape:text-[1.3vw] font-semibold">
 							Travel Buddy
 						</h3>
-						<p className="text-sm portrait:pt2:max-ls:text-base landscape:text-[1.2vw] landscape:leading-tight">
+						<p className="text-sm portrait:max-pt1:text-[3.8vw] portrait:max-pt1:leading-tight portrait:pt2:max-ls:text-base landscape:text-[1.2vw] landscape:leading-tight">
 							A full-stack mobile app built in a team of 6 during my bootcamp.
 							It utilises Vue, Typescript, Axios, and MongoDB, all of which none
 							of the team had any prior experience with. Please use in a mobile
@@ -148,13 +154,15 @@ function Projects({ isDark, sectionRef }) {
 						>
 							<div
 								className={
-									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 landscape:ls:hover:after:h-full px-1 landscape:ls2:w-[15%] landscape:pt:max-ls2:w-[18%]" +
+									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 landscape:ls1:hover:after:h-full px-1 landscape:ls2:w-[15%] landscape:pt:max-ls2:w-[18%] landscape:pt:max-ls1:border-b-2" +
 									(isDark
 										? " text-dark-text landscape:ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
 										: " text-black landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
-								<span className="relative z-10 text-sm">LIVE APP</span>
+								<span className="relative z-10 text-sm portrait:max-pt1:text-[3.5vw] landscape:pt:max-ls1:text-[0.9vw]">
+									LIVE APP
+								</span>
 							</div>
 						</a>
 						<a
@@ -164,20 +172,22 @@ function Projects({ isDark, sectionRef }) {
 						>
 							<div
 								className={
-									"relative w-[55%] overflow-hidden border-b-[0.35rem] border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 landscape:ls:hover:after:h-full px-1 landscape:w-[12%]" +
+									"relative w-[55%] overflow-hidden border-b-[0.35rem] border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 landscape:ls1:hover:after:h-full px-1 landscape:w-[12%] landscape:pt:max-ls1:border-b-2" +
 									(isDark
 										? " text-dark-text landscape:ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
 										: " text-black landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
-								<span className="relative z-10 text-sm">REPO</span>
+								<span className="relative z-10 text-sm portrait:max-pt1:text-[3.5vw] landscape:pt:max-ls1:text-[0.9vw]">
+									REPO
+								</span>
 							</div>
 						</a>
 					</div>
 				</section>
 				<section
 					className={
-						"portfolio-proj relative h-[30%] w-[100vw] flex landscape:ls:hover:scale-95 active:scale-95 transition-all duration-300 landscape:col-start-1 landscape:row-start-4 landscape:row-span-2 landscape:h-[90%] landscape:w-[95%] landscape:flex-col landscape:gap-4 landscape:py-7 landscape:pr-7 landscape:translate-y-[5%]" +
+						"portfolio-proj relative h-[30%] w-[100vw] flex landscape:ls:hover:scale-95 active:scale-95 transition-all duration-300 landscape:col-start-1 landscape:row-start-4 landscape:row-span-2 landscape:h-[90%] landscape:w-[95%] landscape:flex-col landscape:gap-4 landscape:py-7 landscape:pr-7 landscape:translate-y-[5%] landscape:pt:max-ls1:gap-8" +
 						(isDark
 							? " landscape:bg-dark-secondary"
 							: " landscape:bg-light-secondary")
@@ -190,15 +200,15 @@ function Projects({ isDark, sectionRef }) {
 						}
 					></div>
 					<img
-						className="w-[62vw] mt-[7%] object-scale-down z-[2] landscape:w-full landscape:h-[70%] landscape:object-cover landscape:mt-0 landscape:object-right-top"
+						className="w-[62vw] mt-[7%] object-scale-down z-[2] landscape:w-full landscape:h-[70%] landscape:object-cover landscape:mt-0 landscape:object-right-top landscape:pt:max-ls1:h-[60%]"
 						src="https://i.ibb.co/KGnmhqd/portfolio-image.png"
 						alt="Github repo for my portfolio"
 					></img>
-					<div className="absolute z-[3] bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center landscape:h-[30%] landscape:static landscape:ml-auto landscape:w-[90%]">
-						<h3 className="text-md portrait:pt2:text-lg font-semibold landscape:text-[1.3vw]">
+					<div className="absolute z-[3] bg-transparent h-[90%] w-[35vw] right-0 top-[5%] flex flex-col gap-1 px-1 text-left justify-center landscape:h-[30%] landscape:static landscape:ml-auto landscape:w-[90%] landscape:pt:max-ls1:h-1/3">
+						<h3 className="text-md portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:text-lg font-semibold landscape:text-[1.3vw]">
 							Portfolio
 						</h3>
-						<p className="text-sm portrait:pt2:text-base landscape:text-[1.2vw] landscape:leading-tight landscape:my-1">
+						<p className="text-sm portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:text-base landscape:text-[1.2vw] landscape:leading-tight landscape:my-1">
 							This portfolio was built with React and TailwindCSS. It was my
 							first time using Tailwind and this project really helped step my
 							front-end skills up a level.
@@ -210,13 +220,15 @@ function Projects({ isDark, sectionRef }) {
 						>
 							<div
 								className={
-									"relative w-[50%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full  after:duration-500 landscape:ls:hover:after:h-full px-1 landscape:w-[15%]" +
+									"relative w-[50%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full  after:duration-500 landscape:ls1:hover:after:h-full px-1 landscape:w-[15%] landscape:pt:max-ls1:border-b-2" +
 									(isDark
 										? " text-dark-text landscape:ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
 										: " text-black landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
-								<span className="relative z-10 text-sm">REPO</span>
+								<span className="relative z-10 text-sm portrait:max-pt1:text-[3.5vw] landscape:pt:max-ls1:text-[0.9vw]">
+									REPO
+								</span>
 							</div>
 						</a>
 					</div>
@@ -244,15 +256,15 @@ function Projects({ isDark, sectionRef }) {
 					></div>
 
 					<img
-						className="w-[62vw] mt-[7%] object-scale-down z-10 landscape:w-full landscape:h-[85%] landscape:object-cover landscape:order-2 landscape:mt-2 landscape:object-left-top"
+						className="w-[62vw] mt-[7%] object-scale-down z-10 landscape:w-full landscape:h-[85%] landscape:object-cover landscape:order-2 landscape:mt-2 landscape:object-left-top landscape:pt:max-ls1:h-[80%]"
 						src="https://i.ibb.co/Wyxr3s4/poke-match.png"
 						alt="pokemon matching game"
 					></img>
-					<div className="absolute pt:max-ls:mt-2 z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center landscape:max-h-[10%] landscape:static landscape:order-1">
-						<h3 className="text-md portrait:pt2:text-lg font-semibold landscape:text-[1.3vw]">
+					<div className="absolute pt:max-ls:mt-2 z-30 bg-transparent h-[100%] w-[37vw] left-0 flex flex-col gap-1 pl-5 text-left justify-center landscape:my-auto landscape:max-h-[10%] landscape:static landscape:order-1">
+						<h3 className="text-md portrait:max-pt1:text-[4vw] portrait:pt2:text-lg font-semibold landscape:text-[1.3vw]">
 							Pokematch
 						</h3>
-						<p className="text-sm portrait:pt2:max-ls:text-base landscape:text-[1.2vw] landscape:leading-tight">
+						<p className="text-sm portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:max-ls:text-base landscape:text-[1.2vw] landscape:leading-tight">
 							A quick and fun front-end only game to play around with the DOM.
 						</p>
 						<a
@@ -262,13 +274,15 @@ function Projects({ isDark, sectionRef }) {
 						>
 							<div
 								className={
-									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 landscape:ls:hover:after:h-full px-1 landscape:ls2:w-[15%] landscape:pt:max-ls2:w-[18%]" +
+									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 landscape:ls1:hover:after:h-full px-1 landscape:ls2:w-[15%] landscape:pt:max-ls2:w-[18%] landscape:pt:max-ls1:border-b-2" +
 									(isDark
 										? " text-dark-text landscape:ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
 										: " text-black landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
-								<span className="relative z-10 text-sm">LIVE APP</span>
+								<span className="relative z-10 text-sm portrait:max-pt1:text-[3.5vw] landscape:pt:max-ls1:text-[0.9vw]">
+									LIVE APP
+								</span>
 							</div>
 						</a>
 					</div>

@@ -51,7 +51,7 @@ function Form({ isDark, sectionRef }) {
 		<div
 			ref={sectionRef}
 			className={
-				"w-full h-[50vh] landscape:left-0 landscape:w-[50vw]" +
+				"w-full h-[50vh] landscape:left-0 landscape:w-[50vw] landscape:pt:max-ls1:mb-4" +
 				(isDark ? " text-dark-text" : " text-black")
 			}
 		>
@@ -122,7 +122,7 @@ function Form({ isDark, sectionRef }) {
 						value="Send"
 						disabled={submitMsg.length > 0 ? true : false}
 						className={
-							"relative w-[25%] overflow-hidden border-b-4 shadow-2xl transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full  after:duration-500 landscape:ls:hover:after:h-full" +
+							"relative w-[25%] overflow-hidden border-b-4 shadow-2xl transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full  after:duration-500 landscape:ls1:hover:after:h-full landscape:pt:max-ls1:border-b-2" +
 							(isDark
 								? " text-dark-text landscape:ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
 								: " text-black landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")

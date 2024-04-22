@@ -15,19 +15,19 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 		<div
 			className={
 				"fixed z-[99] h-nav ls3:h-[6vh] w-full" +
-				(isDark ? " landscape:bg-dark-bg" : " landscape:bg-light-bg")
+				(isDark ? " landscape:ls1:bg-dark-bg" : " landscape:ls1:bg-light-bg")
 			}
 		>
 			<nav
 				className={
 					"items-center h-full w-full" +
 					(isDark
-						? " landscape:bg-dark-bg text-dark-text"
-						: " landscape:bg-light-bg text-black")
+						? " landscape:ls1:bg-dark-bg text-dark-text"
+						: " landscape:ls1:bg-light-bg text-black")
 				}
 			>
 				<p className="hidden">Arron Bent</p>
-				<section className="MOBILE-MENU flex landscape:hidden w-full">
+				<section className="MOBILE-MENU flex landscape:ls1:hidden w-full">
 					<div
 						className="HAMBURGER-ICON space-y-2 fixed top-4 left-4 z-50"
 						onClick={() => {
@@ -140,7 +140,7 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 					toggle={setIsDark}
 				/>
 
-				<ul className="DESKTOP-MENU hidden space-x-8 landscape:flex landscape:h-nav ls3:h-[6vh] landscape:items-center landscape:pl-3">
+				<ul className="DESKTOP-MENU hidden space-x-8 landscape:ls1:flex landscape:ls1:h-nav ls3:h-[6vh] landscape:ls1:items-center landscape:ls1:pl-3">
 					<li
 						className={
 							"my-8 uppercase hover:scale-110" + (currEl === 0 ? " active" : "")

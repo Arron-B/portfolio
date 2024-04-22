@@ -47,7 +47,7 @@ function About({ isDark, sectionRef }) {
 				></a>
 				<h2
 					className={
-						"relative h-10 text-3xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[8.5rem] landscape:before:w-[9rem] before:h-1/2 before:top-4 before:translate-x-5 landscape:col-start-8 landscape:col-span-5 landscape:row-start-2 landscape:row-span-2 landscape:top-20 font-bold" +
+						"relative h-10 text-3xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[8.5rem] landscape:before:w-[9rem] before:h-1/2 before:top-4 before:translate-x-5 landscape:pt:max-ls:row-start-1 landscape:pt:max-ls:-translate-y-1/3 landscape:col-start-8 landscape:col-span-5 landscape:row-start-2 landscape:row-span-2 landscape:top-20 font-bold" +
 						(isDark
 							? " before:border-b-my-red-dark"
 							: " before:border-b-my-red-light")
@@ -78,7 +78,7 @@ function About({ isDark, sectionRef }) {
 					src="https://i.ibb.co/ssm1sNM/profile-jpg.jpg"
 					alt="Profile Photo"
 				/>
-				<p className="me-text text-sm portrait:pt2:w-3/4 mx-auto landscape:hidden">
+				<p className="me-text text-sm portrait:max-pt1:text-[3.3vw] portrait:max-pt1:leading-tight portrait:pt2:w-3/4 mx-auto landscape:hidden">
 					React, TailwindCSS, Express.js and SQL are my main stack. My time on
 					the Northcoders software development bootcamp gave me extensive
 					problem solving experience with Javascript and introduced me to many
