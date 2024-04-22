@@ -9,11 +9,11 @@ function Welcome({ isDark, sectionRef }) {
 			id="welcome"
 			ref={sectionRef}
 			className={
-				"welcome h-screen px-4 flex flex-col justify-center items-center portrait:pb-nav" +
+				"welcome h-screen px-4 flex flex-col justify-center items-center portrait:pb-nav z-[1]" +
 				(isDark ? " text-dark-text" : " text-light-text")
 			}
 		>
-			<div className="absolute w-full h-full overflow-hidden -z-10">
+			<div className="absolute w-full h-full overflow-hidden z-[2]">
 				<div className="bubbles relative flex w-full mx-auto">
 					{[...Array(10)].map((bubble, i) => (
 						<span
@@ -30,12 +30,12 @@ function Welcome({ isDark, sectionRef }) {
 					))}
 				</div>
 			</div>
-			<div>
+			<div className="z-20">
 				<p className="welcome-msg-1 mr-2 text-2xl landscape:text-5xl">
 					Hello I'm <span className="text-my-red-dark">Arron</span>,
 				</p>
 			</div>
-			<div>
+			<div className="z-20">
 				<p className="welcome-msg-2 text-2xl landscape:text-5xl landscape:leading-tight">
 					a full-stack developer.
 				</p>
