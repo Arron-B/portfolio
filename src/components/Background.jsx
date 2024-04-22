@@ -6,7 +6,9 @@ function Background({ isDark }) {
 					"background fixed -z-20 h-[100vh] w-[100vw]" +
 					(isDark ? " bg-dark-bg" : " bg-light-bg")
 				}
-			></div>
+			>
+				{" "}
+			</div>
 		</>
 	);
 }
