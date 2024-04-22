@@ -13,7 +13,7 @@ function Welcome({ isDark, sectionRef }) {
 				(isDark ? " text-dark-text" : " text-light-text")
 			}
 		>
-			<div className="absolute w-full h-full overflow-hidden -z-20">
+			<div className="absolute w-full h-full overflow-hidden -z-10">
 				<div className="bubbles relative flex w-full mx-auto">
 					{[...Array(10)].map((bubble, i) => (
 						<span
