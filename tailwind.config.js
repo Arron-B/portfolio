@@ -9,7 +9,7 @@ export default {
 			pt3: "641px",
 			ls: "961px", // begins landscape viewports
 			// => @media (min-width: 961px) { ... }
-			ls1: "1025px",
+			ls1: "1025px", //low res laptops and tablets
 			ls2: "1281px",
 			ls3: "2300px",
 			ls4: "3840px",

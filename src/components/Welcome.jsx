@@ -9,7 +9,7 @@ function Welcome({ isDark, sectionRef }) {
 			id="welcome"
 			ref={sectionRef}
 			className={
-				"welcome h-screen px-4 flex flex-col justify-center items-center pt:max-ls:pb-nav" +
+				"welcome h-screen px-4 flex flex-col justify-center items-center portrait:pb-nav" +
 				(isDark ? " text-dark-text" : " text-light-text")
 			}
 		>
@@ -18,7 +18,7 @@ function Welcome({ isDark, sectionRef }) {
 					{[...Array(10)].map((bubble, i) => (
 						<span
 							className={
-								"w-[1vw] h-[1vw] ls:w-[0.4vw] ls:h-[0.4vw]" +
+								"w-[1vw] h-[1vw] landscape:w-[0.4vw] landscape:h-[0.4vw]" +
 								(isDark ? " bubble-dark" : " bubble-light")
 							}
 							key={i}
@@ -31,18 +31,18 @@ function Welcome({ isDark, sectionRef }) {
 				</div>
 			</div>
 			<div>
-				<p className="welcome-msg-1 mr-2 text-2xl ls:text-5xl">
+				<p className="welcome-msg-1 mr-2 text-2xl landscape:text-5xl">
 					Hello I'm <span className="text-my-red-dark">Arron</span>,
 				</p>
 			</div>
 			<div>
-				<p className="welcome-msg-2 text-2xl ls:text-5xl ls:leading-tight">
+				<p className="welcome-msg-2 text-2xl landscape:text-5xl landscape:leading-tight">
 					a full-stack developer.
 				</p>
 			</div>
 			<a href="#about">
 				<FontAwesomeIcon
-					className="absolute opacity-0 animate-fadeInDelayed text-4xl left-1/2 top-1/2 -translate-x-1/2 translate-y-[1rem] hover:scale-125 ls:translate-y-[4rem]"
+					className="absolute opacity-0 animate-fadeInDelayed text-4xl left-1/2 top-1/2 -translate-x-1/2 translate-y-[1rem] hover:scale-125 landscape:translate-y-[4rem]"
 					icon={faAngleDoubleDown}
 				/>
 			</a>

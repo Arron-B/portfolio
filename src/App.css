@@ -133,59 +133,70 @@ html,
 	}
 }
 
-@media (min-width: 280px) and (max-width: 319px) {
-	/* galaxy fold type phones */
+@media (orientation: portrait) and (max-width: 319px) {
+	/* galaxy fold type phones and old smaller smartphones */
 	html,
 	body {
-		font-size: 13px;
+		font-size: 10px;
 	}
 }
-@media (min-width: 320px) {
-	/* smartphones, iPhone, portrait 480x320 phones */
+@media (orientation: portrait) and (min-width: 320px) {
+	/* smartphones */
 	html,
 	body {
 		font-size: 14px;
 	}
 }
-@media (min-width: 481px) {
+@media (orientation: portrait) and (min-width: 481px) {
 	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 	html,
 	body {
 		font-size: 18px;
 	}
 }
-@media (min-width: 641px) {
-	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (orientation: portrait) and (min-width: 641px) {
+	/* portrait tablets, portrait iPad, landscape e-readers */
 	html,
 	body {
 		font-size: 20px;
 	}
 }
-@media (min-width: 961px) {
-	/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (orientation: portrait) and (min-width: 961px) {
+	/* Large portrait tablets and portrait monitors */
 
 	html,
 	body {
-		font-size: 10px;
+		font-size: 22px;
 	}
 }
-@media (min-width: 1025px) {
-	/* big landscape tablets, laptops, and desktops */
+
+/*                Landscape queries                */
+
+@media (orientation: landscape) and (max-width: 1024px) {
+	/* landscape phones and landscape small tablets */
+	html,
+	body {
+		font-size: 12px;
+	}
+}
+
+@media (orientation: landscape) and (min-width: 1025px) {
+	/*landscape tablets, laptops, and desktops */
 	html,
 	body {
 		font-size: 14px;
 	}
 }
 
-@media (min-width: 1281px) {
-	/* hi-res laptops and desktops */
+@media (orientation: landscape) and (min-width: 1281px) {
+	/* big landscape tablets, hi-res laptops and desktops */
 	html,
 	body {
 		font-size: 15px;
 	}
 }
 
-@media (min-width: 2300px) {
+@media (orientation: landscape) and (min-width: 2300px) {
 	/* hi-res laptops and desktops */
 	html,
 	body {
@@ -193,7 +204,7 @@ html,
 	}
 }
 
-@media (min-width: 3840px) {
+@media (orientation: landscape) and (min-width: 3840px) {
 	/* 4k */
 	html,
 	body {
