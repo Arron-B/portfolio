@@ -42,7 +42,7 @@ function Welcome({ isDark, sectionRef }) {
 			</div>
 			<a href="#about">
 				<FontAwesomeIcon
-					className="absolute opacity-0 animate-fadeInDelayed text-4xl left-1/2 top-1/2 -translate-x-1/2 translate-y-[1rem] hover:scale-125 landscape:translate-y-[4rem]"
+					className="absolute opacity-0 animate-fadeInDelayed text-4xl left-1/2 top-1/2 -translate-x-1/2 translate-y-[1rem] hover:scale-125 landscape:translate-y-[4rem] z-20"
 					icon={faAngleDoubleDown}
 				/>
 			</a>
