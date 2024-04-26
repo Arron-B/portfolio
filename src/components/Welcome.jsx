@@ -30,7 +30,7 @@ function Welcome({ isDark, sectionRef }) {
 					))}
 				</div>
 			</div>
-			<div className="z-20 landscape:-translate-y-1/2">
+			<div className="z-20 landscape:ls:-translate-y-1/2">
 				<p className="welcome-msg-1 mr-2 text-2xl landscape:text-5xl">
 					Hello I'm <span className="text-my-red-dark">Arron</span>,
 				</p>
@@ -41,7 +41,7 @@ function Welcome({ isDark, sectionRef }) {
 			</div>
 			<a href="#about">
 				<FontAwesomeIcon
-					className="absolute opacity-0 animate-fadeInDelayed text-4xl left-1/2 top-1/2 -translate-x-1/2 translate-y-[1rem] hover:scale-125 z-20"
+					className="absolute opacity-0 animate-fadeInDelayed text-4xl left-1/2 top-1/2 -translate-x-1/2 translate-y-[1rem] landscape:max-ls:translate-y-16 hover:scale-125 z-20"
 					icon={faAngleDoubleDown}
 				/>
 			</a>
