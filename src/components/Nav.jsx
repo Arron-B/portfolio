@@ -14,7 +14,7 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 	return (
 		<div
 			className={
-				"fixed z-[99] h-nav ls3:h-[6vh] w-full" +
+				"fixed z-[99] h-nav landscape:ls1:h-[4vh] w-full" +
 				(isDark ? " landscape:ls1:bg-dark-bg" : " landscape:ls1:bg-light-bg")
 			}
 		>
@@ -135,12 +135,12 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 				</section>
 
 				<Classic
-					className="top-3 right-4 fixed text-4xl animate-pulse z-40"
+					className="top-3 right-4 fixed text-4xl animate-pulse z-40 landscape:top-0 landscape:right-1"
 					toggled={isDark}
 					toggle={setIsDark}
 				/>
 
-				<ul className="DESKTOP-MENU hidden space-x-8 landscape:ls1:flex landscape:ls1:h-nav ls3:h-[6vh] landscape:ls1:items-center landscape:ls1:pl-3">
+				<ul className="DESKTOP-MENU hidden space-x-8 landscape:ls1:flex landscape:ls1:h-[4vh] landscape:ls3:text-xs landscape:ls1:items-center landscape:ls1:pl-32">
 					<li
 						className={
 							"my-8 uppercase hover:scale-110" + (currEl === 0 ? " active" : "")

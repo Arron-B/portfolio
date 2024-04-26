@@ -30,19 +30,18 @@ function Welcome({ isDark, sectionRef }) {
 					))}
 				</div>
 			</div>
-			<div className="z-20">
+			<div className="z-20 landscape:-translate-y-1/2">
 				<p className="welcome-msg-1 mr-2 text-2xl landscape:text-5xl">
 					Hello I'm <span className="text-my-red-dark">Arron</span>,
 				</p>
-			</div>
-			<div className="z-20">
+
 				<p className="welcome-msg-2 text-2xl landscape:text-5xl landscape:leading-tight">
 					a full-stack developer.
 				</p>
 			</div>
 			<a href="#about">
 				<FontAwesomeIcon
-					className="absolute opacity-0 animate-fadeInDelayed text-4xl left-1/2 top-1/2 -translate-x-1/2 translate-y-[1rem] hover:scale-125 landscape:translate-y-[4rem] z-20"
+					className="absolute opacity-0 animate-fadeInDelayed text-4xl left-1/2 top-1/2 -translate-x-1/2 translate-y-[1rem] hover:scale-125 z-20"
 					icon={faAngleDoubleDown}
 				/>
 			</a>
