@@ -143,7 +143,7 @@ function Projects({ isDark, sectionRef }) {
 						</h3>
 						<p className="text-sm portrait:max-pt1:text-[3.8vw] portrait:max-pt1:leading-tight portrait:pt2:max-ls:text-base landscape:text-[1.2vw] landscape:leading-tight">
 							A full-stack mobile app built in a team of 6 during my bootcamp.
-							It utilises Vue, Typescript, Axios, and MongoDB, all of which none
+							It utilises Vue, Typescript, Ionic, and MongoDB, all of which none
 							of the team had any prior experience with. Please use in a mobile
 							view.
 						</p>
