@@ -15,15 +15,15 @@ function Footer({ isDark }) {
 			className={
 				"relative h-nav w-full px-4 flex items-center ls:mt-2" +
 				(isDark
-					? " bg-[#282828] text-dark-text"
-					: " bg-light-secondary text-black")
+					? " bg-slate-900/15 text-dark-text"
+					: " bg-gray-900 text-gray-100")
 			}
 		>
 			<p className="hidden">Arron Bent</p>
 			<p className="text-xs ls:absolute ls:right-1/4">Arron Bent @2024</p>
 			<a href="#welcome">
 				<FontAwesomeIcon
-					className="absolute text-4xl top-[0] left-1/2 -translate-x-1/2 -translate-y-1/2 hover:scale-125"
+					className={"absolute text-4xl top-[0] left-1/2 -translate-x-1/2 -translate-y-1/2 hover:scale-125" + (!isDark ? " text-gray-500" : "")}
 					icon={faAngleDoubleUp}
 				/>
 			</a>

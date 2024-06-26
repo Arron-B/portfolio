@@ -3,7 +3,6 @@ import { useEffect } from "react";
 
 function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 	useEffect(() => {
-		console.log("useEffect nav");
 		if (isNavOpen) {
 			document.getElementsByTagName("html")[0].style.overflowY = "hidden";
 		} else {
@@ -15,15 +14,15 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 		<div
 			className={
 				"fixed z-[99] h-nav landscape:ls1:h-[4vh] w-full" +
-				(isDark ? " landscape:ls1:bg-dark-bg" : " landscape:ls1:bg-light-bg")
+				(isDark ? " landscape:ls1:bg-slate-950" : " landscape:ls1:bg-gray-100")
 			}
 		>
 			<nav
 				className={
 					"items-center h-full w-full" +
 					(isDark
-						? " landscape:ls1:bg-dark-bg text-dark-text"
-						: " landscape:ls1:bg-light-bg text-black")
+						? " landscape:ls1:bg-slate-950 text-dark-text"
+						: " landscape:ls1:bg-light-bg text-gray-700")
 				}
 			>
 				<p className="hidden">Arron Bent</p>
@@ -65,7 +64,7 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 						className={
 							"menu fixed z-[99] flex flex-col justify-center w-1/2 h-dynamic ease-in-out duration-300" +
 							(isNavOpen ? " -translate-x-0" : " -translate-x-full") +
-							(isDark ? " bg-dark-bg" : " bg-light-bg")
+							(isDark ? " bg-slate-950" : " bg-light-bg")
 						}
 					>
 						<div
@@ -135,7 +134,7 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 				</section>
 
 				<Classic
-					className="top-3 right-4 fixed text-4xl animate-pulse z-40 landscape:top-0 landscape:right-1"
+					className="top-2 right-4 fixed text-4xl animate-pulse z-40 landscape:top-2 landscape:right-2"
 					toggled={isDark}
 					toggle={setIsDark}
 				/>
@@ -143,7 +142,7 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 				<ul className="DESKTOP-MENU hidden space-x-8 landscape:ls1:flex landscape:ls1:h-[4vh] landscape:ls3:text-xs landscape:ls1:items-center landscape:ls1:pl-32">
 					<li
 						className={
-							"my-8 uppercase hover:scale-110" + (currEl === 0 ? " active" : "")
+							"my-8 hover:scale-110" + (currEl === 0 ? " active" : "")
 						}
 					>
 						<a
@@ -155,14 +154,14 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 					</li>
 					<li
 						className={
-							"my-8 uppercase hover:scale-110" + (currEl === 1 ? " active" : "")
+							"my-8 hover:scale-110" + (currEl === 1 ? " active" : "")
 						}
 					>
 						<a href="#about">About Me</a>
 					</li>
 					<li
 						className={
-							"my-8 uppercase hover:scale-110" + (currEl === 2 ? " active" : "")
+							"my-8 hover:scale-110" + (currEl === 2 ? " active" : "")
 						}
 					>
 						<a href="#projects">My Projects</a>
@@ -170,7 +169,7 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 
 					<li
 						className={
-							"my-8 uppercase hover:scale-110" + (currEl === 3 ? " active" : "")
+							"my-8 hover:scale-110" + (currEl === 3 ? " active" : "")
 						}
 					>
 						<a href="#contact">Contact</a>

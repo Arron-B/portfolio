@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-function Form({ isDark, sectionRef }) {
+function Form({ isDark, sectionRef, projectCount }) {
 	const form = useRef();
 
 	const [submitMsg, setSubmitMsg] = useState("");
@@ -51,13 +51,13 @@ function Form({ isDark, sectionRef }) {
 		<div
 			ref={sectionRef}
 			className={
-				"w-full h-[50vh] landscape:left-0 landscape:w-[50vw] landscape:pt:max-ls1:mb-4" +
-				(isDark ? " text-dark-text" : " text-black")
+				"portrait:-mt-32 portrait:pt3:-mt-20 w-full h-[50vh] landscape:left-0 landscape:w-1/2 landscape:pt:max-ls1:mb-4 landscape:-mt-12" +
+				(isDark ? " text-dark-text" : " text-gray-700") + (projectCount % 2 === 0 ? " landscape:mr-auto" : " landscape:ml-auto")
 			}
 		>
 			{" "}
 			<form
-				className="w-[70%] portrait:pt2:w-1/2 h-full flex flex-col gap-2 mx-auto justify-center items-center row-start-2 landscape:w-1/2 landscape:gap-3"
+				className="w-[70%] portrait:pt2:w-1/2 h-full flex flex-col gap-2 mx-auto justify-center items-center row-start-2 landscape:w-3/4 landscape:gap-3"
 				ref={form}
 				onSubmit={sendEmail}
 			>
@@ -66,7 +66,7 @@ function Form({ isDark, sectionRef }) {
 						"relative h-10 z-10 text-2xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[8.2rem] landscape:before:w-[8.7rem] before:h-1/2 before:top-3 before:translate-x-[1rem] font-bold" +
 						(isDark
 							? " before:border-b-my-red-dark"
-							: " before:border-b-my-red-light")
+							: " before:border-b-my-red-light text-gray-800")
 					}
 				>
 					Contact Me
@@ -75,7 +75,7 @@ function Form({ isDark, sectionRef }) {
 					className={
 						"form-input w-full h-5 pl-1 text-sm landscape:h-12 landscape:pl-6 landscape:mt-4" +
 						(isDark
-							? " bg-[#282828] placeholder-dark-text"
+							? " bg-slate-900/20 placeholder-dark-text"
 							: " bg-light-secondary placeholder-black")
 					}
 					type="text"
@@ -87,7 +87,7 @@ function Form({ isDark, sectionRef }) {
 					className={
 						"form-input w-full h-5 pl-1 text-sm landscape:h-12 landscape:pl-6" +
 						(isDark
-							? " bg-[#282828] placeholder-dark-text"
+							? " bg-slate-900/20 placeholder-dark-text"
 							: " bg-light-secondary placeholder-black")
 					}
 					type="email"
@@ -100,7 +100,7 @@ function Form({ isDark, sectionRef }) {
 					className={
 						"form-input w-full h-28 pl-1 text-sm landscape:h-40 landscape:pl-6 landscape:pt-2" +
 						(isDark
-							? " bg-[#282828] placeholder-dark-text"
+							? " bg-slate-900/20 placeholder-dark-text"
 							: " bg-light-secondary placeholder-black")
 					}
 					placeholder="Message"
@@ -125,7 +125,7 @@ function Form({ isDark, sectionRef }) {
 							"relative w-[25%] overflow-hidden border-b-4 shadow-2xl transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full  after:duration-500 landscape:ls1:hover:after:h-full landscape:pt:max-ls1:border-b-2" +
 							(isDark
 								? " text-dark-text landscape:ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-								: " text-black landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
+								: " text-gray-700 landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 						}
 					>
 						<span className="relative z-10 text-sm">Submit</span>
