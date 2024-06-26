@@ -39,11 +39,8 @@ function App() {
 						></About>
 						<Projects
 							isDark={isDark}
-							sectionRef={sectionRefs[2]}
-						/>
-						<Form
-							isDark={isDark}
-							sectionRef={sectionRefs[3]}
+							sectionRefProj={sectionRefs[2]}
+							sectionRefContact={sectionRefs[3]}
 						/>
 						<Footer isDark={isDark}></Footer>
 					</div>

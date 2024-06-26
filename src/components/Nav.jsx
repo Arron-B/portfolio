@@ -14,7 +14,7 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 		<div
 			className={
 				"fixed z-[99] h-nav landscape:ls1:h-[4vh] w-full" +
-				(isDark ? " landscape:ls1:bg-slate-950" : " landscape:ls1:bg-light-bg")
+				(isDark ? " landscape:ls1:bg-slate-950" : " landscape:ls1:bg-gray-100")
 			}
 		>
 			<nav
@@ -22,7 +22,7 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 					"items-center h-full w-full" +
 					(isDark
 						? " landscape:ls1:bg-slate-950 text-dark-text"
-						: " landscape:ls1:bg-light-bg text-black")
+						: " landscape:ls1:bg-light-bg text-gray-700")
 				}
 			>
 				<p className="hidden">Arron Bent</p>
@@ -134,7 +134,7 @@ function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 				</section>
 
 				<Classic
-					className="top-3 right-4 fixed text-4xl animate-pulse z-40 landscape:top-0 landscape:right-1"
+					className="top-2 right-4 fixed text-4xl animate-pulse z-40 landscape:top-2 landscape:right-2"
 					toggled={isDark}
 					toggle={setIsDark}
 				/>

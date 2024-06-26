@@ -10,7 +10,7 @@ function Welcome({ isDark, sectionRef }) {
 			ref={sectionRef}
 			className={
 				"welcome h-screen px-4 flex flex-col justify-center items-center portrait:pb-nav z-[1]" +
-				(isDark ? " text-dark-text" : " text-light-text")
+				(isDark ? " text-dark-text" : " text-gray-700")
 			}
 		>
 			<div className="absolute w-full h-full overflow-hidden z-10">

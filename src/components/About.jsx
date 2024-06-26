@@ -38,7 +38,7 @@ function About({ isDark, sectionRef }) {
 				ref={sectionRef}
 				className={
 					"about relative h-screen pt-nav w-full flex flex-col justify-around px-2 landscape:mt-2 landscape:grid landscape:grid-cols-19 landscape:grid-rows-11 landscape:pt:max-ls1:h-[100vh]" +
-					(isDark ? " text-dark-text" : " text-black")
+					(isDark ? " text-dark-text" : " text-gray-700")
 				}
 			>
 				<a
@@ -50,7 +50,7 @@ function About({ isDark, sectionRef }) {
 						"relative h-10 text-3xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[8.5rem] landscape:before:w-[9rem] before:h-1/2 before:top-4 before:translate-x-5 landscape:pt:max-ls:row-start-1 landscape:pt:max-ls:-translate-y-1/3 landscape:col-start-8 landscape:col-span-5 landscape:row-start-2 landscape:row-span-2 landscape:top-20 font-bold" +
 						(isDark
 							? " before:border-b-my-red-dark"
-							: " before:border-b-my-red-light")
+							: " before:border-b-my-red-light text-gray-800")
 					}
 				>
 					About Me

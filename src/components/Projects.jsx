@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Button from "./Button";
+import Form from "./Form";
 
-function Projects({ isDark, sectionRef }) {
+function Projects({ isDark, sectionRefProj, sectionRefContact }) {
 	const [isHovered, setIsHovered] = useState(false);
 
 	const youtubeRegex = new RegExp("https:\/\/www\.youtube\.com\/.*");
@@ -87,10 +88,10 @@ function Projects({ isDark, sectionRef }) {
 	return (
 		<>
 			<div
-				ref={sectionRef}
+				ref={sectionRefProj}
 				className={
-					"projects relative mt-nav mb-10 portrait:flex portrait:flex-col portrait:gap-32 portrait:pt3:gap-20" +
-					(isDark ? " text-dark-text" : " text-light-text")
+					"projects relative mt-nav flex flex-col portrait:gap-32 portrait:pt3:gap-20 landscape:w-[70vw] landscape:mx-auto landscape:gap-20" +
+					(isDark ? " text-dark-text" : " text-gray-700")
 				}
 			>
 				<a
@@ -102,26 +103,26 @@ function Projects({ isDark, sectionRef }) {
 						"relative h-10 my-10 portrait:pt:max-pt3:mb-0 text-3xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[10rem] landscape:before:w-[10.5rem] before:h-1/2 before:top-4 before:translate-x-[1.6rem] landscape:col-span-2 landscape:top-0 font-bold" +
 						(isDark
 							? " before:border-b-my-red-dark"
-							: " before:border-b-my-red-light")
+							: " before:border-b-my-red-light text-gray-800")
 					}
 				>
 					My Projects
 				</h2>
 				{projects.map((project, i) => {
 					return (
-						<div className={"relative box-border portrait:w-[100vw]" + (project.desc.length > 175 ? " my-2" : "")}
+						<div className={"relative box-border portrait:w-[100vw] landscape:w-3/4 landscape:landscape:ls:hover:scale-95 active:scale-95 transition-all duration-300 " + (project.desc.length > 175 ? " my-2" : "") + (i % 2 === 0 ? "" : " ml-auto")}
 							key={`proj${i+1}`}>
 							{youtubeRegex.test(project.media) ?
-							<iframe className={"portrait:w-[65%] portrait:aspect-video border-y-[1.5rem] border-slate-900/20" + (i % 2 === 0 ? " border-r-[1.5rem]" : " ml-auto border-l-[1.5rem]")}
+							<iframe className={"w-[65%] aspect-video border-y-[1.5rem] landscape:border-[2rem]" + (i % 2 === 0 ? " border-r-[1.5rem]" : " ml-auto border-l-[1.5rem]") + (isDark ? " border-slate-900/20" : " border-gray-900/5")}
 							width="" height="" src={project.media} title="YouTube video player" frameBorder="0" allow="web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> :
 							<img
-							className={"portrait:w-[65%] border-y-[1.5rem] border-slate-900/20" + (i % 2 === 0 ? " border-r-[1.5rem]" : " ml-auto border-l-[1.5rem]")}
+							className={"w-[65%] border-y-[1.5rem] landscape:border-[2rem]" + (i % 2 === 0 ? " border-r-[1.5rem]" : " ml-auto border-l-[1.5rem]") + (isDark ? " border-slate-900/20" : " border-gray-900/5")}
 							src={project.media}></img>}
-							<div className={"absolute flex flex-col justify-center portrait:top-0 portrait:w-[37%] portrait:text-left portrait:h-full" + (i % 2 === 0 ? " portrait:right-0 portrait:mr-2 portrait:pl-1" : " portrait:ml-2")}>
-							<h3 className="text-md portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:text-lg mb-2 font-semibold">
+							<div className={"absolute flex flex-col justify-center top-0 w-[37%] text-left h-full" + (i % 2 === 0 ? " right-0 mr-2 pl-1 landscape:pl-3" : " ml-2")}>
+							<h3 className={"text-md portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:text-lg mb-2 font-semibold landscape:text-2xl landscape:mb-4" + (isDark ? "" : " text-gray-800")}>
 							{project.title}
 							</h3>
-							<p className="text-sm portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:max-ls:text-base">{project.desc}</p>
+							<p className="text-sm portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:max-ls:text-base landscape:text-2xl landscape:mb-2">{project.desc}</p>
 							{project.buttons.map((button, i) => {
 								return <Button key={`button${i}`} text={button.text} link={button.link} isDark={isDark}/>
 							})}
@@ -130,6 +131,7 @@ function Projects({ isDark, sectionRef }) {
 						</div>
 					)
 				})}
+				<Form isDark={isDark} sectionRef={sectionRefContact} projectCount={projects.length}></Form>
 			</div>
 		</>
 	);
