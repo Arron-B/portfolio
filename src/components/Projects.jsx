@@ -1,13 +1,16 @@
 import { useState } from "react";
+import Button from "./Button";
 
 function Projects({ isDark, sectionRef }) {
 	const [isHovered, setIsHovered] = useState(false);
+
+	const youtubeRegex = new RegExp("https:\/\/www\.youtube\.com\/.*");
 
 	const projects = [
 		{
 			title: "Events Platform",
 			desc: "This full-stack web app is my first freelance project and is an event organising platform built with React, TailwindUI/CSS, Node.sj, Express.js and PostgreSQL",
-			video: "https://www.youtube.com/embed/WvKOJIuOabw?si=ZC2GjuoREbCrXztI",
+			media: "https://www.youtube.com/embed/WvKOJIuOabw?si=ZC2GjuoREbCrXztI",
 			buttons: [
 				{
 					text: "LIVE APP",
@@ -22,7 +25,7 @@ function Projects({ isDark, sectionRef }) {
 		{
 			title: "Nc News",
 			desc: "My first full-stack project. Nc News is a web app built using React, Bootstrap, Node.js, Express.js and PostgreSQL",
-			video: "https://www.youtube.com/embed/9G4nvV82eZg?si=_gL8Dc0q8cQJy6et",
+			media: "https://www.youtube.com/embed/9G4nvV82eZg?si=_gL8Dc0q8cQJy6et",
 			buttons: [
 				{
 					text: "LIVE APP",
@@ -41,7 +44,7 @@ function Projects({ isDark, sectionRef }) {
 		{
 			title: "Travel Buddy",
 			desc: "A full-stack mobile app built in a team of 6 during my bootcamp. It utilises Vue, Typescript, Ionic, and MongoDB, all of which none of the team had any prior experience with. Please use in a mobile view.",
-			video: "https://www.youtube.com/embed/fR2Xv5OEUfM?si=WOGiDGutWoCWDPVg&amp;start=261",
+			media: "https://www.youtube.com/embed/fR2Xv5OEUfM?si=WOGiDGutWoCWDPVg&amp;start=261",
 			buttons: [
 				{
 					text: "LIVE APP",
@@ -52,6 +55,32 @@ function Projects({ isDark, sectionRef }) {
 				link: "https://github.com/npm-jog/travel-proj"
 		}
 		]
+		},
+		{
+			title: "Portfolio",
+			desc: "This full-stack web app is my first freelance project and is an event organising platform built with React, TailwindUI/CSS, Node.sj, Express.js and PostgreSQL",
+			media: "https://i.ibb.co/KGnmhqd/portfolio-image.png",
+			buttons: [
+				{
+					text: "LIVE APP",
+					link: "https://arron-events-app.netlify.app/"
+			},
+			{
+				text: "REPO",
+				link: "https://github.com/Arron-B/events-app"
+		}
+		]
+		},
+		{
+			title: "Pokematch",
+			desc: "A quick and fun front-end only game to play around with the DOM.",
+			media: "https://i.ibb.co/Wyxr3s4/poke-match.png",
+			buttons: [
+				{
+					text: "LIVE APP",
+					link: "https://arron-b.github.io/pokemon-memory-game/"
+			}
+		]
 		}
 	]
 
@@ -60,7 +89,7 @@ function Projects({ isDark, sectionRef }) {
 			<div
 				ref={sectionRef}
 				className={
-					"projects relative mt-nav mb-10 portrait:flex portrait:flex-col portrait:gap-2" +
+					"projects relative mt-nav mb-10 portrait:flex portrait:flex-col portrait:gap-32 portrait:pt3:gap-20" +
 					(isDark ? " text-dark-text" : " text-light-text")
 				}
 			>
@@ -70,7 +99,7 @@ function Projects({ isDark, sectionRef }) {
 				></a>
 				<h2
 					className={
-						"relative h-10 my-10 text-3xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[10rem] landscape:before:w-[10.5rem] before:h-1/2 before:top-4 before:translate-x-[1.6rem] landscape:col-span-2 landscape:top-0 font-bold" +
+						"relative h-10 my-10 portrait:pt:max-pt3:mb-0 text-3xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[10rem] landscape:before:w-[10.5rem] before:h-1/2 before:top-4 before:translate-x-[1.6rem] landscape:col-span-2 landscape:top-0 font-bold" +
 						(isDark
 							? " before:border-b-my-red-dark"
 							: " before:border-b-my-red-light")
@@ -80,13 +109,23 @@ function Projects({ isDark, sectionRef }) {
 				</h2>
 				{projects.map((project, i) => {
 					return (
-						<div className="relative portrait:h-60 box-border">
-							<iframe className={"portrait:w-80 border-y-[1.5rem] border-slate-900/15" + (i % 2 === 0 ? " border-r-[1.5rem]" : " ml-auto border-l-[1.5rem]")} width="" height="" src={project.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-							<div className={"absolute flex flex-col justify-center portrait:top-0 portrait:w-40 portrait:text-left portrait:h-full" + (i % 2 === 0 ? " portrait:right-0 portrait:mr-2" : " portrait:ml-2")}>
-							<h3 className="text-md portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:text-lg font-semibold">
+						<div className={"relative box-border portrait:w-[100vw]" + (project.desc.length > 175 ? " my-2" : "")}
+							key={`proj${i+1}`}>
+							{youtubeRegex.test(project.media) ?
+							<iframe className={"portrait:w-[65%] portrait:aspect-video border-y-[1.5rem] border-slate-900/20" + (i % 2 === 0 ? " border-r-[1.5rem]" : " ml-auto border-l-[1.5rem]")}
+							width="" height="" src={project.media} title="YouTube video player" frameBorder="0" allow="web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> :
+							<img
+							className={"portrait:w-[65%] border-y-[1.5rem] border-slate-900/20" + (i % 2 === 0 ? " border-r-[1.5rem]" : " ml-auto border-l-[1.5rem]")}
+							src={project.media}></img>}
+							<div className={"absolute flex flex-col justify-center portrait:top-0 portrait:w-[37%] portrait:text-left portrait:h-full" + (i % 2 === 0 ? " portrait:right-0 portrait:mr-2 portrait:pl-1" : " portrait:ml-2")}>
+							<h3 className="text-md portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:text-lg mb-2 font-semibold">
 							{project.title}
+							</h3>
 							<p className="text-sm portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:max-ls:text-base">{project.desc}</p>
-						</h3>
+							{project.buttons.map((button, i) => {
+								return <Button key={`button${i}`} text={button.text} link={button.link} isDark={isDark}/>
+							})}
+						
 							 </div>
 						</div>
 					)

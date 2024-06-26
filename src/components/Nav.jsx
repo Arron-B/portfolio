@@ -3,7 +3,6 @@ import { useEffect } from "react";
 
 function Nav({ isNavOpen, setIsNavOpen, isDark, setIsDark, currEl }) {
 	useEffect(() => {
-		console.log("useEffect nav");
 		if (isNavOpen) {
 			document.getElementsByTagName("html")[0].style.overflowY = "hidden";
 		} else {
