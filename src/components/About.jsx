@@ -66,9 +66,9 @@ function About({ isDark, sectionRef }) {
 						the Northcoders software development bootcamp gave me extensive
 						problem solving experience with Javascript and introduced me to many
 						of the technologies you see on this page. <br></br> I have my Lvl 4
-						in IT (Software) and intend to complete my degree part-time while I
-						work. Web apps are my career focus, but in the future I'd like to
-						makes games as a hobby with Godot or Unreal Engine. In my free time
+						in IT and intend to complete my degree part-time while I
+						work ( however an apprenticeship offer would be great ). Web apps are my current focus, but in the future I'd like to
+						make games as a hobby with Unity or Unreal Engine. In my free time
 						you'll find me playing table tennis, badminton, games, board games,
 						at the gym or just bingeing my favourite tv series.
 					</p>{" "}
