@@ -76,7 +76,7 @@ function Form({ isDark, sectionRef, projectCount }) {
 						"form-input w-full h-5 pl-1 text-sm landscape:h-12 landscape:pl-6 landscape:mt-4" +
 						(isDark
 							? " bg-slate-900/20 placeholder-dark-text"
-							: " bg-light-secondary placeholder-black")
+							: " bg-gray-900/5 placeholder-gray-700")
 					}
 					type="text"
 					name="user_name"
@@ -88,7 +88,7 @@ function Form({ isDark, sectionRef, projectCount }) {
 						"form-input w-full h-5 pl-1 text-sm landscape:h-12 landscape:pl-6" +
 						(isDark
 							? " bg-slate-900/20 placeholder-dark-text"
-							: " bg-light-secondary placeholder-black")
+							: " bg-gray-900/5 placeholder-gray-700")
 					}
 					type="email"
 					name="user_email"
@@ -101,7 +101,7 @@ function Form({ isDark, sectionRef, projectCount }) {
 						"form-input w-full h-28 pl-1 text-sm landscape:h-40 landscape:pl-6 landscape:pt-2" +
 						(isDark
 							? " bg-slate-900/20 placeholder-dark-text"
-							: " bg-light-secondary placeholder-black")
+							: " bg-gray-900/5 placeholder-gray-700")
 					}
 					placeholder="Message"
 				/>
