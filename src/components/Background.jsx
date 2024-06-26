@@ -4,7 +4,7 @@ function Background({ isDark }) {
 			<div
 				className={
 					"background fixed -z-20 h-[100vh] w-[100vw]" +
-					(isDark ? " bg-dark-bg" : " bg-light-bg")
+					(isDark ? " bg-slate-950" : " bg-light-bg")
 				}
 			>
 				{" "}

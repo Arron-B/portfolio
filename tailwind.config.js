@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
@@ -15,6 +18,9 @@ export default {
 			ls4: "3840px",
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+			  },
 			height: {
 				screen: ["100vh", "100svh"],
 				dynamic: ["100vh", "100dvh"], //fallback for browsers not supporting dvh
@@ -36,7 +42,7 @@ export default {
 				"dark-secondary": "#042233",
 				"light-secondary": "#f2f8ff",
 				"dark-text": "#9DBEBB",
-				"light-text": "black",
+				"light-text": "#111827",
 			},
 			keyframes: {
 				fadeIn: {

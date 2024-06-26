@@ -75,7 +75,7 @@ function Form({ isDark, sectionRef }) {
 					className={
 						"form-input w-full h-5 pl-1 text-sm landscape:h-12 landscape:pl-6 landscape:mt-4" +
 						(isDark
-							? " bg-[#282828] placeholder-dark-text"
+							? " bg-slate-900/20 placeholder-dark-text"
 							: " bg-light-secondary placeholder-black")
 					}
 					type="text"
@@ -87,7 +87,7 @@ function Form({ isDark, sectionRef }) {
 					className={
 						"form-input w-full h-5 pl-1 text-sm landscape:h-12 landscape:pl-6" +
 						(isDark
-							? " bg-[#282828] placeholder-dark-text"
+							? " bg-slate-900/20 placeholder-dark-text"
 							: " bg-light-secondary placeholder-black")
 					}
 					type="email"
@@ -100,7 +100,7 @@ function Form({ isDark, sectionRef }) {
 					className={
 						"form-input w-full h-28 pl-1 text-sm landscape:h-40 landscape:pl-6 landscape:pt-2" +
 						(isDark
-							? " bg-[#282828] placeholder-dark-text"
+							? " bg-slate-900/20 placeholder-dark-text"
 							: " bg-light-secondary placeholder-black")
 					}
 					placeholder="Message"

@@ -9,7 +9,7 @@ function Projects({ isDark, sectionRef }) {
 				ref={sectionRef}
 				className={
 					"projects relative mt-nav mb-10 flex flex-col justify-around portrait:gap-32 landscape:h-[170vh] landscape:grid landscape:grid-cols-2 landscape:grid-rows-[5rem_1fr_1fr_1fr_1fr] landscape:mt-[6rem] overflow-x-clip" +
-					(isDark ? " text-dark-text" : " text-black")
+					(isDark ? " text-dark-text" : " text-light-text")
 				}
 			>
 				<a
@@ -31,14 +31,14 @@ function Projects({ isDark, sectionRef }) {
 					className={
 						"nc-news relative h-[30%] w-[100vw] flex landscape:landscape:ls:hover:scale-95 active:scale-95 transition-all duration-300 landscape:col-start-1 landscape:row-start-2 landscape:row-span-2 landscape:h-[90%] landscape:w-[95%] landscape:top-0 landscape:flex-col landscape:py-7 landscape:pr-7 landscape:justify-center" +
 						(isDark
-							? " landscape:bg-dark-secondary"
-							: " landscape:bg-light-secondary")
+							? " landscape:bg-slate-900/15"
+							: " landscape:bg-gray-50")
 					}
 				>
 					<div
 						className={
 							"w-[70vw] h-[115%] absolute z-0 landscape:w-full landscape:h-full" +
-							(isDark ? " bg-dark-secondary" : " bg-light-secondary")
+							(isDark ? " bg-slate-900/15" : " bg-gray-50")
 						}
 					></div>
 					<img
@@ -64,7 +64,7 @@ function Projects({ isDark, sectionRef }) {
 									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 landscape:landscape:ls1:hover:after:h-full px-1 landscape:w-[15%] landscape:pt:max-ls1:border-b-2 landscape:pt:max-ls1:w-full" +
 									(isDark
 										? " text-dark-text landscape:landscape:ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-										: " text-black landscape:landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
+										: " text-light-text landscape:landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
 								<span className="relative z-10 text-sm portrait:max-pt1:text-[3.5vw] landscape:pt:max-ls1:text-[0.9vw]">
@@ -82,7 +82,7 @@ function Projects({ isDark, sectionRef }) {
 									"relative w-[55%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 landscape:landscape:ls1:hover:after:h-full px-1 landscape:w-[12%] landscape:pt:max-ls1:border-b-2 landscape:pt:max-ls1:w-full" +
 									(isDark
 										? " text-dark-text landscape:landscape:ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-										: " text-black landscape:landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
+										: " text-light-text landscape:landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
 								<span className="relative z-10 text-sm portrait:max-pt1:text-[3.5vw] landscape:pt:max-ls1:text-[0.9vw]">
@@ -100,7 +100,7 @@ function Projects({ isDark, sectionRef }) {
 									"relative w-[50%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 landscape:landscape:ls1:hover:after:h-full px-1 landscape:w-[9%] landscape:pt:max-ls1:border-b-2  landscape:pt:max-ls1:w-full" +
 									(isDark
 										? " text-dark-text landscape:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-										: " text-black landscape:hover:text-light-bg border-my-red-light after:bg-my-red-light")
+										: " text-light-text landscape:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
 								<span className="relative z-10 text-sm portrait:max-pt1:text-[3.5vw] landscape:pt:max-ls1:text-[0.9vw]">
@@ -115,8 +115,8 @@ function Projects({ isDark, sectionRef }) {
 					className={
 						"travel-buddy relative h-[30%] w-[100vw] flex ml-auto justify-end landscape:landscape:ls:hover:scale-95 transition-all duration-300 landscape:h-[90%] landscape:w-[95%] landscape:mt-auto landscape:col-start-2 landscape:row-start-2 landscape:row-span-2 landscape:-bottom-[30%] landscape:flex-col landscape:py-7 landscape:pl-7 landscape:pt:max-ls1:h-full landscape:justify-center" +
 						(isDark
-							? " landscape:bg-dark-secondary"
-							: " landscape:bg-light-secondary")
+							? " landscape:bg-slate-900/15"
+							: " landscape")
 					}
 					onMouseEnter={() => {
 						setIsHovered(true);
@@ -128,7 +128,7 @@ function Projects({ isDark, sectionRef }) {
 					<div
 						className={
 							"w-[70vw] h-[115%] absolute z-0 landscape:w-full landscape:bottom-0 landscape:h-full" +
-							(isDark ? " bg-dark-secondary" : " bg-light-secondary")
+							(isDark ? " bg-slate-900/15" : "")
 						}
 					></div>
 
@@ -157,7 +157,7 @@ function Projects({ isDark, sectionRef }) {
 									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 landscape:ls1:hover:after:h-full px-1 landscape:ls2:w-[15%] landscape:pt:max-ls2:w-[18%] landscape:pt:max-ls1:border-b-2" +
 									(isDark
 										? " text-dark-text landscape:ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-										: " text-black landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
+										: " text-light-text landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
 								<span className="relative z-10 text-sm portrait:max-pt1:text-[3.5vw] landscape:pt:max-ls1:text-[0.9vw]">
@@ -175,7 +175,7 @@ function Projects({ isDark, sectionRef }) {
 									"relative w-[55%] overflow-hidden border-b-[0.35rem] border-my-red transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:bg-my-red after:duration-500 landscape:ls1:hover:after:h-full px-1 landscape:w-[12%] landscape:pt:max-ls1:border-b-2" +
 									(isDark
 										? " text-dark-text landscape:ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-										: " text-black landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
+										: " text-light-text landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
 								<span className="relative z-10 text-sm portrait:max-pt1:text-[3.5vw] landscape:pt:max-ls1:text-[0.9vw]">
@@ -189,14 +189,14 @@ function Projects({ isDark, sectionRef }) {
 					className={
 						"portfolio-proj relative h-[30%] w-[100vw] flex landscape:ls:hover:scale-95 active:scale-95 transition-all duration-300 landscape:col-start-1 landscape:row-start-4 landscape:row-span-2 landscape:h-[90%] landscape:w-[95%] landscape:flex-col landscape:gap-4 landscape:py-7 landscape:pr-7 landscape:translate-y-[5%] landscape:pt:max-ls1:gap-8" +
 						(isDark
-							? " landscape:bg-dark-secondary"
-							: " landscape:bg-light-secondary")
+							? " landscape:bg-slate-900/15"
+							: " landscape:bg-gray-50")
 					}
 				>
 					<div
 						className={
 							"w-[70vw] h-[115%] absolute z-0 landscape:w-full landscape:h-full" +
-							(isDark ? " bg-dark-secondary" : " bg-light-secondary")
+							(isDark ? " bg-slate-900/15" : " bg-gray-50")
 						}
 					></div>
 					<img
@@ -223,7 +223,7 @@ function Projects({ isDark, sectionRef }) {
 									"relative w-[50%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full  after:duration-500 landscape:ls1:hover:after:h-full px-1 landscape:w-[15%] landscape:pt:max-ls1:border-b-2" +
 									(isDark
 										? " text-dark-text landscape:ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-										: " text-black landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
+										: " text-light-text landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
 								<span className="relative z-10 text-sm portrait:max-pt1:text-[3.5vw] landscape:pt:max-ls1:text-[0.9vw]">
@@ -238,8 +238,8 @@ function Projects({ isDark, sectionRef }) {
 					className={
 						"pokematch relative h-[30%] w-[100vw] flex ml-auto justify-end landscape:ls:hover:scale-95 transition-all duration-300 landscape:h-[110%] landscape:w-[95%] landscape:mt-auto landscape:col-start-2 landscape:row-start-4 landscape:row-span-2 landscape:-bottom-[40%] landscape:flex-col landscape:py-7 landscape:pl-7 landscape:gap-4" +
 						(isDark
-							? " landscape:bg-dark-secondary"
-							: " landscape:bg-light-secondary")
+							? " landscape:bg-slate-900/15"
+							: " landscape")
 					}
 					onMouseEnter={() => {
 						setIsHovered(true);
@@ -251,7 +251,7 @@ function Projects({ isDark, sectionRef }) {
 					<div
 						className={
 							"w-[70vw] h-[110%] absolute z-0 landscape:w-full landscape:bottom-0 landscape:h-full" +
-							(isDark ? " bg-dark-secondary" : " bg-light-secondary")
+							(isDark ? " bg-slate-900/15" : "bg-gray-50")
 						}
 					></div>
 
@@ -277,7 +277,7 @@ function Projects({ isDark, sectionRef }) {
 									"relative w-[60%] overflow-hidden border-b-[0.35rem] transition-all after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0 after:w-full after:duration-500 landscape:ls1:hover:after:h-full px-1 landscape:ls2:w-[15%] landscape:pt:max-ls2:w-[18%] landscape:pt:max-ls1:border-b-2" +
 									(isDark
 										? " text-dark-text landscape:ls:hover:text-dark-bg border-my-red-dark after:bg-my-red-dark"
-										: " text-black landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
+										: " text-light-text landscape:ls:hover:text-light-bg border-my-red-light after:bg-my-red-light")
 								}
 							>
 								<span className="relative z-10 text-sm portrait:max-pt1:text-[3.5vw] landscape:pt:max-ls1:text-[0.9vw]">
