@@ -119,10 +119,10 @@ function Projects({ isDark, sectionRefProj, sectionRefContact }) {
 							className={"w-[65%] border-y-[1.5rem] landscape:border-[2rem]" + (i % 2 === 0 ? " border-r-[1.5rem]" : " ml-auto border-l-[1.5rem]") + (isDark ? " border-slate-900/20" : " border-gray-900/5")}
 							src={project.media}></img>}
 							<div className={"absolute flex flex-col justify-center top-0 w-[37%] text-left h-full" + (i % 2 === 0 ? " right-0 mr-2 pl-1 landscape:pl-3" : " ml-2")}>
-							<h3 className={"text-md portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:text-lg mb-2 font-semibold landscape:text-2xl landscape:mb-4" + (isDark ? "" : " text-gray-800")}>
+							<h3 className={"text-md portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:text-lg mb-2 font-semibold landscape:ls2:text-2xl landscape:ls:max-ls2:text-xl landscape:mb-4" + (isDark ? "" : " text-gray-800")}>
 							{project.title}
 							</h3>
-							<p className="text-sm portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:max-ls:text-base landscape:text-2xl landscape:mb-2">{project.desc}</p>
+							<p className="text-sm portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:max-ls:text-base landscape:ls2:text-2xl landscape:ls:max-ls2:text-xl landscape:mb-2">{project.desc}</p>
 							{project.buttons.map((button, i) => {
 								return <Button key={`button${i}`} text={button.text} link={button.link} isDark={isDark}/>
 							})}
