@@ -90,7 +90,7 @@ function Projects({ isDark, sectionRefProj, sectionRefContact }) {
 			<div
 				ref={sectionRefProj}
 				className={
-					"projects relative mt-nav flex flex-col portrait:gap-32 portrait:pt3:gap-20 landscape:w-[70vw] landscape:mx-auto landscape:gap-20 landscape:ls:max-ls2:gap-32" +
+					"projects relative mt-nav flex flex-col portrait:gap-32 portrait:pt3:gap-20 landscape:w-[70vw] landscape:mx-auto landscape:gap-20 landscape:ls:max-ls2:gap-40" +
 					(isDark ? " text-dark-text" : " text-gray-700")
 				}
 			>
@@ -100,7 +100,7 @@ function Projects({ isDark, sectionRefProj, sectionRefContact }) {
 				></a>
 				<h2
 					className={
-						"relative h-10 my-10 portrait:pt:max-pt3:mb-0 text-3xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[10rem] landscape:before:w-[10.5rem] before:h-1/2 before:top-4 before:translate-x-[1.6rem] landscape:col-span-2 landscape:top-0 font-bold" +
+						"relative h-10 my-10 portrait:pt:max-pt3:mb-0 text-3xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[10rem] landscape:before:w-[10.5rem] before:h-1/2 before:top-4 before:translate-x-[1.6rem] landscape:col-span-2 landscape:top-0 font-bold landscape:ls:max-ls2:mb-0 landscape:ls:max-ls2:mt-4" +
 						(isDark
 							? " before:border-b-my-red-dark"
 							: " before:border-b-my-red-light text-gray-800")
