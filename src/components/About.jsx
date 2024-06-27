@@ -43,11 +43,11 @@ function About({ isDark, sectionRef }) {
 			>
 				<a
 					id="about"
-					className="absolute top-4 landscape:top-16"
+					className="absolute top-4 landscape:top-16 landscape:pt:max-ls:top-10"
 				></a>
 				<h2
 					className={
-						"relative h-10 text-3xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[8.5rem] landscape:before:w-[9rem] before:h-1/2 before:top-4 before:translate-x-5 landscape:pt:max-ls:row-start-1 landscape:pt:max-ls:-translate-y-1/3 landscape:col-start-8 landscape:col-span-5 landscape:row-start-2 landscape:row-span-2 landscape:top-20 font-bold landscape:ls:max-ls2:top-5" +
+						"relative h-10 text-3xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[8.5rem] landscape:before:w-[9rem] before:h-1/2 before:top-4 before:translate-x-5 landscape:pt:max-ls:row-start-1 landscape:pt:max-ls:-translate-y-1/3 landscape:col-start-8 landscape:col-span-5 landscape:row-start-2 landscape:row-span-2 landscape:top-[7vh] font-bold" +
 						(isDark
 							? " before:border-b-my-red-dark"
 							: " before:border-b-my-red-light text-gray-800")
