@@ -90,17 +90,17 @@ function Projects({ isDark, sectionRefProj, sectionRefContact }) {
 			<div
 				ref={sectionRefProj}
 				className={
-					"projects relative mt-nav flex flex-col portrait:gap-32 portrait:pt3:gap-20 landscape:w-[70vw] landscape:mx-auto landscape:gap-20 landscape:ls:max-ls2:gap-40" +
+					"projects relative mt-nav flex flex-col portrait:gap-32 portrait:pt3:gap-20 landscape:w-[70vw] landscape:mx-auto landscape:gap-20 landscape:ls:max-ls3:gap-32" +
 					(isDark ? " text-dark-text" : " text-gray-700")
 				}
 			>
 				<a
 					id="projects"
-					className="absolute -top-6 landscape:-top-20"
+					className="absolute -top-6 landscape:-top-22"
 				></a>
 				<h2
 					className={
-						"relative h-10 my-10 portrait:pt:max-pt3:mb-0 text-3xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[10rem] landscape:before:w-[10.5rem] before:h-1/2 before:top-4 before:translate-x-[1.6rem] landscape:col-span-2 landscape:top-0 font-bold landscape:ls:max-ls2:mb-0 landscape:ls:max-ls2:mt-4" +
+						"relative h-10 my-10 portrait:pt:max-pt3:mb-0 text-3xl before:absolute before:border-b-[0.7rem] before:-z-10 before:w-[10rem] landscape:before:w-[10.5rem] before:h-1/2 before:top-4 before:translate-x-[1.6rem] landscape:col-span-2 landscape:top-0 font-bold landscape:ls:max-ls3:mb-0 landscape:ls:max-ls3:mt-4" +
 						(isDark
 							? " before:border-b-my-red-dark"
 							: " before:border-b-my-red-light text-gray-800")
@@ -110,7 +110,7 @@ function Projects({ isDark, sectionRefProj, sectionRefContact }) {
 				</h2>
 				{projects.map((project, i) => {
 					return (
-						<div className={"relative box-border portrait:w-[100vw] landscape:w-3/4 landscape:landscape:ls:hover:scale-95 active:scale-95 transition-all duration-300 " + (project.desc.length > 175 ? " my-2" : "") + (i % 2 === 0 ? "" : " ml-auto")}
+						<div className={"relative box-border portrait:w-[100vw] landscape:w-3/4 landscape:landscape:ls:hover:scale-95 landscape:ls:active:scale-95 landscape:ls:transition-all landscape:ls:duration-300 " + (project.desc.length > 175 ? " my-2" : "") + (i % 2 === 0 ? "" : " ml-auto")}
 							key={`proj${i+1}`}>
 							{youtubeRegex.test(project.media) ?
 							<iframe className={"w-[65%] aspect-video border-y-[1.5rem] landscape:border-[2rem]" + (i % 2 === 0 ? " border-r-[1.5rem]" : " ml-auto border-l-[1.5rem]") + (isDark ? " border-slate-900/20" : " border-gray-900/5")}
@@ -119,10 +119,10 @@ function Projects({ isDark, sectionRefProj, sectionRefContact }) {
 							className={"w-[65%] border-y-[1.5rem] landscape:border-[2rem]" + (i % 2 === 0 ? " border-r-[1.5rem]" : " ml-auto border-l-[1.5rem]") + (isDark ? " border-slate-900/20" : " border-gray-900/5")}
 							src={project.media}></img>}
 							<div className={"absolute flex flex-col justify-center top-0 w-[37%] text-left h-full" + (i % 2 === 0 ? " right-0 mr-2 pl-1 landscape:pl-3" : " ml-2")}>
-							<h3 className={"text-md portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:text-lg mb-2 font-semibold landscape:ls2:text-2xl landscape:ls:max-ls2:text-xl landscape:mb-4" + (isDark ? "" : " text-gray-800")}>
+							<h3 className={"text-md portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:text-lg mb-2 font-semibold landscape:ls2:text-[1.5vw] landscape:ls:max-ls2:text-xl landscape:mb-4" + (isDark ? "" : " text-gray-800")}>
 							{project.title}
 							</h3>
-							<p className="text-sm portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight portrait:pt2:max-ls:text-base landscape:ls2:text-2xl landscape:ls:max-ls2:text-xl landscape:mb-2">{project.desc}</p>
+							<p className="text-sm portrait:max-pt1:text-[4vw] portrait:max-pt1:leading-tight landscape:mb-2 portrait:pt2:max-ls:text-base landscape:ls:max-ls2:text-xl landscape:ls2:text-[1.4vw] landscape:ls2:leading-snug">{project.desc}</p>
 							{project.buttons.map((button, i) => {
 								return <Button key={`button${i}`} text={button.text} link={button.link} isDark={isDark}/>
 							})}

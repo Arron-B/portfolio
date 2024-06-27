@@ -1,7 +1,7 @@
 function Button ({text, link, isDark}) {
     return (
         <a
-							className={"text-sm mt-1 portrait:pt2:max-ls:w-2/3" + (text.length <= 3 ? " landscape:w-1/5 landscape:ls2:w-1/6" : "") + (text.length === 4 ? " landscape:w-1/4 landscape:ls2:w-1/5" : "") + (text.length > 4 ? " landscape:w-1/3 landscape:ls2:w-1/4" : "")}
+							className={"text-sm mt-1 portrait:pt2:max-ls:w-2/3" + (text.length <= 3 ? " landscape:w-1/5 landscape:ls2:w-1/6" : "") + (text.length === 4 ? " landscape:w-1/4 landscape:ls2:w-1/5" : "") + (text.length > 4 ? " landscape:w-1/3 landscape:ls2:w-[28%]" : "")}
 							href={link}
 							target="_blank"
 						>
