@@ -59,7 +59,7 @@ function Projects({ isDark, sectionRefProj, sectionRefContact }) {
 		},
 		{
 			title: "Portfolio",
-			desc: "This full-stack web app is my first freelance project and is an event organising platform built with React, TailwindUI/CSS, Node.sj, Express.js and PostgreSQL",
+			desc: "This portfolio was built with React and TailwindCSS. It was my first time using Tailwind and this project really helped step my front-end skills up a level.",
 			media: "https://i.ibb.co/KGnmhqd/portfolio-image.png",
 			buttons: [
 				{
