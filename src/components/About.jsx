@@ -58,7 +58,7 @@ function About({ isDark, sectionRef }) {
 				<div className="profile-ls my-auto flow-root portrait:hidden px-4 pb-4 row-start-2 row-span-5 justify-center gap-4 landscape:flex-row landscape:items-center landscape:row-start-4 landscape:row-span-6 landscape:col-start-6 landscape:col-span-9">
 					<img
 						className="me float-left w-1/3"
-						src="https://i.ibb.co/ssm1sNM/profile-jpg.jpg"
+						src="https://ibb.co/RG9LDC6m"
 						alt="Profile Photo"
 					/>
 					<p className="me-text text-left w-full h-[100%] text-[1.2vw]">
