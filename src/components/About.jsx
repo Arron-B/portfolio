@@ -75,7 +75,7 @@ function About({ isDark, sectionRef }) {
 				</div>
 				<img
 					className="landscape:hidden rounded-full portrait:w-1/2 mx-auto aspect-square landscape:w-1/2"
-					src="https://i.ibb.co/ssm1sNM/profile-jpg.jpg"
+					src="https://i.ibb.co/wZRDzKQX/Me.jpg"
 					alt="Profile Photo"
 				/>
 				<p className="me-text text-sm portrait:max-pt1:text-[3.3vw] portrait:max-pt1:leading-tight portrait:pt2:w-3/4 mx-auto landscape:hidden">
